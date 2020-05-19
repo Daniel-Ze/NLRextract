@@ -1,7 +1,7 @@
 # NLRextract: search for NLR related hmms
 
 NLRextract was written to search for NLR related hmms in multi-fasta protein
-sequences. It uses hmms from pfam v32.
+sequences. It uses hmms from pfam v32. This tool is under development so let me know if something's odd or can be improved.
 
 ## What it does:
 
