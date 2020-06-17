@@ -82,7 +82,7 @@ else
   echo "# One or more HMMs were not found. Exiting."
   exit 1
 fi
-
+ 
 echo ""
 if [ $wd == '.' ]
 then
