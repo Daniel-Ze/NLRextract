@@ -32,3 +32,9 @@ sequences. It uses hmms from pfam v32. This tool is under development so let me 
 - put it in your PATH
 - chmod a+x NLRextract.sh
 - Write: NLRextract.sh protein.fa
+
+## Changes:
+
+- Added usage info
+- Added suffix and number of CPU options
+- Adjusted plotNLR.r output
