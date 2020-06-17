@@ -1,0 +1,255 @@
+#!/bin/bash
+########################################################### To get the script running
+NLRextracthome=/NLRextract                                # edit this line
+########################################################### and put the folder in PATH
+
+# HMMs
+NBARChmm=$NLRextracthome/hmm/NB-ARC_pfam.hmm
+CChmm=$NLRextracthome/hmm/Rx_N.hmm
+TIRhmm=$NLRextracthome/hmm/TIR_pfam.hmm
+RPW8hmm=$NLRextracthome/hmm/RPW8_pfam.hmm
+LRR=$NLRextracthome/hmm/LRR/LRR.hmm
+MADA=$NLRextracthome/hmm/mada.hmm
+
+# R scripts
+plotNLR=$NLRextracthome/plotNLR.r
+vennNLR=$NLRextracthome/vennNLR.r
+
+# Define a help funktion
+helpFunction()
+{
+   echo ""
+   echo "Usage: $(basename -- "$0") -c 1 -p protein.fa -s suffix"
+   echo -e "\t-c number of CPUs to use"
+   echo -e "\t-p path to the protein multifasta"
+   echo -e "\t-s suffix for folder"
+   exit 1 # Exit script after printing help
+}
+
+# Parse the parameters
+while getopts "c:p:s:" opt
+do
+   case "$opt" in
+      c ) parameterC="$OPTARG" ;;
+      p ) parameterP="$OPTARG" ;;
+      s ) parameterS="$OPTARG" ;;
+      ? ) helpFunction ;; # Print helpFunction in case parameter is non-existent
+   esac
+done
+
+# Print helpFunction in case parameters are empty
+if [ -z "$parameterP" ]
+then
+   echo "No protein file supplied.";
+   helpFunction
+fi
+
+if [ -z "$parameterS" ]
+then
+  echo "# No suffix provided. Generating a unique random identifier."
+  parameterS=$(cat /dev/urandom | env LC_CTYPE=C tr -dc a-zA-Z0-9 | head -c 6; echo)
+fi
+
+if [ -z "$parameterC" ]
+then
+  echo "# Nothing supplied for number of CPU. Running on 1 core."
+  parameterC=1
+fi
+
+if [ -d $(dirname $parameterP)"/NLRextract_"$parameterS ]
+then
+  echo "# A folder with the same name already exists. Exiting."
+  exit 1
+fi
+# Begin script in case all parameters are correct
+
+wd=$(dirname $parameterP)/
+in=$(basename -- "$parameterP")
+echo "# Working directory:           $wd"
+echo "# Protein multifasta:          $in"
+echo "# Number of cores used:        $parameterC"
+echo "# Suffix for resutls folder:   $parameterS"
+
+echo -e "# NLR domain HMMs check:"
+if [ -f $NBARChmm ] || [ -f $CChmm ] || [ -f $TIRhmm ] || [ -f $RPW8hmm ] || [ -f $LRR ]
+then
+  printf "\t \xE2\x9C\x94 "$(basename -- "$NBARChmm")"\n"
+  printf "\t \xE2\x9C\x94 "$(basename -- "$CChmm")"\n"
+  printf "\t \xE2\x9C\x94 "$(basename -- "$TIRhmm")"\n"
+  printf "\t \xE2\x9C\x94 "$(basename -- "$RPW8hmm")"\n"
+  printf "\t \xE2\x9C\x94 "$(basename -- "$LRR")"\n"
+else
+  echo "# One or more HMMs were not found. Exiting."
+  exit 1
+fi
+exit
+echo ""
+if [ $wd == '.' ]
+then
+  touch $in.stats
+  touch $in.stderr
+else
+  touch $wd'nlr.stats'
+  touch $wd'nlr.stderr'
+fi
+
+echo "# $(grep -E "^>" $wd$in | wc -l) sequences in multi fasta"
+
+
+######################################################################################################################################################
+# 1. Checking the whole dataset for NB-ARC, CC, TIR, RPW8 and LRR domains:
+# searching the fa file for NB-ARC domain containing sequences:
+echo "NBARC HMM search" 2>> $wd'nlr.stderr'
+hmmsearch --cpu $parameterC --max --tblout $wd'nb.out.tbl' -o $wd'nb.out' $NBARChmm $parameterP 2>> $wd'nlr.stderr'
+
+grep -v "^#" $wd'nb.out.tbl' | awk '($5 + 0.0 < 0.01) { print $1 }' > $wd'nb.out.seqname' 2>> $wd'nlr.stderr'
+
+echo -e "#\t$(wc -l < $wd'nb.out.seqname') sequences with NB-ARC domain"
+
+echo -e "NB-ARC\n$(cat $wd'nb.out.seqname')" > $wd'nb.out.name'
+
+echo -e "$(wc -l < $wd'nb.out.seqname')\tNB-ARC" >> $wd'nlr.stats'
+
+    #awk -F'>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $1.nb.out.seqname $1 > $1.nb.out.fa
+
+# searching the fa file for CC domain containing sequences:
+echo "CC HMM search" 2>> $wd'nlr.stderr'
+hmmsearch --cpu $parameterC --max --tblout $wd'cc.out.tbl' -o $wd'cc.out' $CChmm $parameterP 2>> $wd'nlr.stderr'
+
+grep -v "^#" $wd'cc.out.tbl' | awk '($5 + 0.0 < 0.01) { print $1 }' > $wd'cc.out.seqname' 2>> $wd'nlr.stderr'
+
+echo -e "#\t$(wc -l < $wd'cc.out.seqname') sequences with CC domain"
+
+echo -e "CC\n$(cat $wd'cc.out.seqname')" > $wd'cc.out.name'
+
+echo -e "$(wc -l < $wd'cc.out.seqname')\tCC" >> $wd'nlr.stats'
+
+    #awk -F'>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $input.cc.out.seqname $input > $input.cc.out.fa
+
+# searching the fa file for TIR domain containing sequences:
+echo "TIR HMM search" 2>> $wd'nlr.stderr'
+hmmsearch --cpu $parameterC --max --tblout $wd'tir.out.tbl' -o $wd'tir.out' $TIRhmm $parameterP 2>> $wd'nlr.stderr'
+
+grep -v "^#" $wd'tir.out.tbl' | awk '($5 + 0.0 < 0.01) { print $1 }' > $wd'tir.out.seqname' 2>> $wd'nlr.stderr'
+
+echo -e "#\t$(wc -l < $wd'tir.out.seqname') sequences with TIR domain"
+
+echo -e "TIR\n$(cat $wd'tir.out.seqname')" > $wd'tir.out.name'
+
+echo -e "$(wc -l < $wd'tir.out.seqname')\tTIR" >> $wd'nlr.stats'
+
+    #awk -F'>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $input.tir.out.seqname $input > $input.tir.out.fa
+
+# searching the fa file for RPW8 domain containing sequences:
+echo "RPW8 HMM search" 2>> $wd'nlr.stderr'
+hmmsearch --cpu $parameterC --max --tblout $wd'rpw8.out.tbl' -o $wd'rpw8.out' $RPW8hmm $parameterP 2>> $wd'nlr.stderr'
+
+grep -v "^#" $wd'rpw8.out.tbl' | awk '($5 + 0.0 < 0.01) { print $1 }' > $wd'rpw8.out.seqname' 2>> $wd'nlr.stderr'
+
+echo -e "#\t$(wc -l < $wd'rpw8.out.seqname') sequences with RPW8 domain"
+
+echo -e "RPW8\n$(cat $wd'rpw8.out.seqname')" > $wd'rpw8.out.name'
+
+echo -e "$(wc -l < $wd'rpw8.out.seqname')\tRPW8" >> $wd'nlr.stats'
+
+    #awk -F'>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $input.rpw8.out.seqname $input > $input.rpw8.out.fa
+
+# searching the fa file for LRR domain containing sequences:
+echo "LRR HMM search" 2>> $wd'nlr.stderr'
+hmmscan --cpu $parameterC --max --tblout $wd'lrr.out.tbl' -o $wd'lrr.out' $LRR $parameterP 2>> $wd'nlr.stderr'
+
+grep -v "^#" $wd'lrr.out.tbl' | awk '($5 + 0.0 < 0.01) { print $3 }' | uniq  > $wd'lrr.out.seqname' 2>> $wd'nlr.stderr'
+
+echo -e "#\t$(wc -l < $wd'lrr.out.seqname') sequences with LRR domain"
+
+echo -e "LRR\n$(cat $wd'lrr.out.seqname')" > $wd'lrr.out.name'
+
+echo -e "$(wc -l < $wd'lrr.out.seqname')\tLRR" >> $wd'nlr.stats'
+
+    #awk -F'>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $input.lrr.out.seqname $input > $input.lrr.out.fa
+
+echo "#"
+
+######################################################################################################################################################
+# plot some stuff
+echo "running R scripts" 2>> $wd'nlr.stderr'
+Rscript $vennNLR $wd'nb.out.name' $wd'cc.out.name' $wd'tir.out.name' $wd'rpw8.out.name' $wd'lrr.out.name' --save 2>> $wd'nlr.stderr'
+
+NLRprotein=$wd*.protein
+for f in $NLRprotein
+do
+  echo $(basename -- "$f")
+  echo -e "$(wc -l < $f)\t$(basename -- "$f")" >> $wd'nlr.stats'
+  awk '{print $2}' $f > $wd'tmp'
+  awk -F'>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $wd'tmp' $parameterP > $f.fa
+  rm $wd'tmp'
+done
+
+Rscript $plotNLR $wd'nlr.stats' --save 2>> $wd'nlr.stderr'
+
+######################################################################################################################################################
+# cleaning up the mess
+rand_folder="NLRextract_"$parameterS
+
+mkdir $wd$rand_folder
+
+mkdir $wd$rand_folder'/seqname'
+
+SEQNAME=$wd'/'*.seqname
+echo "#  - Moving all files with sequence names to $rand_folder/seqname"
+for f in $SEQNAME
+do
+  mv $f $wd$rand_folder'/seqname' 2>> $wd'nlr.stderr'
+done
+
+mkdir $wd$rand_folder'/fasta'
+FASTA=$wd'/'*.protein.fa
+echo "#  - Moving all fasta files to $rand_folder/fasta"
+for f in $FASTA
+do
+  mv $f $wd$rand_folder'/fasta' 2>> $wd'nlr.stderr'
+done
+
+mkdir -p $wd$rand_folder'/hmmer' $wd$rand_folder'/hmmer/out'  $wd$rand_folder'/hmmer/tbl'
+
+FASTA=$wd'/'*.out
+echo "#  - Moving all .out files to $rand_folder/hmmer/out"
+for f in $FASTA
+do
+  mv $f $wd$rand_folder'/hmmer/out' 2>> $wd'nlr.stderr'
+done
+
+FASTA=$wd'/'*.tbl
+echo "#  - Moving all .tbl files to $rand_folder/hmmer/tbl"
+for f in $FASTA
+do
+  mv $f $wd$rand_folder'/hmmer/tbl' 2>> $wd'nlr.stderr'
+done
+
+mkdir $wd$rand_folder'/plot'
+FASTA=$wd'/'*.pdf
+echo "#  - Moving all .pdf files to $rand_folder/plot"
+for f in $FASTA
+do
+  mv $f $wd$rand_folder'/plot' 2>> $wd'nlr.stderr'
+done
+
+FASTA=$wd'/'*.name
+echo "#  - Moving all .name files to $rand_folder/plot"
+for f in $FASTA
+do
+  mv $f $wd$rand_folder'/plot' 2>> $wd'nlr.stderr'
+done
+echo "#  - Moving all .stats files to $rand_folder/plot"
+mv $wd'nlr.stats' $wd$rand_folder'/plot' 2>> $wd'nlr.stderr'
+
+FASTA=$wd'/'*.protein
+echo "#  - Moving all .protein files to /"$rand_folder
+for f in $FASTA
+do
+  mv $f $wd$rand_folder 2>> $wd'nlr.stderr'
+done
+
+echo "#  - Moving files to /"$rand_folder
+mv $wd'nlr.prot' $wd$rand_folder 2>> $wd'nlr.stderr'
+mv $wd'nlr.stderr' $wd$rand_folder 2>> $wd'nlr.stderr'
