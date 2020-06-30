@@ -38,9 +38,9 @@ do
 done
 
 # Print helpFunction in case parameters are empty
-if [ -z "$parameterP" ]
+if [ -z "$parameterP" ] || [ ! -f "$parameterP" ]
 then
-   echo "No protein file supplied.";
+   echo "No protein file supplied or file does not exist."
    helpFunction
 fi
 
@@ -82,7 +82,7 @@ else
   echo "# One or more HMMs were not found. Exiting."
   exit 1
 fi
- 
+
 echo ""
 if [ $wd == '.' ]
 then
