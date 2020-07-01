@@ -30,8 +30,8 @@ sequences. It uses hmms from pfam v32. This tool is under development so let me 
 
 - Clone it
 - put it in your PATH
-- chmod a+x NLRextract.sh
-- Write: NLRextract.sh protein.fa
+- chmod a+x NLRextract
+- Write: NLRextract -p protein.fa
 
 ## Changes:
 
