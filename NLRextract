@@ -1,6 +1,6 @@
 #!/bin/bash
 ########################################################### To get the script running
-NLRextracthome=/home/daniel/Programs/NLRextract           # edit this line
+NLRextracthome=~/Programs/NLRextract           # edit this line
 ########################################################### and put the folder in PATH
 
 # HMMs
