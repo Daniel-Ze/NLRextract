@@ -1,6 +1,6 @@
 #!/bin/bash
 ########################################################### To get the script running
-NLRextracthome=/Path/to/NLRextract                        # edit this line
+NLRextracthome=/home/daniel/Programs/NLRextract           # edit this line
 ########################################################### and put the folder in PATH
 
 # HMMs
@@ -121,7 +121,7 @@ else
   touch $NLREX'nlr.stderr'
 fi
 
-echo "# $(grep -E "^>" $wd$in | wc -l) sequences in multi fasta"
+echo "# $(grep -E "^>" $parameterP | wc -l) sequences in multi fasta"
 
 ######################################################################################################################################################
 # 1. Checking the whole dataset for NB-ARC, CC, TIR, RPW8 and LRR domains:
@@ -199,7 +199,7 @@ echo "#"
 
 ######################################################################################################################################################
 # plot some stuff
-echo "running R scripts" 2>> $NLREX'nlr.stderr'
+echo "# running R scripts" 2>> $NLREX'nlr.stderr'
 Rscript $vennNLR $NAME'nb.out.name' $NAME'cc.out.name' $NAME'tir.out.name' $NAME'rpw8.out.name' $NAME'lrr.out.name' --save 2>> $NLREX'nlr.stderr'
 
 mkdir -p $wd"NLRextract_"$parameterS"/fasta"
@@ -213,8 +213,10 @@ do
   file=$(basename -- "$f")
   echo -e "$(wc -l < $f)\t$(basename -- "$f")" >> $STATS'nlr.stats'
   awk '{print $2}' $f > $NLREX'tmp'
-  awk -F'>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $NLREX'tmp' $wd$parameterP > $FASTA$file.fa
+  cat $NLREX'tmp' | xargs -I % grep -E % $wd$parameterP > $NLREX'tmp1'
+  awk -F'^>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' $NLREX'tmp1' $parameterP > $FASTA$file.fa
   rm $NLREX'tmp'
+  rm $NLREX'tmp1'
 done
 
 Rscript $plotNLR $STATS'nlr.stats' --save 2>> $NLREX'nlr.stderr'
