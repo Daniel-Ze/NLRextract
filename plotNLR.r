@@ -1,6 +1,8 @@
 #!/usr/bin/Rscript
 #install.packages("ggplot2")
 library(ggplot2)
+library(egg)
+library(cowplot)
 
 # Saving data from bash script to nlrs
 nlrs <- commandArgs( )
@@ -80,89 +82,129 @@ nlr_dom$V2 <- factor( nlr_dom$V2,
 
 
 # Generating bar plot of data from NLRextract
-pdf(paste0(nlrs_file_path,"/nlr.domain.pdf"))
-ggplot( nlr_dom,
+# pdf(paste0(nlrs_file_path,"/nlr.domain.pdf"))
+p0<-ggplot( nlr_dom,
         aes( nlr_dom$V2,
              nlr_dom$V1,
              fill = nlr_dom$V2
             )
       )+
   geom_bar( stat = "identity",
-            show.legend=FALSE
+            show.legend=FALSE,
+            alpha = 0.7,
+            color = "black"
           )+
   ylab( "# NLR" )+
   theme_bw()+
   theme( axis.title.x = element_blank(),
-         axis.text.x = element_text( angle = 45,
-                                     hjust = 1
+         axis.text.x = element_text( angle = 90,
+                                     hjust = 1,
+                                     vjust = 0.5,
+                                     size = 12
                                     ),
          legend.title = element_blank()
         )+
   ggtitle( "NLR domains" )
-dev.off()
+
+# dev.off()
 
 # Generating bar plot of data from NLRextract
-pdf(paste0(nlrs_file_path,"/nlr.protein.pdf"))
-ggplot( nlr_prot,
+# pdf(paste0(nlrs_file_path,"/nlr.protein.pdf"))
+p1<-ggplot( nlr_prot,
         aes( x=reorder(V2, -V1),
              y=V1,
              fill = V2
             )
       )+
   geom_bar( stat = "identity",
-            show.legend=FALSE
+            show.legend=FALSE,
+            alpha = 0.7,
+            color = "black"
           )+
   ylab( "# proteins" )+
   theme_bw()+
   theme( axis.title.x = element_blank(),
-         axis.text.x = element_text( angle = 45,
-                                     hjust = 1
+         axis.text.x = element_text( angle = 90,
+                                     hjust = 1,
+                                     vjust = 0.5,
+                                     size = 12
                                     ),
          legend.title = element_blank()
         )+
-  ggtitle( "NLR proteins" )
-dev.off()
+  ggtitle( "All combinations" )
 
-pdf(paste0(nlrs_file_path,"/nlr.protein.comp.pdf"))
-ggplot( nlr_comp,
+# dev.off()
+
+# pdf(paste0(nlrs_file_path,"/nlr.protein.comp.pdf"))
+p3<-ggplot( nlr_comp,
         aes( nlr_comp$V2,
              nlr_comp$V1,
              fill = nlr_comp$V2
         )
       )+
   geom_bar( stat = "identity",
-            show.legend=FALSE
+            show.legend=FALSE,
+            alpha = 0.7,
+            width = 0.7,
+            color = "black"
           )+
+  geom_text(aes(label = V1), vjust = -0.5, show.legend = FALSE) +
   ylab( "# proteins" )+
   theme_bw()+
   theme( axis.title.x = element_blank(),
-         axis.text.x = element_text( angle = 45,
-                                     hjust = 1
+         axis.title.y = element_text(size = 14),
+         axis.text.x = element_text( angle = 90,
+                                     hjust = 1,
+                                     vjust = 0.5,
+                                     size = 12
          ),
          legend.title = element_blank()
        )+
-  ggtitle( "NLR complete proteins" )
-dev.off()
+  ggtitle( "NLR - complete proteins" )
 
-pdf(paste0(nlrs_file_path,"/nlr.protein.part.pdf"))
-ggplot( nlr_part,
+# dev.off()
+
+
+# pdf(paste0(nlrs_file_path,"/nlr.protein.part.pdf"))
+p4<-ggplot( nlr_part,
         aes( nlr_part$V2,
              nlr_part$V1,
              fill = nlr_part$V2
         )
       )+
   geom_bar( stat = "identity",
-            show.legend=FALSE
+            show.legend=FALSE,
+            alpha = 0.7,
+            color = "black",
+            width = 0.8
           )+
+  geom_text(aes(label = V1), vjust = -0.5,
+            show.legend = FALSE) +
   ylab( "# proteins" )+
   theme_bw()+
   theme( axis.title.x = element_blank(),
-         axis.text.x = element_text( angle = 45,
-                                     hjust = 1
+         axis.title.y = element_blank(),
+         axis.text.x = element_text( angle = 90,
+                                     hjust = 1,
+                                     vjust = 0.5,
+                                     size = 12
          ),
          legend.title = element_blank()
        )+
   ggtitle( "NLR - partial proteins" )
-dev.off()
 
-print( paste0( "Plot saved as pdf with 300 dpi (7 x 5 in) in ", nlrs_file_path, "nlr.domain.pdf and nlr.protein.pdf" ) )
+
+# dev.off()
+p5<-plot_grid(p3,p4, nrow = 1, align = "h", rel_widths = c(2.5,4))
+
+ggsave(file = paste0(nlrs_file_path, "/nlr.protein.pdf"),
+       width = 5, height = 5, p1)
+ggsave(file = paste0(nlrs_file_path, "/nlr.domain.pdf"),
+       width = 3, height = 5, p0)
+ggsave(file = paste0(nlrs_file_path, "/nlr.protein.comp.pdf"),
+       width = 3, height = 7, p3)
+ggsave(file = paste0(nlrs_file_path, "/nlr.protein.part.pdf"),
+       width = 5, height = 7, p4)
+ggsave(file = paste0(nlrs_file_path, "/nlr.protein.comp_part.pdf"),
+       width = 8, height = 7, p5)
+print( paste0( "Done." ) )
