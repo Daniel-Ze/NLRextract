@@ -1,0 +1,14 @@
+name: NLRextract
+channels:
+  - bioconda
+dependencies:
+  - hmmer=3.3.2
+  - bedtools=2.30.0
+  - R=3.6
+  - r-ggplot2
+  - r-gplots
+  - r-egg
+  - r-cowplot
+  - r-plyr
+  - clustalo=1.2.4
+  - clustalw=2.1
