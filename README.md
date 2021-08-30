@@ -1,5 +1,4 @@
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-()[https://github.com/Daniel-Ze/NLRextract/blob/master/preview_nlrextract.png?raw=true]
+![title](https://github.com/Daniel-Ze/NLRextract/blob/master/preview_nlrextract.png?raw=true)
 # NLRextract: search for NLR related hmms
 
 NLRextract was written to search for NLR related hmms in multi-fasta protein
@@ -82,6 +81,8 @@ Usage: NLRextract -p protein.fa
 - Added suffix and number of CPU options
 - Adjusted plotNLR.r output
 - Added phylogenetic trees
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
 [1] Hiroaki Adachi, Mauricio P Contreras, Adeline Harant, Chih-hang Wu, Lida Derevnina, Toshiyuki Sakai, Cian Duggan, Eleonora Moratto, Tolga O Bozkurt, Abbas Maqbool, Joe Win, Sophien Kamoun, 2019, An N-terminal motif in NLR immune receptors is functionally conserved across distantly related plant species. eLife, 8:e49956 http://dx.doi.org/10.7554/eLife.49956 \
 [2] Burkhard Steuernagel,  Florian Jupe,  Kamil Witek, Jonathan D.G. Jones,  Brande B.H. Wulff, 2015, NLR-parser: rapid annotation of plant NLR complements. Bioinformatics, Vol. 31, Issue 10, Pages 1665–1667 https://doi.org/10.1093/bioinformatics/btv005 \
