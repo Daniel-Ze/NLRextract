@@ -2,8 +2,7 @@
 # NLRextract: search for NLR related hmms
 
 NLRextract was written to search for NLR related hmms in multi-fasta protein
-sequences. It uses hmms from pfam v32. This tool is under development so let me know if something's odd or can be improved. I tested the performance of NLRextract against [NLRparser](https://github.com/steuernb/NLR-Parser)[1] and [NLRtracker](https://github.com/slt666666/NLRtracker)[2] in a small article on my website: https://www.biotinkertech.eu/project_NLRextract.html
-It includes the search for the CC domain related MADA motif [3].
+sequences. It uses hmms from pfam v32. It includes the search for the CC domain related MADA motif [1]. This tool is under development so let me know if something's odd or can be improved. I tested the performance of NLRextract against [NLRparser](https://github.com/steuernb/NLR-Parser)[2] and [NLRtracker](https://github.com/slt666666/NLRtracker)[3] in a small article on my website: https://www.biotinkertech.eu/project_NLRextract.html
 
 ## What it does:
 
@@ -83,6 +82,6 @@ Usage: NLRextract -p protein.fa
 - Adjusted plotNLR.r output
 - Added phylogenetic trees
 
-[1] Burkhard Steuernagel,  Florian Jupe,  Kamil Witek, Jonathan D.G. Jones,  Brande B.H. Wulff, 2015, NLR-parser: rapid annotation of plant NLR complements. Bioinformatics, Vol. 31, Issue 10, Pages 1665–1667 https://doi.org/10.1093/bioinformatics/btv005 \
-[2]  Jiorgos Kourelis,  Toshiyuki Sakai,  Hiroaki Adachi,  Sophien Kamoun, 2021, RefPlantNLR: a comprehensive collection of experimentally validated plant NLRs. bioRxiv, https://doi.org/10.1101/2020.07.08.193961 \
-[3] Hiroaki Adachi, Mauricio P Contreras, Adeline Harant, Chih-hang Wu, Lida Derevnina, Toshiyuki Sakai, Cian Duggan, Eleonora Moratto, Tolga O Bozkurt, Abbas Maqbool, Joe Win, Sophien Kamoun, 2019, An N-terminal motif in NLR immune receptors is functionally conserved across distantly related plant species. eLife, 8:e49956 http://dx.doi.org/10.7554/eLife.49956 
+[1] Hiroaki Adachi, Mauricio P Contreras, Adeline Harant, Chih-hang Wu, Lida Derevnina, Toshiyuki Sakai, Cian Duggan, Eleonora Moratto, Tolga O Bozkurt, Abbas Maqbool, Joe Win, Sophien Kamoun, 2019, An N-terminal motif in NLR immune receptors is functionally conserved across distantly related plant species. eLife, 8:e49956 http://dx.doi.org/10.7554/eLife.49956 \
+[2] Burkhard Steuernagel,  Florian Jupe,  Kamil Witek, Jonathan D.G. Jones,  Brande B.H. Wulff, 2015, NLR-parser: rapid annotation of plant NLR complements. Bioinformatics, Vol. 31, Issue 10, Pages 1665–1667 https://doi.org/10.1093/bioinformatics/btv005 \
+[3]  Jiorgos Kourelis,  Toshiyuki Sakai,  Hiroaki Adachi,  Sophien Kamoun, 2021, RefPlantNLR: a comprehensive collection of experimentally validated plant NLRs. bioRxiv, https://doi.org/10.1101/2020.07.08.193961 
