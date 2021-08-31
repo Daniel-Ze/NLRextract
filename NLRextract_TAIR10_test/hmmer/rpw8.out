@@ -1,0 +1,2835 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/daniel/test/hmm/RPW8_pfam.hmm
+# target sequence database:        TAIR10_pep_20101214.txt
+# output directed to file:         ./NLRextract_TAIR10_test1/hmmer/rpw8.out
+# per-seq hits tabular output:     ./NLRextract_TAIR10_test1/hmmer/rpw8.out.tbl
+# per-dom hits tabular output:     ./NLRextract_TAIR10_test1/hmmer/rpw8.out.dom.tbl
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       RPW8  [M=139]
+Accession:   PF05659.11
+Description: Arabidopsis broad-spectrum mildew resistance protein RPW8
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    4.1e-57  192.7   3.7    5.7e-57  192.3   3.7    1.2  1  AT3G50470.1  | Symbols: HR3, MLA10 | homolog of RPW8 3 | chr3
+    2.9e-52  177.0   5.2    3.7e-52  176.7   5.2    1.1  1  AT3G50460.1  | Symbols: HR2 | homolog of RPW8 2 | chr3:187278
+    6.7e-50  169.3   3.9    8.1e-50  169.1   3.9    1.1  1  AT3G50450.1  | Symbols: HR1 | homolog of RPW8 1 | chr3:187224
+    1.2e-48  165.4   8.3    2.1e-43  148.3   0.0    3.1  3  AT3G50480.1  | Symbols: HR4 | homolog of RPW8 4 | chr3:187332
+    5.6e-48  163.1   0.6    1.4e-47  161.8   0.6    1.7  1  AT5G66630.1  | Symbols: DAR5 | DA1-related protein 5 | chr5:2
+    9.7e-27   94.3   3.4    2.3e-26   93.1   3.4    1.6  1  AT5G66910.1  | Symbols:  | Disease resistance protein (CC-NBS
+    1.1e-26   94.1   0.9    2.4e-26   93.0   0.9    1.6  1  AT5G66900.1  | Symbols:  | Disease resistance protein (CC-NBS
+    2.3e-13   51.0   0.8    3.9e-13   50.2   0.8    1.3  1  AT3G26470.1  | Symbols:  | Powdery mildew resistance protein,
+    4.9e-12   46.7   0.5    1.7e-11   44.9   0.5    2.0  1  AT1G33560.1  | Symbols: ADR1 | Disease resistance protein (CC
+    5.7e-12   46.5   0.7    1.2e-11   45.4   0.7    1.5  1  AT4G33300.1  | Symbols: ADR1-L1 | ADR1-like 1 | chr4:16051162
+    5.7e-12   46.5   0.7    1.2e-11   45.4   0.7    1.5  1  AT4G33300.2  | Symbols: ADR1-L1 | ADR1-like 1 | chr4:16051162
+    4.6e-11   43.5   3.0    1.2e-10   42.2   0.7    2.6  2  AT5G04720.1  | Symbols: ADR1-L2 | ADR1-like 2 | chr5:1360748-
+     0.0089   16.7   0.1      0.023   15.3   0.1    1.7  1  AT5G66200.1  | Symbols: ARO2 | armadillo repeat only 2 | chr5
+  ------ inclusion threshold ------
+      0.015   15.9   0.3       0.14   12.8   0.1    2.4  2  AT3G26600.1  | Symbols: ARO4 | armadillo repeat only 4 | chr3
+      0.024   15.3   2.6      0.024   15.3   2.6    1.7  1  AT3G46510.1  | Symbols: PUB13, ATPUB13 | plant U-box 13 | chr
+      0.024   15.3   0.0      0.077   13.6   0.0    1.9  1  AT5G43470.1  | Symbols: RPP8, HRT, RCY1 | Disease resistance 
+      0.024   15.3   0.0      0.077   13.6   0.0    1.9  1  AT5G43470.2  | Symbols: RPP8, HRT, RCY1 | Disease resistance 
+      0.031   14.9   0.1       0.18   12.5   0.2    2.2  1  AT3G19180.1  | Symbols: ARC6H, PARC6, ATCDP1, CDP1 | paralog 
+      0.034   14.8   0.1       0.11   13.1   0.0    1.9  1  AT5G48620.1  | Symbols:  | Disease resistance protein (CC-NBS
+      0.066   13.9   7.4          2    9.1   0.9    3.2  3  AT2G35190.1  | Symbols: NPSN11, ATNPSN11, NSPN11 | novel plan
+      0.085   13.5   0.2        1.1    9.9   0.0    2.4  2  AT4G34940.1  | Symbols: ARO1 | armadillo repeat only 1 | chr4
+        0.1   13.2   0.0       0.34   11.6   0.0    1.8  1  AT4G36030.1  | Symbols: ARO3 | armadillo repeat only 3 | chr4
+        0.1   13.2   0.1        1.8    9.2   0.0    2.0  2  AT4G23330.2  | Symbols:  | unknown protein; FUNCTIONS IN: mol
+       0.14   12.8   2.5       0.12   13.0   0.4    2.0  1  AT3G50950.1  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | 
+       0.14   12.8   2.5       0.12   13.0   0.4    2.0  1  AT3G50950.2  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | 
+       0.15   12.7   2.3       0.22   12.2   2.3    1.3  1  AT2G17442.3  | Symbols:  | unknown protein; FUNCTIONS IN: mol
+       0.15   12.7   2.3       0.22   12.2   2.3    1.3  1  AT2G17442.4  | Symbols:  | unknown protein; FUNCTIONS IN: mol
+       0.15   12.7   2.3       0.22   12.2   2.3    1.3  1  AT2G17442.1  | Symbols:  | unknown protein; Has 30201 Blast h
+       0.15   12.7   2.3       0.22   12.2   2.3    1.3  1  AT2G17442.2  | Symbols:  | unknown protein; FUNCTIONS IN: mol
+       0.16   12.6   0.6        0.2   12.3   0.6    1.2  1  AT2G17442.5  | Symbols:  | unknown protein; FUNCTIONS IN: mol
+       0.16   12.6   1.7       0.31   11.7   0.6    1.8  2  AT5G03220.1  | Symbols:  | Mediator complex, subunit Med7 | c
+       0.19   12.3   0.5        1.1    9.9   0.0    2.2  2  AT4G35920.1  | Symbols: MCA1 | PLAC8 family protein | chr4:17
+       0.19   12.3   0.5        1.1    9.9   0.0    2.2  2  AT4G35920.2  | Symbols: MCA1 | PLAC8 family protein | chr4:17
+       0.19   12.3   0.5        1.1    9.9   0.0    2.2  2  AT4G35920.3  | Symbols: MCA1 | PLAC8 family protein | chr4:17
+       0.21   12.2   4.1       0.24   12.1   3.3    1.5  1  AT4G01245.1  | Symbols:  | FUNCTIONS IN: molecular_function u
+       0.36   11.5   2.3        0.8   10.3   0.3    1.9  2  AT5G03500.1  | Symbols:  | Mediator complex, subunit Med7 | c
+       0.36   11.5   2.3        0.8   10.3   0.3    1.9  2  AT5G03500.2  | Symbols:  | Mediator complex, subunit Med7 | c
+       0.36   11.5   2.3        0.8   10.3   0.3    1.9  2  AT5G03500.3  | Symbols:  | Mediator complex, subunit Med7 | c
+       0.38   11.4   0.7        6.4    7.4   0.1    2.1  2  AT1G19086.1  | Symbols:  | unknown protein; LOCATED IN: endom
+       0.46   11.1   1.1        8.7    7.0   0.0    3.0  2  AT4G36550.1  | Symbols:  | ARM repeat superfamily protein | c
+       0.47   11.1   4.5         20    5.8   0.5    2.9  2  AT2G38370.1  | Symbols:  | Plant protein of unknown function 
+       0.51   11.0   0.3         21    5.8   0.1    2.3  2  AT5G64560.2  | Symbols: MGT9, MRS2-2, ATMGT9 | magnesium tran
+       0.54   10.9   0.0        2.3    8.9   0.0    2.0  1  AT5G35450.1  | Symbols:  | Disease resistance protein (CC-NBS
+       0.57   10.8   0.5        2.4    8.8   0.2    2.1  1  AT3G18160.1  | Symbols: PEX3-1 | peroxin 3-1 | chr3:6220918-6
+       0.57   10.8   0.3         22    5.7   0.1    2.3  2  AT5G64560.1  | Symbols: MGT9, MRS2-2, ATMGT9 | magnesium tran
+       0.63   10.7   0.4        2.6    8.7   0.2    2.1  1  AT3G18160.3  | Symbols: PEX3-1 | peroxin 3-1 | chr3:6220918-6
+       0.64   10.7   0.2       0.74   10.5   0.2    1.2  1  AT2G24470.1  | Symbols:  | Plant protein of unknown function 
+       0.65   10.6   2.2        1.3    9.7   0.5    2.0  2  AT5G04850.1  | Symbols: VPS60.2 | SNF7 family protein | chr5:
+       0.73   10.5   0.4          1   10.0   0.4    1.2  1  AT3G10640.2  | Symbols: VPS60.1 | SNF7 family protein | chr3:
+       0.79   10.4   0.1         51    4.5   0.0    2.9  2  AT4G02350.1  | Symbols: SEC15B | exocyst complex component se
+       0.81   10.3   0.1        2.2    8.9   0.1    1.7  1  AT3G18160.2  | Symbols: PEX3-1 | peroxin 3-1 | chr3:6221322-6
+       0.83   10.3   7.8        0.1   13.2   1.5    2.4  2  AT2G17780.4  | Symbols: MCA2 | PLAC8 family protein | chr2:77
+       0.87   10.2   1.5        7.5    7.2   0.1    2.7  2  AT2G17190.1  | Symbols:  | ubiquitin family protein | chr2:74
+       0.93   10.1   2.2        1.6    9.4   0.5    2.0  2  AT5G04850.2  | Symbols: VPS60.2 | SNF7 family protein | chr5:
+        1.1    9.9   0.3        3.1    8.5   0.3    1.7  1  AT5G55300.3  | Symbols: TOP1ALPHA | DNA topoisomerase I alpha
+        1.2    9.8   0.4         23    5.6   0.1    2.3  2  AT5G09690.1  | Symbols: ATMGT7, MGT7, MRS2-7 | magnesium tran
+        1.3    9.7   1.2        4.6    7.9   0.3    2.3  1  AT2G27090.1  | Symbols:  | Protein of unknown function (DUF63
+        1.3    9.7   0.4         24    5.5   0.1    2.3  2  AT5G09690.2  | Symbols: ATMGT7, MGT7, MRS2-7 | magnesium tran
+        1.4    9.6   0.1        1.7    9.2   0.1    1.1  1  AT1G26945.1  | Symbols: KDR | basic helix-loop-helix (bHLH) D
+        1.5    9.5  10.4       0.72   10.5   3.3    2.4  2  AT1G67170.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+        1.5    9.4   1.0        2.3    8.9   0.1    1.8  1  AT1G53350.1  | Symbols:  | Disease resistance protein (CC-NBS
+        1.6    9.4   0.7        3.1    8.4   0.1    1.7  1  AT1G35030.1  | Symbols:  | unknown protein; FUNCTIONS IN: mol
+        1.6    9.4   0.0        2.7    8.6   0.0    1.3  1  AT2G16790.2  | Symbols:  | P-loop containing nucleoside triph
+        1.6    9.4   0.0        2.8    8.6   0.0    1.3  1  AT2G16790.1  | Symbols:  | P-loop containing nucleoside triph
+        1.6    9.4   2.8        1.8    9.2   0.4    2.0  2  AT3G10640.1  | Symbols: VPS60.1 | SNF7 family protein | chr3:
+        1.7    9.3   1.3        6.2    7.5   0.5    2.2  1  AT5G45150.1  | Symbols: RTL3 | RNAse THREE-like protein 3 | c
+        1.8    9.2   6.9        1.9    9.2   1.8    2.8  3  AT3G17440.2  | Symbols: NPSN13, ATNPSN13 | novel plant snare 
+        1.8    9.2   1.8        3.6    8.2   0.8    2.0  1  AT2G17940.1  | Symbols:  | Plant protein of unknown function 
+        1.9    9.1   0.3        5.5    7.6   0.3    1.8  1  AT5G55300.1  | Symbols: MGO1, TOP1ALPHA, TOP1 | DNA topoisome
+        1.9    9.1   0.3        4.3    8.0   0.3    1.5  1  AT1G18420.1  | Symbols:  | Aluminium activated malate transpo
+          2    9.1   0.3        5.7    7.6   0.3    1.7  1  AT5G55300.2  | Symbols: TOP1ALPHA | DNA topoisomerase I alpha
+        2.1    9.0   1.5         13    6.4   0.0    2.6  2  AT2G17200.1  | Symbols: DSK2 | ubiquitin family protein | chr
+        2.1    9.0   0.9        3.1    8.4   0.9    1.3  1  AT3G15190.1  | Symbols:  | chloroplast 30S ribosomal protein 
+        2.3    8.9   0.7         23    5.6   0.2    2.0  2  AT1G79070.1  | Symbols:  | SNARE-associated protein-related |
+        2.3    8.8   0.6         16    6.1   0.0    2.5  1  AT2G17110.1  | Symbols:  | Protein of unknown function (DUF63
+        2.3    8.8   0.8        4.2    8.0   0.8    1.4  1  AT3G27460.2  | Symbols:  | SGF29 tudor-like domain | chr3:101
+        2.3    8.8   0.0        2.8    8.6   0.0    1.2  1  AT5G39950.1  | Symbols: ATTRX2, ATH2, ATTRXH2, TRXH2, TRX2 | 
+        2.6    8.7   0.5         36    5.0   0.0    2.3  2  AT5G26780.1  | Symbols: SHM2 | serine hydroxymethyltransferas
+        2.6    8.7   0.8        4.5    7.9   0.8    1.4  1  AT3G27460.1  | Symbols:  | SGF29 tudor-like domain | chr3:101
+        2.7    8.6   5.1        2.7    8.6   1.0    2.5  2  AT1G18190.1  | Symbols: GC2 | golgin candidate 2 | chr1:62579
+        2.7    8.6   0.5         38    4.9   0.0    2.3  2  AT5G26780.2  | Symbols: SHM2 | serine hydroxymethyltransferas
+        2.7    8.6   0.5         38    4.9   0.0    2.3  2  AT5G26780.3  | Symbols: SHM2 | serine hydroxymethyltransferas
+        2.8    8.6   8.5       0.14   12.8   1.1    2.4  2  AT2G17780.3  | Symbols: MCA2 | PLAC8 family protein | chr2:77
+        2.8    8.6   8.5       0.14   12.8   1.1    2.4  2  AT2G17780.2  | Symbols: MCA2 | PLAC8 family protein | chr2:77
+        2.9    8.5   0.1        3.3    8.4   0.1    1.2  1  AT3G47710.1  | Symbols: BNQ3, BHLH161 | BANQUO 3 | chr3:17590
+        2.9    8.5   1.2        6.5    7.4   1.2    1.7  1  AT1G59620.1  | Symbols: CW9 | Disease resistance protein (CC-
+        2.9    8.5   0.2    1.4e+02    3.1   0.0    2.5  2  AT3G46530.1  | Symbols: RPP13 | NB-ARC domain-containing dise
+          3    8.5   8.5       0.14   12.8   1.1    2.4  2  AT2G17780.1  | Symbols: MCA2 | PLAC8 family protein | chr2:77
+          3    8.5   6.4          4    8.1   1.5    2.9  3  AT1G48240.1  | Symbols: ATNPSN12, NPSN12 | novel plant snare 
+        3.1    8.5   0.1        3.9    8.1   0.1    1.2  1  AT5G39860.1  | Symbols: PRE1, BNQ1, BHLH136 | basic helix-loo
+        3.2    8.4   1.2        6.8    7.3   1.2    1.5  1  AT4G14368.1  | Symbols:  | Regulator of chromosome condensati
+        3.3    8.3   6.6        9.1    6.9   0.4    3.4  3  AT4G32560.1  | Symbols:  | paramyosin-related | chr4:15713866
+        3.3    8.3   6.6        9.1    6.9   0.4    3.4  3  AT4G32560.2  | Symbols:  | paramyosin-related | chr4:15713866
+        3.4    8.3   0.2         32    5.2   0.7    2.2  2  AT5G65640.2  | Symbols: bHLH093 | beta HLH protein 93 | chr5:
+        3.6    8.2   0.9        4.6    7.9   0.9    1.2  1  AT1G29580.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+        3.6    8.2   1.4         14    6.3   1.4    2.0  1  AT4G27190.1  | Symbols:  | NB-ARC domain-containing disease r
+        3.7    8.2   0.0         11    6.6   0.0    1.8  1  AT4G02070.2  | Symbols: MSH6 | MUTS homolog 6 | chr4:906079-9
+        3.7    8.2   0.2        7.1    7.3   0.2    1.4  1  AT3G19570.2  | Symbols: SCO3, QWRF1 | Family of unknown funct
+        3.7    8.2   0.9         19    5.9   0.1    1.9  2  AT1G07950.1  | Symbols: MED22B | Surfeit locus protein 5 subu
+        3.7    8.2   0.0         11    6.6   0.0    1.8  1  AT4G02070.1  | Symbols: MSH6, MSH6-1, ATMSH6 | MUTS homolog 6
+        3.9    8.1   0.5         13    6.4   0.2    1.9  1  AT1G46408.1  | Symbols: AGL97 | AGAMOUS-like 97 | chr1:172321
+          4    8.1   0.3          5    7.8   0.3    1.2  1  AT5G24655.1  | Symbols: LSU4 | response to low sulfur 4 | chr
+        4.1    8.1   1.1         20    5.8   0.2    2.3  3  AT4G19350.1  | Symbols: EMB3006 | embryo defective 3006 | chr
+        4.1    8.0   7.1        2.7    8.6   1.9    2.7  3  AT3G17440.1  | Symbols: NPSN13, ATNPSN13 | novel plant snare 
+        4.2    8.0   1.1        9.2    6.9   1.1    1.5  1  AT3G05390.1  | Symbols:  | FUNCTIONS IN: molecular_function u
+        4.3    8.0   3.8        3.7    8.2   0.2    2.4  2  AT3G51410.1  | Symbols:  | Arabidopsis protein of unknown fun
+        4.4    7.9   3.0         11    6.6   0.5    2.6  2  AT1G11070.1  | Symbols:  | BEST Arabidopsis thaliana protein 
+        4.6    7.9   1.0         21    5.7   0.1    2.4  2  AT3G53920.1  | Symbols: SIGC, SIG3 | RNApolymerase sigma-subu
+        4.7    7.8   2.2    1.3e+02    3.2   0.1    3.4  3  AT5G20490.2  | Symbols: XIK, ATXIK, XI-17 | Myosin family pro
+          5    7.8  12.4         14    6.3   0.9    3.3  3  AT4G09060.2  | Symbols:  | unknown protein; BEST Arabidopsis 
+        5.1    7.7   0.9        9.7    6.8   0.9    1.4  1  AT5G40550.2  | Symbols:  | SGF29 tudor-like domain | chr5:162
+        5.4    7.7   0.9        9.9    6.8   0.9    1.4  1  AT5G40550.1  | Symbols:  | SGF29 tudor-like domain | chr5:162
+        5.4    7.6   1.0        9.5    6.9   0.2    1.8  1  AT4G04745.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+        5.6    7.6   0.2         16    6.2   0.2    1.7  1  AT1G16430.1  | Symbols:  | Surfeit locus protein 5 subunit 22
+        5.6    7.6   1.5         15    6.2   1.3    1.8  1  AT5G36170.3  | Symbols: HCF109, ATPRFB | high chlorophyll flu
+        5.7    7.6   0.1          8    7.1   0.1    1.4  1  AT5G15160.1  | Symbols: BNQ2, BHLH134 | BANQUO 2 | chr5:49214
+        5.8    7.6   0.4        9.8    6.8   0.4    1.3  1  AT1G02340.1  | Symbols: HFR1, RSF1, FBI1, REP1 | basic helix-
+        5.9    7.5   0.7        9.9    6.8   0.7    1.3  1  AT3G22260.1  | Symbols:  | Cysteine proteinases superfamily p
+        5.9    7.5   1.8         18    6.0   1.8    1.7  1  AT1G51000.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+        5.9    7.5   2.2         11    6.6   1.6    2.0  1  AT2G27740.1  | Symbols:  | Family of unknown function (DUF662
+          6    7.5   2.3    1.6e+02    2.9   0.1    3.4  3  AT5G20490.1  | Symbols: XIK, ATXIK, XI-17 | Myosin family pro
+        6.1    7.5   0.7         10    6.8   0.7    1.3  1  AT3G22260.2  | Symbols:  | Cysteine proteinases superfamily p
+        6.1    7.5   0.7         10    6.8   0.7    1.3  1  AT3G22260.3  | Symbols:  | Cysteine proteinases superfamily p
+        6.2    7.5   0.3         12    6.6   0.3    1.5  1  AT1G11905.2  | Symbols:  | B-cell receptor-associated protein
+        6.3    7.4   1.3         14    6.3   0.6    1.8  1  AT5G36170.1  | Symbols: HCF109, ATPRFB | high chlorophyll flu
+        6.4    7.4   1.3         15    6.3   0.7    1.8  1  AT5G36170.2  | Symbols: HCF109, ATPRFB | high chlorophyll flu
+        6.4    7.4   0.2         37    5.0   0.5    2.1  1  AT5G65640.1  | Symbols: bHLH093 | beta HLH protein 93 | chr5:
+        6.6    7.4   0.4         16    6.2   0.1    1.7  1  AT3G58370.1  | Symbols:  | TRAF-like family protein | chr3:21
+        6.7    7.4   7.8        5.8    7.6   1.2    2.4  2  AT2G36410.1  | Symbols:  | Family of unknown function (DUF662
+        6.7    7.4   3.3         33    5.1   0.1    2.4  2  AT4G22950.1  | Symbols: AGL19, GL19 | AGAMOUS-like 19 | chr4:
+        6.8    7.3   3.3        4.5    7.9   0.5    1.9  2  AT2G36355.1  | Symbols:  | Family of unknown function (DUF662
+        6.9    7.3   0.9         15    6.2   0.2    2.0  1  AT3G60660.1  | Symbols:  | unknown protein; CONTAINS InterPro
+          7    7.3   5.3        9.8    6.8   0.6    2.5  2  AT3G52920.1  | Symbols:  | Family of unknown function (DUF662
+          7    7.3   1.6         11    6.7   0.2    2.0  1  AT5G07770.2  | Symbols:  | Actin-binding FH2 protein | chr5:2
+        7.2    7.3   0.3         65    4.2   0.0    2.1  2  AT1G13890.1  | Symbols: SNAP30, ATSNAP30 | soluble N-ethylmal
+        7.2    7.3   1.0         16    6.1   1.0    1.7  1  AT1G11905.1  | Symbols:  | B-cell receptor-associated protein
+        7.2    7.2   0.1         11    6.7   0.1    1.4  1  AT1G35410.1  | Symbols:  | Protein of unknown function (DUF11
+        7.2    7.2   2.7         14    6.3   2.4    1.7  1  AT4G17010.1  | Symbols:  | unknown protein; Has 30201 Blast h
+        7.3    7.2   1.4         41    4.8   1.3    1.9  1  AT1G51010.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+        7.5    7.2   1.8         24    5.5   0.7    2.6  1  AT3G12550.1  | Symbols:  | XH/XS domain-containing protein | 
+        7.5    7.2   1.8         24    5.5   0.7    2.6  1  AT3G12550.2  | Symbols:  | XH/XS domain-containing protein | 
+        7.5    7.2   0.0        8.2    7.1   0.0    1.1  1  AT5G28642.1  | Symbols:  | unknown protein; Has 30201 Blast h
+        7.6    7.2   4.2        4.1    8.1   1.0    2.1  1  AT4G36060.2  | Symbols: bHLH11 | basic helix-loop-helix (bHLH
+        7.8    7.1   1.8         18    6.0   1.5    1.8  1  AT2G32760.1  | Symbols:  | unknown protein; Has 229 Blast hit
+        7.8    7.1   0.4         18    6.0   0.4    1.5  1  AT5G41315.1  | Symbols: GL3, MYC6.2 | basic helix-loop-helix 
+          8    7.1   7.3        9.2    6.9   0.5    3.2  3  AT4G32560.3  | Symbols:  | paramyosin-related | chr4:15713866
+          8    7.1   0.4         14    6.3   0.4    1.3  1  AT5G33898.1  | Symbols:  | Protein of unknown function (DUF32
+          8    7.1   1.8         12    6.5   1.8    1.3  1  AT5G15690.1  | Symbols:  | zinc ion binding | chr5:5113823-51
+        8.1    7.1   4.7         12    6.5   0.5    2.7  3  AT3G14750.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+        8.2    7.1   1.7         11    6.6   0.2    1.9  1  AT5G07770.1  | Symbols:  | Actin-binding FH2 protein | chr5:2
+        8.6    7.0   0.5         20    5.8   0.4    1.7  1  AT1G19010.2  | Symbols:  | unknown protein; BEST Arabidopsis 
+        8.7    7.0   0.1         12    6.5   0.1    1.2  1  AT4G06490.1  | Symbols:  | Protein of unknown function (DUF32
+        8.8    7.0   5.1        2.3    8.8   0.9    2.3  1  AT1G19980.1  | Symbols:  | cytomatrix protein-related | chr1:
+        8.9    7.0   0.2         18    6.0   0.2    1.5  1  AT1G45110.1  | Symbols:  | Tetrapyrrole (Corrin/Porphyrin) Me
+        8.9    7.0   4.2        4.5    7.9   1.0    2.1  1  AT4G36060.1  | Symbols: bHLH11 | basic helix-loop-helix (bHLH
+          9    6.9   2.3        8.9    7.0   0.2    2.1  1  AT2G40480.1  | Symbols:  | Plant protein of unknown function 
+        9.1    6.9   1.3         18    6.0   0.4    2.0  1  AT1G63650.1  | Symbols: EGL3, EGL1, ATMYC-2 | basic helix-loo
+        9.1    6.9   1.3         18    6.0   0.4    2.0  1  AT1G63650.2  | Symbols: EGL3, EGL1, ATMYC-2 | basic helix-loo
+        9.1    6.9   1.3         18    6.0   0.4    2.0  1  AT1G63650.3  | Symbols: EGL3 | basic helix-loop-helix (bHLH) 
+        9.3    6.9   0.1         30    5.2   0.1    1.8  1  AT5G62600.1  | Symbols:  | ARM repeat superfamily protein | c
+        9.5    6.9   1.1         33    5.1   1.1    1.9  1  AT2G28830.1  | Symbols: PUB12, AtPUB12 | PLANT U-BOX 12 | chr
+        9.6    6.8  10.9         18    6.0  10.9    1.4  1  AT1G33960.1  | Symbols: AIG1 | P-loop containing nucleoside t
+        9.7    6.8   2.2         26    5.5   2.2    1.8  1  AT1G51030.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+        9.7    6.8   0.4         26    5.5   0.1    1.7  1  AT1G70540.1  | Symbols: EDA24 | Plant invertase/pectin methyl
+        9.8    6.8   1.8         60    4.3   0.1    2.7  3  AT3G20320.1  | Symbols: TGD2 | trigalactosyldiacylglycerol2 |
+        9.8    6.8   0.5         24    5.6   0.3    1.7  1  AT1G19010.1  | Symbols:  | unknown protein; BEST Arabidopsis 
+         10    6.8   0.9         59    4.3   0.1    2.3  2  AT5G12900.1  | Symbols:  | unknown protein; FUNCTIONS IN: mol
+
+
+Domain annotation for each sequence (and alignments):
+>> AT3G50470.1  | Symbols: HR3, MLA10 | homolog of RPW8 3 | chr3:18729146-18730162 FORWARD LENGTH=213
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  192.3   3.7   2.7e-59   5.7e-57       2     139 .]       5     143 ..       4     143 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 192.3 bits;  conditional E-value: 2.7e-59
+         RPW8   2 elvgGAalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkk 98 
+                  e+++GAalg+al++l++ai++ak++sl++++il+rL++t+ ritP+v++++kl++e+ d+pr++ie+Lk+lLeka +LVe++++l+r+n+lkk+rYk+
+  AT3G50470.1   5 EIMAGAALGLALQVLHDAIKKAKDRSLTTRCILDRLDATIFRITPLVTQVDKLSEEVeDSPRKVIEDLKHLLEKAVSLVEAYAELRRRNLLKKFRYKR 102
+                  89************************************************************************************************ PP
+
+         RPW8  99 klkeLekslrkfvqvelqvqqvrdikellakmkelntklde 139
+                  ++keLe+slr++v+v++qv+q+ dikel+akm+e+ntklde
+  AT3G50470.1 103 RIKELEASLRWMVDVDVQVNQWVDIKELMAKMSEMNTKLDE 143
+                  ***************************************96 PP
+
+>> AT3G50460.1  | Symbols: HR2 | homolog of RPW8 2 | chr3:18727840-18728649 FORWARD LENGTH=205
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  176.7   5.2   1.7e-54   3.7e-52       2     138 ..       5     142 ..       4     143 .. 0.99
+
+  Alignments for each domain:
+  == domain 1  score: 176.7 bits;  conditional E-value: 1.7e-54
+         RPW8   2 elvgGAalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkk 98 
+                  e+++GAalg+al+ l++ai +ak++sl++++il+rL+st+ ritP+++++eklnke+ ++ r+++e+Lk+lLeka  LVe++++lkr+n+l kyrYk+
+  AT3G50460.1   5 EIIAGAALGLALQILHEAIQRAKDRSLTTSCILDRLDSTILRITPLMAKVEKLNKESdESLRKVFEDLKHLLEKAVVLVEAYAELKRRNLLGKYRYKR 102
+                  89*******************************************************999************************************** PP
+
+         RPW8  99 klkeLekslrkfvqvelqvqqvrdikellakmkelntkld 138
+                  ++keLe sl+++v+v+++v+q++dik+l+akm+e+ntkl+
+  AT3G50460.1 103 RIKELEGSLKWMVDVDVKVNQWADIKDLMAKMSEMNTKLE 142
+                  **************************************97 PP
+
+>> AT3G50450.1  | Symbols: HR1 | homolog of RPW8 1 | chr3:18722415-18723135 FORWARD LENGTH=189
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  169.1   3.9   3.8e-52   8.1e-50       2     138 ..       5     142 ..       4     143 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 169.1 bits;  conditional E-value: 3.8e-52
+         RPW8   2 elvgGAalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkk 98 
+                  el+  Aalg+ l+ l++ai++ak++sl +++il+rL++tl++itP+v +i++l++e+ +++r++ieeLk+lLeka +LV ++++lk +n+l+kyrYk+
+  AT3G50450.1   5 ELLTSAALGLSLQLLHDAIIRAKERSLITRCILDRLDATLHKITPFVIKIDTLTEEVdEPFRKVIEELKRLLEKAIRLVDAYAELKLRNLLRKYRYKR 102
+                  78889****************************************************9999************************************* PP
+
+         RPW8  99 klkeLekslrkfvqvelqvqqvrdikellakmkelntkld 138
+                  ++keL+ slr++++v++qv+q++dik+l+ km+e+ntkld
+  AT3G50450.1 103 RIKELDSSLRWMIDVDVQVNQWLDIKKLMGKMSEMNTKLD 142
+                  ***************************************9 PP
+
+>> AT3G50480.1  | Symbols: HR4 | homolog of RPW8 4 | chr3:18733287-18734180 FORWARD LENGTH=200
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  148.3   0.0     1e-45   2.1e-43       3     139 .]      11     147 ..       4     147 .. 0.97
+   2 !   11.8   0.6    0.0013      0.28     115     139 .]     151     175 ..     148     175 .. 0.93
+   3 !    9.1   0.3     0.009       1.9     115     134 ..     179     198 ..     176     200 .] 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 148.3 bits;  conditional E-value: 1e-45
+         RPW8   3 lvgGAalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklk.rynvlkkyrYkk 98 
+                   vgG++++aalg+ +++i++ ++k +d+ si++rL +t+e+i+Pv+++i+kl+++  +++re++e+L++lLe+a++++ek++kl+ +++v++kyrY k
+  AT3G50480.1  11 TVGGPLIAAALGVGAQVIYDGFRKGKDT-SIINRLGRTMESISPVRDRIGKLSNVEgKPFREVHESLTRLLEDAKSIIEKYWKLRwSRHVCRKYRYIK 107
+                  49**************************.********************************************************99*********** PP
+
+         RPW8  99 klkeLekslrkfvqvelqvqqvrdikellakmkelntklde 139
+                  kl+++e +l++ v++e+qv+q++dike++a + +++t+++e
+  AT3G50480.1 108 KLESIELELVR-VAREIQVHQWTDIKEMKAIQVHQWTDIKE 147
+                  ***********.**************************996 PP
+
+  == domain 2  score: 11.8 bits;  conditional E-value: 0.0013
+         RPW8 115 lqvqqvrdikellakmkelntklde 139
+                  +qv+q++dike++a + +++ +++e
+  AT3G50480.1 151 IQVDQWTDIKEMKAIQVDQWIDIKE 175
+                  8********************9986 PP
+
+  == domain 3  score: 9.1 bits;  conditional E-value: 0.009
+         RPW8 115 lqvqqvrdikellakmkeln 134
+                  +qv+q++dike++a+++e+ 
+  AT3G50480.1 179 IQVDQWTDIKEMKAQISEKH 198
+                  8**************99976 PP
+
+>> AT5G66630.1  | Symbols: DAR5 | DA1-related protein 5 | chr5:26592720-26595691 FORWARD LENGTH=702
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !  161.8   0.6   6.7e-50   1.4e-47       1     137 [.       7     145 ..       7     147 .. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 161.8 bits;  conditional E-value: 6.7e-50
+         RPW8   1 aelvgGAalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkk 98 
+                  a+lvgGAalga+l+e++k+++e++kk++dfk+ +++L+st+er++P+++ei+++++ ++r ++e++ L++++e+a ++V+kcs++++y+++kk++Y++
+  AT5G66630.1   7 ASLVGGAALGAPLSEIFKLVIEEAKKVKDFKPLSQDLASTMERLVPIFNEIDMMQQGSNRGTSELKVLTETMERAGEMVHKCSRIQWYSIAKKALYTR 104
+                  689*********************************************************************************************** PP
+
+         RPW8  99 klkeLekslrkfvqvelqvqqvrdikellak..mkelntkl 137
+                  ++k+++++++kf+q+elq+ q+r++ +++++  m++++tk 
+  AT5G66630.1 105 EIKAINQDFLKFCQIELQLIQHRNQLQYMRSmgMASVSTKA 145
+                  ******************************95566777765 PP
+
+>> AT5G66910.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr5:26718338-26721133 REVERSE LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.1   3.4   1.1e-28   2.3e-26       6     132 ..      12     133 ..       9     138 .. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 93.1 bits;  conditional E-value: 1.1e-28
+         RPW8   6 GAalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  G + ga ++e lk+++ ++kk+l fks +++L+st+e++ Pv+keie+++   d ++  +++Lk++++ka  LVekcs + ++n++ k +Y++k++e+
+  AT5G66910.1  12 GSVAGALVSEGLKVLISEAKKVLAFKSVSNELASTMESLLPVIKEIESMQ---DGME--LQDLKDTIDKALLLVEKCSHVEKWNIILKSKYTRKVEEI 104
+                  7788999*******************************************...5555..999************************************ PP
+
+         RPW8 104 ekslrkfvqvelqvqqvrdikellakmke 132
+                  + +++kf+qv+lq+   r++ + + +m+ 
+  AT5G66910.1 105 NRKMLKFCQVQLQLLLFRNQLKSMPSMEA 133
+                  ************************99975 PP
+
+>> AT5G66900.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr5:26714931-26717757 REVERSE LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   93.0   0.9   1.2e-28   2.4e-26       6     127 ..      10     128 ..       5     139 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 93.0 bits;  conditional E-value: 1.2e-28
+         RPW8   6 GAalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  G + +a++++llk++++++kk + fk+ +k+L st+e + P+ ++i++++keld   +e++eL++++e+a   V+k  ++k+y+   k +Y++k++ +
+  AT5G66900.1  10 GSIGEAVFSKLLKVVIDEAKKFKAFKPLSKDLVSTMEILFPLTQKIDSMQKELDFGVKELKELRDTIERADVAVRKFPRVKWYE---KSKYTRKIERI 104
+                  666689****************************************************************************97...788******** PP
+
+         RPW8 104 ekslrkfvqvelqvqqvrdikell 127
+                  +k+++kf+q++lq+ q+r++  ll
+  AT5G66900.1 105 NKDMLKFCQIDLQLLQHRNQLTLL 128
+                  *******************99876 PP
+
+>> AT3G26470.1  | Symbols:  | Powdery mildew resistance protein,  RPW8 domain | chr3:9686144-9686900 FORWARD LENGTH=221
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   50.2   0.8   1.8e-15   3.9e-13      11     126 ..      10     126 ..       7     136 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 50.2 bits;  conditional E-value: 1.8e-15
+         RPW8  11 aalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLeksl 107
+                   +  ellk +   + ++   k + ++L   +e+i+P +kei+    el   ++++i  L + Lek++kL  k     r+n++++ +  kk+++Lek l
+  AT3G26470.1  10 EIATELLKQLFLISARAGRYKNTADNLSTLIENIQPTIKEIQYSGVELpAHRQAQIRILFESLEKGKKLMDKFLTCNRWNMIRQLYLMKKMEKLEKTL 107
+                  56778888888888899999999**************************9************************************************ PP
+
+         RPW8 108 rkfvqvelqvqqvrdikel 126
+                   +f+   +  +  +d   l
+  AT3G26470.1 108 SDFFRASILTHILADLHLL 126
+                  *****99999888886555 PP
+
+>> AT1G33560.1  | Symbols: ADR1 | Disease resistance protein (CC-NBS-LRR class) family | chr1:12169092-12171878 FORWARD 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   44.9   0.5   8.2e-14   1.7e-11      12     119 ..      12     119 ..       7     138 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 44.9 bits;  conditional E-value: 8.2e-14
+         RPW8  12 algellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslr 108
+                  +  +llk++  ++++++++k i +rL  ++ +++P + ei+   +el +  + ++  + + Leka kL ek  +  r+n+ k  + ++k+k+Lek++ 
+  AT1G33560.1  12 ITTQLLKLLALVANTVYSCKGIAERLITMIRDVQPTIREIQYSGAELsNHHQTQLGVFYEILEKARKLCEKVLRCNRWNL-KHVYHANKMKDLEKQIS 108
+                  66799999**********************************************************************95.89999************ PP
+
+         RPW8 109 kfvqvelqvqq 119
+                  +f + ++ + +
+  AT1G33560.1 109 RFLNSQILLFV 119
+                  ***99988755 PP
+
+>> AT4G33300.1  | Symbols: ADR1-L1 | ADR1-like 1 | chr4:16051162-16054005 REVERSE LENGTH=816
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.4   0.7   5.8e-14   1.2e-11      10     130 ..       9     130 ..       7     139 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 45.4 bits;  conditional E-value: 5.8e-14
+         RPW8  10 gaalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLeks 106
+                  g +  ellk +   + ++   k + k+L   + +i+P +kei+    el   ++++i +L ++Lek++kL  k    kr+n+ ++   ++k+++Lek 
+  AT4G33300.1   9 GEIATELLKQLFTISTTAWRYKNTAKQLLTLIDSIRPTIKEIQYSGVELpAHRQAQIGMLFDTLEKGKKLTDKVLSSKRWNLYRQLTLARKMEKLEKT 106
+                  56778999999999999999******************************9*********************************************** PP
+
+         RPW8 107 lrkfvqvelqvqqvrdikellakm 130
+                  + +f + e+  +  +d   l+a  
+  AT4G33300.1 107 ISNFLKNEVFTHILADVHHLRADT 130
+                  *********999999988887765 PP
+
+>> AT4G33300.2  | Symbols: ADR1-L1 | ADR1-like 1 | chr4:16051162-16054005 REVERSE LENGTH=816
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   45.4   0.7   5.8e-14   1.2e-11      10     130 ..       9     130 ..       7     139 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 45.4 bits;  conditional E-value: 5.8e-14
+         RPW8  10 gaalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLeks 106
+                  g +  ellk +   + ++   k + k+L   + +i+P +kei+    el   ++++i +L ++Lek++kL  k    kr+n+ ++   ++k+++Lek 
+  AT4G33300.2   9 GEIATELLKQLFTISTTAWRYKNTAKQLLTLIDSIRPTIKEIQYSGVELpAHRQAQIGMLFDTLEKGKKLTDKVLSSKRWNLYRQLTLARKMEKLEKT 106
+                  56778999999999999999******************************9*********************************************** PP
+
+         RPW8 107 lrkfvqvelqvqqvrdikellakm 130
+                  + +f + e+  +  +d   l+a  
+  AT4G33300.2 107 ISNFLKNEVFTHILADVHHLRADT 130
+                  *********999999988887765 PP
+
+>> AT5G04720.1  | Symbols: ADR1-L2 | ADR1-like 2 | chr5:1360748-1363665 FORWARD LENGTH=811
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   42.2   0.7   5.7e-13   1.2e-10      11     127 ..       8     125 ..       3     137 .. 0.94
+   2 ?    0.0   0.1       5.8   1.2e+03      49      80 ..     137     169 ..     130     172 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 42.2 bits;  conditional E-value: 5.7e-13
+         RPW8  11 aalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLeksl 107
+                   ++ el++ ++ +++k+l ++ i k+L+ ++  ++P +kei+    el   +++++ ++ ++L+k  kL ek  k +r+n++++ +  +k+++L  ++
+  AT5G04720.1   8 EVVTELVRQLYAVSQKTLRCRGIAKNLATMIDGLQPTIKEIQYSGVELtPHRQAQLRMFSETLDKCRKLTEKVLKSSRWNMVRQLLHVRKMENLQSKV 105
+                  6788999999**************************************889999******************************************** PP
+
+         RPW8 108 rkfvqvelqvqqvrdikell 127
+                    f + +l v++ +d   ++
+  AT5G04720.1 106 SSFLNGQLLVHVLADVHHVR 125
+                  *************9987766 PP
+
+  == domain 2  score: 0.0 bits;  conditional E-value: 5.8
+         RPW8  49 keieklnkel.drpreeieeLkklLekaekLVe 80 
+                   ++++ln++l   +    e+L++ L+ ae  Ve
+  AT5G04720.1 137 RKVDSLNEKLgSMKLRGSESLREALKTAEATVE 169
+                  5899*****96666678999*****99998776 PP
+
+>> AT5G66200.1  | Symbols: ARO2 | armadillo repeat only 2 | chr5:26453648-26455603 REVERSE LENGTH=651
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.3   0.1   0.00011     0.023      16      83 ..      15      84 ..       8     112 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 0.00011
+         RPW8 16 llkaileakkksldfksilkrLestleritPvvkeieklnkel.drp.reeieeLkklLekaekLVekcs 83
+                 l + +++a++++++fk  + +L++  e+++ ++ +  + +++l +rp r  i++ ++ Leka +LV kc 
+  AT5G66200.1 15 LSDQVVKAADEASSFKQECGELKAKTEKLAGLLRQAARASNDLyERPtRRIIDDTEQMLEKALSLVLKCR 84
+                 77889**************************************98772556789999************5 PP
+
+>> AT3G26600.1  | Symbols: ARO4 | armadillo repeat only 4 | chr3:9769889-9771736 FORWARD LENGTH=615
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   0.1   0.00066      0.14      32      86 ..      41      97 ..      13     123 .. 0.64
+   2 ?   -0.1   0.0       6.3   1.3e+03      34      77 ..     452     495 ..     441     523 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00066
+         RPW8 32 silkrLestleritPvvkeieklnkel.drp.reeieeLkklLekaekLVekcsk...lk 86
+                  +++rL+++l   +++v  + + ++++ drp r +i + kk Le++  LV+kc +   ++
+  AT3G26600.1 41 KQVDRLAQML---RTLVRFVSSSSQQVyDRPiRRVIVDVKKNLERGFALVRKCRRhniIR 97
+                 3445555555...5556666777777777754889******************7623233 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 6.3
+         RPW8  34 lkrLestleritPvvkeieklnkel.drpreeieeLkklLekaek 77 
+                  +k+ +s + +i P ++ i++l   +  r++  i+ L ++L + ++
+  AT3G26600.1 452 IKDVDSPILKI-PAIQSIGSLARTFpARETRMIKPLVEKLGSSNQ 495
+                  56666666666.889999999999988888899999888876654 PP
+
+>> AT3G46510.1  | Symbols: PUB13, ATPUB13 | plant U-box 13 | chr3:17124106-17126539 REVERSE LENGTH=660
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   15.3   2.6   0.00011     0.024      20     108 ..      19     113 ..       6     141 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 15.3 bits;  conditional E-value: 0.00011
+         RPW8  20 ileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklk.rynvlkkyrYkkklke....Lekslr 108
+                  i   ++   ++k  + +L++ l+ ++P+++ei + n+ + +   + + +Lk+ + +a++ ++ cs+ +  y v+ +   + kl e    Le+sl 
+  AT3G46510.1  19 IAAISDYRITVKKLCYNLARRLKLLVPMFEEIRESNEPIsEDTLKTLMNLKEAMCSAKDYLKFCSQGSkIYLVMEREQVTSKLMEvsvkLEQSLS 113
+                  44455666889999************************9999999********************87659999*********9862222566655 PP
+
+>> AT5G43470.1  | Symbols: RPP8, HRT, RCY1 | Disease resistance protein (CC-NBS-LRR class) family | chr5:17463130-174666
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0   0.00036     0.077       7      83 ..       4      80 ..       1      96 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00036
+         RPW8  7 AalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcs 83
+                 A++ + l++l +++ +++++   ++ +l+ L++ l +++ ++k+ +  ++ +dr r+ +e+ k+l  +ae+++e + 
+  AT5G43470.1  4 AFVSFGLEKLWDLLSRESERLQGIDGQLDGLKRQLRSLQSLLKDADAKKHGSDRVRNFLEDVKDLVFDAEDIIESYV 80
+                 6777889999****************************************************************985 PP
+
+>> AT5G43470.2  | Symbols: RPP8, HRT, RCY1 | Disease resistance protein (CC-NBS-LRR class) family | chr5:17463130-174666
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.6   0.0   0.00036     0.077       7      83 ..       4      80 ..       1      96 [. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 13.6 bits;  conditional E-value: 0.00036
+         RPW8  7 AalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcs 83
+                 A++ + l++l +++ +++++   ++ +l+ L++ l +++ ++k+ +  ++ +dr r+ +e+ k+l  +ae+++e + 
+  AT5G43470.2  4 AFVSFGLEKLWDLLSRESERLQGIDGQLDGLKRQLRSLQSLLKDADAKKHGSDRVRNFLEDVKDLVFDAEDIIESYV 80
+                 6777889999****************************************************************985 PP
+
+>> AT3G19180.1  | Symbols: ARC6H, PARC6, ATCDP1, CDP1 | paralog of ARC6 | chr3:6632810-6636953 FORWARD LENGTH=819
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.5   0.2   0.00083      0.18      54     118 ..     753     818 ..     745     819 .] 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 12.5 bits;  conditional E-value: 0.00083
+         RPW8  54 lnkel..drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkfvqvelqvq 118
+                  l++++  d    e  e++ lLe+a +LV ++   k  ++  +y+ +  lk+ e+ l kf+q ++q+q
+  AT3G19180.1 753 LQAHIfeDGIAGEAAEIEALLEEAAELVDESQ-PKNAKYYSTYKIRYILKKQEDGLWKFCQSDIQIQ 818
+                  5555555778889999************9975.45555555555555699***************98 PP
+
+>> AT5G48620.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr5:19717406-19720932 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.1   0.0   0.00052      0.11      13      83 ..      10      80 ..       4     100 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 13.1 bits;  conditional E-value: 0.00052
+         RPW8 13 lgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcs 83
+                 l++l +++ +++++   ++ +l+ L++ l +++ ++k+ +  ++ +dr r+ +e+ k+l  +ae+++e + 
+  AT5G48620.1 10 LEKLWDLLSRESERLQGIDEQLDGLKRQLRSLQSLLKDADAKKHGSDRVRNFLEDVKDLVFDAEDIIESYV 80
+                 788999999999********************************************************995 PP
+
+>> AT2G35190.1  | Symbols: NPSN11, ATNPSN11, NSPN11 | novel plant snare 11 | chr2:14831087-14832979 FORWARD LENGTH=265
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.1   0.9    0.0093         2      40      82 ..      21      62 ..       9     101 .. 0.75
+   2 ?    4.9   0.1      0.18        37      55      84 ..     136     166 ..     128     174 .. 0.88
+   3 ?    1.9   0.1       1.5   3.2e+02      56      81 ..     180     205 ..     169     215 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 9.1 bits;  conditional E-value: 0.0093
+         RPW8 40 tleritPvvkeieklnkeldrpreeieeLkklLekaekLVekc 82
+                    +++  ++++ek++++ +r+  ++eeL++++++ ++L++  
+  AT2G35190.1 21 IFRALSNGFQKLEKIKDA-NRQSRQLEELTDKMRDCKSLIKDF 62
+                 556677778999999965.555559***************976 PP
+
+  == domain 2  score: 4.9 bits;  conditional E-value: 0.18
+         RPW8  55 nkel.drpreeieeLkklLekaekLVekcsk 84 
+                  n+el d+ ++ +++  + +e+++k+V++  +
+  AT2G35190.1 136 NQELmDKGNSMMDDTDQAIERGKKIVQETIN 166
+                  67888*********************98765 PP
+
+  == domain 3  score: 1.9 bits;  conditional E-value: 1.5
+         RPW8  56 keldrpreeieeLkklLekaekLVek 81 
+                  +++ r  +e++++   L+ka kLV++
+  AT2G35190.1 180 EQMSRVVNELDSIHFSLKKASKLVKE 205
+                  33355556777777788888888876 PP
+
+>> AT4G34940.1  | Symbols: ARO1 | armadillo repeat only 1 | chr4:16639760-16641754 FORWARD LENGTH=664
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0    0.0054       1.1      16      83 ..      15      84 ..      12     127 .. 0.86
+   2 ?    0.6   0.1       3.7   7.9e+02      39      74 ..     509     545 ..     495     563 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.0054
+         RPW8 16 llkaileakkksldfksilkrLestleritPvvkeieklnkel.drp.reeieeLkklLekaekLVekcs 83
+                 l++ i++a++++++f+  + + ++  e+++ ++ +  + +++l +rp r  i++ ++ L ka  LVekc 
+  AT4G34940.1 15 LADQITKASDEAYSFRQECLEVKAKTEKLAGLLRQAARASNDLyERPtRRIIDDTEQVLFKALALVEKCR 84
+                 7889***************************************98772556789999************6 PP
+
+  == domain 2  score: 0.6 bits;  conditional E-value: 3.7
+         RPW8  39 stleritPvvkeieklnkel.drpreeieeLkklLek 74 
+                  + l  + P +k i++l+  +   ++  i  L klL++
+  AT4G34940.1 509 EILDLLIPCIKSIGSLSRTFrATETRIIGPLVKLLDE 545
+                  4566688***********9988888889999999876 PP
+
+>> AT4G36030.1  | Symbols: ARO3 | armadillo repeat only 3 | chr4:17045084-17047096 REVERSE LENGTH=670
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   11.6   0.0    0.0016      0.34      16     108 ..      15     113 ..       9     124 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 11.6 bits;  conditional E-value: 0.0016
+         RPW8  16 llkaileakkksldfksilkrLestleritPvvkeieklnkel.drpr.eeieeLkklLekaekLVekcsk....lkrynvlkkyrYkkklkeLeksl 107
+                  l++ +++a ++++  k  + +++s  e+++ ++ +  + + +l +rp+   +++ ++ Leka  +V++c      ++ +n++  + ++k + +Le+s+
+  AT4G36030.1  15 LADQVVKAGDEATINKQECADIKSKTEKLAALLRQAARASSDLyERPTrRILDDTENVLEKALTMVQRCRDdgyiMRLFNIIPAAAFRKMISQLENSV 112
+                  778899*************************************9877515679999*************865665999*****************997 PP
+
+         RPW8 108 r 108
+                   
+  AT4G36030.1 113 G 113
+                  5 PP
+
+>> AT4G23330.2  | Symbols:  | unknown protein; FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.1       1.3   2.7e+02      11      44 ..      40      73 ..      38      81 .. 0.80
+   2 ?    9.2   0.0    0.0083       1.8       7      68 ..      82     143 ..      76     145 .. 0.93
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 1.3
+         RPW8 11 aalgellkaileakkksldfksilkrLestleri 44
+                  +l+ l+ + ++ +  + +f+s + +L stl++ 
+  AT4G23330.2 40 EILKTLATVEKDSQAIAESFSSLFVSLRSTLSEA 73
+                 5677777777888888999999999999999875 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 0.0083
+         RPW8   7 AalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeL 68 
+                  A +g a g l +  l+a+ k      ++ rL++ ++ ++ + +++++l+k++d  +  +++L
+  AT4G23330.2  82 ACFGEAAGRLQENALDAATKGNRYINSCLRLNEEIKGVENLAARLKHLRKNVDVLDTAVNKL 143
+                  78999***********************************************9988877776 PP
+
+>> AT3G50950.1  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | chr3:18936127-18938685 FORWARD LENGTH=852
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.4   0.00056      0.12       7      82 ..       4      79 ..       1      81 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00056
+         RPW8  7 AalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekc 82
+                 A++ + l++ l+++ e  ++++d + +l++L+s l+ ++ ++k+ e+ +   +  r  + +L++l  +ae+++  c
+  AT3G50950.1  4 AVVTVFLEKTLNILEEKGRTVSDYRKQLEDLQSELKYMQSFLKDAERQKRTNETLRTLVADLRELVYEAEDILVDC 79
+                 67778899999************************************99999*******************99887 PP
+
+>> AT3G50950.2  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | chr3:18936127-18938685 FORWARD LENGTH=852
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.0   0.4   0.00056      0.12       7      82 ..       4      79 ..       1      81 [. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 13.0 bits;  conditional E-value: 0.00056
+         RPW8  7 AalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekc 82
+                 A++ + l++ l+++ e  ++++d + +l++L+s l+ ++ ++k+ e+ +   +  r  + +L++l  +ae+++  c
+  AT3G50950.2  4 AVVTVFLEKTLNILEEKGRTVSDYRKQLEDLQSELKYMQSFLKDAERQKRTNETLRTLVADLRELVYEAEDILVDC 79
+                 67778899999************************************99999*******************99887 PP
+
+>> AT2G17442.3  | Symbols:  | unknown protein; FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.3     0.001      0.22      24      85 ..      30      91 ..      22     109 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.001
+         RPW8 24 kkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcskl 85
+                 +kk ++ +  l + es +++ +  ++e+ek++k  +++ +  e L+ +Lek ek++    kl
+  AT2G17442.3 30 NKKIKKAHQALAEAESIIKTYEAKLAEVEKMKKMAKQMVQSCEALMFKLEKKEKMLDDLGKL 91
+                 56777888889999999**************************************9877666 PP
+
+>> AT2G17442.4  | Symbols:  | unknown protein; FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.3     0.001      0.22      24      85 ..      30      91 ..      22     109 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.001
+         RPW8 24 kkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcskl 85
+                 +kk ++ +  l + es +++ +  ++e+ek++k  +++ +  e L+ +Lek ek++    kl
+  AT2G17442.4 30 NKKIKKAHQALAEAESIIKTYEAKLAEVEKMKKMAKQMVQSCEALMFKLEKKEKMLDDLGKL 91
+                 56777888889999999**************************************9877666 PP
+
+>> AT2G17442.1  | Symbols:  | unknown protein; Has 30201 Blast hits to 17322 proteins in 780 species: Archae - 12; Bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.3     0.001      0.22      24      85 ..      31      92 ..      23     110 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.001
+         RPW8 24 kkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcskl 85
+                 +kk ++ +  l + es +++ +  ++e+ek++k  +++ +  e L+ +Lek ek++    kl
+  AT2G17442.1 31 NKKIKKAHQALAEAESIIKTYEAKLAEVEKMKKMAKQMVQSCEALMFKLEKKEKMLDDLGKL 92
+                 56777888889999999**************************************9877666 PP
+
+>> AT2G17442.2  | Symbols:  | unknown protein; FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.2   2.3     0.001      0.22      24      85 ..      31      92 ..      23     110 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 12.2 bits;  conditional E-value: 0.001
+         RPW8 24 kkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcskl 85
+                 +kk ++ +  l + es +++ +  ++e+ek++k  +++ +  e L+ +Lek ek++    kl
+  AT2G17442.2 31 NKKIKKAHQALAEAESIIKTYEAKLAEVEKMKKMAKQMVQSCEALMFKLEKKEKMLDDLGKL 92
+                 56777888889999999**************************************9877666 PP
+
+>> AT2G17442.5  | Symbols:  | unknown protein; FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.3   0.6   0.00093       0.2      30      85 ..      31      85 ..      20     103 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 12.3 bits;  conditional E-value: 0.00093
+         RPW8 30 fksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcskl 85
+                 f   l + es +++ +  ++e+ek++k  +++ +  e L+ +Lek ek++    kl
+  AT2G17442.5 31 F-QALAEAESIIKTYEAKLAEVEKMKKMAKQMVQSCEALMFKLEKKEKMLDDLGKL 85
+                 4.45666789999999*********************************9877666 PP
+
+>> AT5G03220.1  | Symbols:  | Mediator complex, subunit Med7 | chr5:767617-768584 REVERSE LENGTH=168
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.0       7.2   1.5e+03      95     111 ..      69      85 ..      66      95 .. 0.83
+   2 ?   11.7   0.6    0.0015      0.31      24      80 ..     100     159 ..      85     163 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 7.2
+         RPW8  95 rYkkklkeLekslrkfv 111
+                   Yk++l +L+ +l  ++
+  AT5G03220.1  69 DYKNELRSLNRELQLHI 85 
+                  59999999999998765 PP
+
+  == domain 2  score: 11.7 bits;  conditional E-value: 0.0015
+         RPW8  24 kkksldfksilkrLestleritPvvke...ieklnkeldrpreeieeLkklLekaekLVe 80 
+                  +k+  +++si+k+L++ l++++P  ++   i  ++ +++++++ +e++k++ e+a++L++
+  AT5G03220.1 100 AKRIGEISSIFKNLHHLLNSLRPHQARatlIHIMELQIQQRKQAVEDIKRRREEAQRLLK 159
+                  67888999***************976655589999999*******************987 PP
+
+>> AT4G35920.1  | Symbols: MCA1 | PLAC8 family protein | chr4:17012106-17014192 REVERSE LENGTH=421
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0    0.0051       1.1      15      83 ..      24      93 ..      15     135 .. 0.86
+   2 ?   -0.1   0.1       6.2   1.3e+03      18      65 ..     157     204 ..     149     216 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.0051
+         RPW8 15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcs 83
+                 +l+ +i++a++++ + k ++++ ++ l+ i  ++++++  + +   + re +e L++ L++   LV+ c 
+  AT4G35920.1 24 KLIGLIVKAANTAWMHKKNCRQFAQHLKLIGNLLEQLKISEMKKyPETREPLEGLEDALRRSYLLVNSCR 93
+                 67889*****************************97654443343666779****************996 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 6.2
+         RPW8  18 kaileakkksldfksilkrLestleritPvvkeieklnkeldrpreei 65 
+                  + + ++  k+ +++     L++tl+   P++   e l++e ++ + e+
+  AT4G35920.1 157 RHVQDVILKQESTREAASVLKKTLSCSYPNLRFCEALKTENEKLQIEL 204
+                  567777778888899999999999999999999999998887766555 PP
+
+>> AT4G35920.2  | Symbols: MCA1 | PLAC8 family protein | chr4:17012106-17014192 REVERSE LENGTH=421
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0    0.0051       1.1      15      83 ..      24      93 ..      15     135 .. 0.86
+   2 ?   -0.1   0.1       6.2   1.3e+03      18      65 ..     157     204 ..     149     216 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.0051
+         RPW8 15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcs 83
+                 +l+ +i++a++++ + k ++++ ++ l+ i  ++++++  + +   + re +e L++ L++   LV+ c 
+  AT4G35920.2 24 KLIGLIVKAANTAWMHKKNCRQFAQHLKLIGNLLEQLKISEMKKyPETREPLEGLEDALRRSYLLVNSCR 93
+                 67889*****************************97654443343666779****************996 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 6.2
+         RPW8  18 kaileakkksldfksilkrLestleritPvvkeieklnkeldrpreei 65 
+                  + + ++  k+ +++     L++tl+   P++   e l++e ++ + e+
+  AT4G35920.2 157 RHVQDVILKQESTREAASVLKKTLSCSYPNLRFCEALKTENEKLQIEL 204
+                  567777778888899999999999999999999999998887766555 PP
+
+>> AT4G35920.3  | Symbols: MCA1 | PLAC8 family protein | chr4:17012106-17014192 REVERSE LENGTH=421
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.9   0.0    0.0051       1.1      15      83 ..      24      93 ..      15     135 .. 0.86
+   2 ?   -0.1   0.1       6.2   1.3e+03      18      65 ..     157     204 ..     149     216 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 9.9 bits;  conditional E-value: 0.0051
+         RPW8 15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcs 83
+                 +l+ +i++a++++ + k ++++ ++ l+ i  ++++++  + +   + re +e L++ L++   LV+ c 
+  AT4G35920.3 24 KLIGLIVKAANTAWMHKKNCRQFAQHLKLIGNLLEQLKISEMKKyPETREPLEGLEDALRRSYLLVNSCR 93
+                 67889*****************************97654443343666779****************996 PP
+
+  == domain 2  score: -0.1 bits;  conditional E-value: 6.2
+         RPW8  18 kaileakkksldfksilkrLestleritPvvkeieklnkeldrpreei 65 
+                  + + ++  k+ +++     L++tl+   P++   e l++e ++ + e+
+  AT4G35920.3 157 RHVQDVILKQESTREAASVLKKTLSCSYPNLRFCEALKTENEKLQIEL 204
+                  567777778888899999999999999999999999998887766555 PP
+
+>> AT4G01245.1  | Symbols:  | FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process unknown; LOCATED
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.1   3.3    0.0011      0.24      55      98 ..      53      96 ..      49     112 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 12.1 bits;  conditional E-value: 0.0011
+         RPW8 55 nkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkk 98
+                 +++l++  e+ie+Lkk++++ e + e+   ++  nv kk +Y+ 
+  AT4G01245.1 53 SEKLEKALEKIEKLKKRMRELELITEENRAIRDINVSKKCSYTE 96
+                 567788899*********************************85 PP
+
+>> AT5G03500.1  | Symbols:  | Mediator complex, subunit Med7 | chr5:876673-877660 REVERSE LENGTH=168
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.1       3.1   6.5e+02      95     111 ..      69      85 ..      66      94 .. 0.86
+   2 ?   10.3   0.3    0.0038       0.8      24      80 ..     100     159 ..      87     162 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 3.1
+         RPW8  95 rYkkklkeLekslrkfv 111
+                   Ykk+l +L+ +l  ++
+  AT5G03500.1  69 DYKKELRSLNRELQLHI 85 
+                  599*******9998776 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 0.0038
+         RPW8  24 kkksldfksilkrLestleritPvvke...ieklnkeldrpreeieeLkklLekaekLVe 80 
+                  +k+  +++si+k+L++ l++++P  ++   i  ++ +++++++ +e++k++ e+a+ L++
+  AT5G03500.1 100 AKRIGEISSIFKNLHHLLNSLRPHQARatlIHIMELQIQQRKQAVEDIKRRREEAQGLLK 159
+                  67888999***************976655589999999*****************99976 PP
+
+>> AT5G03500.2  | Symbols:  | Mediator complex, subunit Med7 | chr5:876673-877660 REVERSE LENGTH=168
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.1       3.1   6.5e+02      95     111 ..      69      85 ..      66      94 .. 0.86
+   2 ?   10.3   0.3    0.0038       0.8      24      80 ..     100     159 ..      87     162 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 3.1
+         RPW8  95 rYkkklkeLekslrkfv 111
+                   Ykk+l +L+ +l  ++
+  AT5G03500.2  69 DYKKELRSLNRELQLHI 85 
+                  599*******9998776 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 0.0038
+         RPW8  24 kkksldfksilkrLestleritPvvke...ieklnkeldrpreeieeLkklLekaekLVe 80 
+                  +k+  +++si+k+L++ l++++P  ++   i  ++ +++++++ +e++k++ e+a+ L++
+  AT5G03500.2 100 AKRIGEISSIFKNLHHLLNSLRPHQARatlIHIMELQIQQRKQAVEDIKRRREEAQGLLK 159
+                  67888999***************976655589999999*****************99976 PP
+
+>> AT5G03500.3  | Symbols:  | Mediator complex, subunit Med7 | chr5:876673-877660 REVERSE LENGTH=168
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.1       3.1   6.5e+02      95     111 ..      69      85 ..      66      94 .. 0.86
+   2 ?   10.3   0.3    0.0038       0.8      24      80 ..     100     159 ..      87     162 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 3.1
+         RPW8  95 rYkkklkeLekslrkfv 111
+                   Ykk+l +L+ +l  ++
+  AT5G03500.3  69 DYKKELRSLNRELQLHI 85 
+                  599*******9998776 PP
+
+  == domain 2  score: 10.3 bits;  conditional E-value: 0.0038
+         RPW8  24 kkksldfksilkrLestleritPvvke...ieklnkeldrpreeieeLkklLekaekLVe 80 
+                  +k+  +++si+k+L++ l++++P  ++   i  ++ +++++++ +e++k++ e+a+ L++
+  AT5G03500.3 100 AKRIGEISSIFKNLHHLLNSLRPHQARatlIHIMELQIQQRKQAVEDIKRRREEAQGLLK 159
+                  67888999***************976655589999999*****************99976 PP
+
+>> AT1G19086.1  | Symbols:  | unknown protein; LOCATED IN: endomembrane system; Has 30201 Blast hits to 17322 proteins i
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.4   0.1      0.03       6.4      46      76 ..      24      55 ..      22      65 .. 0.90
+   2 ?    2.5   0.0      0.98   2.1e+02     117     138 ..     108     129 ..      92     130 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 7.4 bits;  conditional E-value: 0.03
+         RPW8 46 Pvvkeieklnkel.drpreeieeLkklLekae 76
+                 P  +++e+  ++  ++ +++iee++k+L+ ++
+  AT1G19086.1 24 PTTEQVEETMEKYcEQGDKKIEEINKRLRTGQ 55
+                 88999998888877***************997 PP
+
+  == domain 2  score: 2.5 bits;  conditional E-value: 0.98
+         RPW8 117 vqqvrdikellakmkelntkld 138
+                   ++ rd k++l k+ke ++k++
+  AT1G19086.1 108 SNSGRDMKNILNKVKESEKKVQ 129
+                  47889***********999986 PP
+
+>> AT4G36550.1  | Symbols:  | ARM repeat superfamily protein | chr4:17245400-17247926 REVERSE LENGTH=718
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.0     0.041       8.7      28      84 ..      14      70 ..       7      79 .. 0.90
+   2 ?    0.7   0.0       3.5   7.4e+02      98     121 ..     456     479 ..     454     494 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.041
+         RPW8 28 ldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsk 84
+                 ++ +s++ +L++ + ri  ++ +ie  +    +  + +  L + L+k ++L++ cs+
+  AT4G36550.1 14 KMHSSMCLELKRLVDRIMRIFPDIEDARPGCSSGIQTLCLLHNALDKTKQLLQYCSE 70
+                 67789999***********************99999*******************98 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 3.5
+         RPW8  98 kklkeLekslrkfvqvelqvqqvr 121
+                  + +++Le+++ k+++v l+ ++v+
+  AT4G36550.1 456 RAIESLEEEVFKMFSVFLESEVVA 479
+                  7899********999877655543 PP
+
+>> AT2G38370.1  | Symbols:  | Plant protein of unknown function (DUF827) | chr2:16072184-16074168 REVERSE LENGTH=522
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.7   0.3      0.11        22      40      74 ..     142     176 ..     125     182 .. 0.85
+   2 ?    5.8   0.5     0.096        20      35      96 ..     311     374 ..     297     383 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 5.7 bits;  conditional E-value: 0.11
+         RPW8  40 tleritPvvkeieklnkeldrpreeieeLkklLek 74 
+                   l +i+ +++ +e+l+++l+++r+ +e+ +++L++
+  AT2G38370.1 142 NLCKIASIRESVEQLKNKLNEERAALEKTRERLME 176
+                  57899**************99999*9999988765 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.096
+         RPW8  35 krLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVek..csklkrynvlkkyrY 96 
+                  kr e+ ++r++      + + k++d+  +eie  k+ Le+a + V +   sk+   + l+k+r 
+  AT2G38370.1 311 KRVEDAMSRVEEANVSKKDVLKKVDEAAQEIETSKRVLEEAVERVDAanASKIEAEEALRKWRS 374
+                  67777788886544444444558899999****************863369999999***9985 PP
+
+>> AT5G64560.2  | Symbols: MGT9, MRS2-2, ATMGT9 | magnesium transporter 9 | chr5:25807163-25809395 REVERSE LENGTH=378
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   0.0      0.75   1.6e+02      34      66 ..     194     226 ..     170     251 .. 0.72
+   2 ?    5.8   0.1     0.097        21      32      83 ..     287     342 ..     275     346 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.75
+         RPW8  34 lkrLestleritPvvkei.eklnkeldrpreeie 66 
+                  +++L+s ++r+t  v+++ ++l++ ld  + ++ 
+  AT5G64560.2 194 VRKLKSAMTRLTARVQKVrDELEQLLDDDD-DMA 226
+                  678999999999999998666776666555.333 PP
+
+  == domain 2  score: 5.8 bits;  conditional E-value: 0.097
+         RPW8  32 silkrLestleritPvvkeiek....lnkeldrpreeieeLkklLekaekLVekcs 83 
+                    + +++stl+r+t++++ i+     +n +ld+ r+++ +L+  L ++   ++ +s
+  AT5G64560.2 287 AYFMQIDSTLNRLTTLREYIDDtedyINIQLDNHRNQLIQLELVLSSGTVCLSMYS 342
+                  5677899*************873333677899999999999999999987776665 PP
+
+>> AT5G35450.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr5:13667809-13670685 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9   0.0     0.011       2.3      13      83 ..      10      80 ..       4      86 .. 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.011
+         RPW8 13 lgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcs 83
+                 +++l  ++ +++++   ++ +++ L++ l  ++ ++k+ +  ++ +dr r+ +e+ k+l  +ae+++e + 
+  AT5G35450.1 10 VQKLWALLNRESERLNGIDEQVDGLKRQLRGLQSLLKDADAKKHGSDRVRNFLEDVKDLVFDAEDIIESYV 80
+                 6788889999999999999*************************************************985 PP
+
+>> AT3G18160.1  | Symbols: PEX3-1 | peroxin 3-1 | chr3:6220918-6222923 FORWARD LENGTH=358
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.2     0.011       2.4      39     117 ..      68     145 ..      49     149 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.011
+         RPW8  39 stleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkfvqvelqv 117
+                  +++ + t++ + i +l+ ++ ++ +  + +++++L k++ ++  + kl+ +n lk  ++++ + +L   ++    + +qv
+  AT3G18160.1  68 QMIADTTTLPHAIHHLSSRVvEEID--VSSIMDKLSKGKGILIPSEKLQLWNELKILSFTRMVLSLWSVTMLSLYIRVQV 145
+                  5677778888999999999966665..99********************************9999877666666666665 PP
+
+>> AT5G64560.1  | Symbols: MGT9, MRS2-2, ATMGT9 | magnesium transporter 9 | chr5:25807025-25809395 REVERSE LENGTH=394
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.8   0.0       0.8   1.7e+02      34      66 ..     194     226 ..     171     251 .. 0.71
+   2 ?    5.7   0.1       0.1        22      32      83 ..     287     342 ..     275     346 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 2.8 bits;  conditional E-value: 0.8
+         RPW8  34 lkrLestleritPvvkei.eklnkeldrpreeie 66 
+                  +++L+s ++r+t  v+++ ++l++ ld  + ++ 
+  AT5G64560.1 194 VRKLKSAMTRLTARVQKVrDELEQLLDDDD-DMA 226
+                  678999999999999998666776666555.333 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.1
+         RPW8  32 silkrLestleritPvvkeiek....lnkeldrpreeieeLkklLekaekLVekcs 83 
+                    + +++stl+r+t++++ i+     +n +ld+ r+++ +L+  L ++   ++ +s
+  AT5G64560.1 287 AYFMQIDSTLNRLTTLREYIDDtedyINIQLDNHRNQLIQLELVLSSGTVCLSMYS 342
+                  5677899*************873333677899999999999999999987776665 PP
+
+>> AT3G18160.3  | Symbols: PEX3-1 | peroxin 3-1 | chr3:6220918-6222923 FORWARD LENGTH=376
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.7   0.2     0.012       2.6      39     117 ..      86     163 ..      67     167 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 8.7 bits;  conditional E-value: 0.012
+         RPW8  39 stleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkfvqvelqv 117
+                  +++ + t++ + i +l+ ++ ++ +  + +++++L k++ ++  + kl+ +n lk  ++++ + +L   ++    + +qv
+  AT3G18160.3  86 QMIADTTTLPHAIHHLSSRVvEEID--VSSIMDKLSKGKGILIPSEKLQLWNELKILSFTRMVLSLWSVTMLSLYIRVQV 163
+                  5677778888999999999966665..99********************************9999877666666666665 PP
+
+>> AT2G24470.1  | Symbols:  | Plant protein of unknown function (DUF869) | chr2:10395828-10396622 REVERSE LENGTH=92
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.5   0.2    0.0035      0.74      49      84 ..      43      78 ..      12      85 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 10.5 bits;  conditional E-value: 0.0035
+         RPW8 49 keieklnkeldrpreeieeLkklLekaekLVekcsk 84
+                 ++i++l++ l r  ++   L++ L++  +++ k s+
+  AT2G24470.1 43 EKIDELSQGLHRVASDNAALTRSLQERSEMIVKISE 78
+                 58*****************************99987 PP
+
+>> AT5G04850.1  | Symbols: VPS60.2 | SNF7 family protein | chr5:1408246-1409806 REVERSE LENGTH=235
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.0       6.7   1.4e+03      52      74 ..      22      44 ..      15      53 .. 0.65
+   2 ?    9.7   0.5     0.006       1.3      18      72 ..      97     149 ..      89     154 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 6.7
+         RPW8 52 eklnkeldrpreeieeLkklLek 74
+                 +++nk+ d+ +e++++L  +L k
+  AT5G04850.1 22 DRINKRGDSVEEKVKRLDAELCK 44
+                 56666667777777777666655 PP
+
+  == domain 2  score: 9.7 bits;  conditional E-value: 0.006
+         RPW8  18 kaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklL 72 
+                  + +++a+++ +  ks  k+L+ ++++++  +++i++l++++ d ++ e  e++++L
+  AT5G04850.1  97 EGLKDAQQTMTALKSANKELKGMMKTVK--IQDIDNLQDDMmDLMD-ESSEIQETL 149
+                  5578999******************996..9*********977777.666676666 PP
+
+>> AT3G10640.2  | Symbols: VPS60.1 | SNF7 family protein | chr3:3323501-3324484 REVERSE LENGTH=170
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   10.0   0.4    0.0048         1      19      72 ..      33      84 ..      26      90 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 10.0 bits;  conditional E-value: 0.0048
+         RPW8 19 aileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklL 72
+                  +++a+++ +  ks  k+L+ ++++++  +++i++l++e+ d ++ +  e+++ L
+  AT3G10640.2 33 GLKDAQQTMTALKSANKELKGMMKTVK--IQDIDNLQDEMmDLMD-VSSEIQESL 84
+                 578999******************996..9*********977665.666666655 PP
+
+>> AT4G02350.1  | Symbols: SEC15B | exocyst complex component sec15B | chr4:1038157-1040571 FORWARD LENGTH=787
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.1   0.1       1.3   2.7e+02      28      80 ..      73     126 ..      63     134 .. 0.73
+   2 ?    4.5   0.0      0.24        51      40     115 ..     457     529 ..     434     548 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 2.1 bits;  conditional E-value: 1.3
+         RPW8  28 ldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVe 80 
+                    +k   ++  + + +++ ++ ++e+l+ +l d+  +       lL +  +LVe
+  AT4G02350.1  73 EVCKAHYQDFIHAVDDLKSLLSDVESLKSALsDSNSKLQSVAAPLLSSLDSLVE 126
+                  567788888889999999999*******99966655444444456666667776 PP
+
+  == domain 2  score: 4.5 bits;  conditional E-value: 0.24
+         RPW8  40 tleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkfvqvel 115
+                    ++i+P +  i  +++ + d++r      ++ +e+  +  +   +l +y+v+kky+ +   + L++ l+k +++ +
+  AT4G02350.1 457 QTSEIVPAFPFIAPFSTTVpDCCR----IVRSFIEDSVSFMSHGGQLDFYDVVKKYLDRLLGEVLDEALLKLISTSV 529
+                  446899999999999999999999....788999*********************9866655778999999887765 PP
+
+>> AT3G18160.2  | Symbols: PEX3-1 | peroxin 3-1 | chr3:6221322-6222923 FORWARD LENGTH=304
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9   0.1      0.01       2.2      40     118 ..      15      92 ..       6      97 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.01
+         RPW8  40 tleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkfvqvelqvq 118
+                  ++ + t++ + i +l+ ++ ++ +  + +++++L k++ ++  + kl+ +n lk  ++++ + +L   ++    + +qv+
+  AT3G18160.2  15 MIADTTTLPHAIHHLSSRVvEEID--VSSIMDKLSKGKGILIPSEKLQLWNELKILSFTRMVLSLWSVTMLSLYIRVQVN 92 
+                  666777788889999999856665..99********************************99999776666666666655 PP
+
+>> AT2G17780.4  | Symbols: MCA2 | PLAC8 family protein | chr2:7725808-7726952 REVERSE LENGTH=314
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   13.2   1.5   0.00049       0.1      15     123 ..      24     133 ..      15     149 .. 0.79
+   2 ?    0.3   0.0       4.9     1e+03      30      64 ..     170     204 ..     149     211 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 13.2 bits;  conditional E-value: 0.00049
+         RPW8  15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklk.rynvlkkyrYkkklkeLekslrkf 110
+                  +l+ +i++a++++ + k ++++ ++ l+ i+ ++++i++ + +   +  e ++ L + L++   LV+ c + +  y ++  +   ++ ++  +++  f
+  AT2G17780.4  24 KLIGMIVNAANTARMHKKNCRQFAHHLKLIRNLLEQIKNSEMNQrSEILEPLQGLDDALRRSYILVKSCQEKSyLYLLAMGWNIVNQFEKAQNEIDLF 121
+                  67889********************************96554443444458899999************99886777777888888888888888887 PP
+
+         RPW8 111 vqvelqvqqvrdi 123
+                   +++  ++ + d+
+  AT2G17780.4 122 LKIVPLINMA-DN 133
+                  7775544443.44 PP
+
+  == domain 2  score: 0.3 bits;  conditional E-value: 4.9
+         RPW8  30 fksilkrLestleritPvvkeieklnkeldrpree 64 
+                   +     L++tl+r  P++   e l++e ++ + e
+  AT2G17780.4 170 REAATSVLKKTLSRSYPNMGFCEALKTEEEKLQLE 204
+                  34456679999999999999999999888776655 PP
+
+>> AT2G17190.1  | Symbols:  | ubiquitin family protein | chr2:7478272-7481361 REVERSE LENGTH=538
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.1       3.9   8.2e+02      36      78 ..     227     269 ..     213     273 .. 0.85
+   2 ?    7.2   0.1     0.035       7.5      89     132 ..     383     426 ..     374     435 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 3.9
+         RPW8  36 rLestleritPvvkeieklnkeldrpreeieeLkklLekaekL 78 
+                   + +++ +    + +ie++ + ++  r   e+ ++ L++a  +
+  AT2G17190.1 227 LMREMMRNTDRAMSNIESMPEGFNMLRRMYENVQEPLMNATTM 269
+                  578899999999999********99999999999999999877 PP
+
+  == domain 2  score: 7.2 bits;  conditional E-value: 0.035
+         RPW8  89 nvlkkyrYkkklkeLekslrkfvqvelqvqqvrdikellakmke 132
+                  +vl  + Y ++l +L+ +lr + +++ q+ ++  + + l+++++
+  AT2G17190.1 383 SVLSNPQYMNQLMSLNPQLRSMLDMNPQLREMMQNPDFLRQFSS 426
+                  678889************************99999888888776 PP
+
+>> AT5G04850.2  | Symbols: VPS60.2 | SNF7 family protein | chr5:1408246-1409806 REVERSE LENGTH=272
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.5   0.0       8.1   1.7e+03      52      74 ..      22      44 ..      15      53 .. 0.65
+   2 ?    9.4   0.5    0.0077       1.6      18      72 ..      97     149 ..      89     154 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: -0.5 bits;  conditional E-value: 8.1
+         RPW8 52 eklnkeldrpreeieeLkklLek 74
+                 +++nk+ d+ +e++++L  +L k
+  AT5G04850.2 22 DRINKRGDSVEEKVKRLDAELCK 44
+                 56666667777777777666655 PP
+
+  == domain 2  score: 9.4 bits;  conditional E-value: 0.0077
+         RPW8  18 kaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklL 72 
+                  + +++a+++ +  ks  k+L+ ++++++  +++i++l++++ d ++ e  e++++L
+  AT5G04850.2  97 EGLKDAQQTMTALKSANKELKGMMKTVK--IQDIDNLQDDMmDLMD-ESSEIQETL 149
+                  5578999******************996..9*********977777.666666666 PP
+
+>> AT5G55300.3  | Symbols: TOP1ALPHA | DNA topoisomerase I alpha | chr5:22424837-22429045 REVERSE LENGTH=564
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.5   0.3     0.015       3.1      49      77 ..     435     463 ..     404     463 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.5 bits;  conditional E-value: 0.015
+         RPW8  49 keieklnkeldrpreeieeLkklLekaek 77 
+                  ++iekl++++++ +e+++eLk  L++a+k
+  AT5G55300.3 435 AQIEKLTARIEELKEVLKELKTNLDRAKK 463
+                  79************************986 PP
+
+>> AT5G09690.1  | Symbols: ATMGT7, MGT7, MRS2-7 | magnesium transporter 7 | chr5:3000990-3003169 REVERSE LENGTH=386
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.0       1.4     3e+02      34      58 ..     185     210 ..     143     233 .. 0.70
+   2 ?    5.6   0.1      0.11        23      32      85 ..     279     336 ..     268     340 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 1.4
+         RPW8  34 lkrLestleritPvvkei.eklnkel 58 
+                  +++L+s ++r+t  v+++ ++l++ l
+  AT5G09690.1 185 VRKLKSAMTRLTARVQKVrDELEQLL 210
+                  56677777777777766644455444 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.11
+         RPW8  32 silkrLestleritPvvkeiek....lnkeldrpreeieeLkklLekaekLVekcskl 85 
+                    + +++stl+++t +++ i+     +n +ld+ r+++ +L+  L  +   V+ +s +
+  AT5G09690.1 279 AYFMQIDSTLNKLTELREYIDDtedyINIQLDNHRNQLIQLELMLSAGTVCVSVYSMI 336
+                  56778999**9999999999863333677999*****************999999876 PP
+
+>> AT2G27090.1  | Symbols:  | Protein of unknown function (DUF630 and DUF632) | chr2:11567691-11570345 REVERSE LENGTH=74
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   0.3     0.022       4.6      31      88 ..     482     537 ..     469     567 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.022
+         RPW8  31 ksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkry 88 
+                  k    r+   ++ri  +  +ie+l+++  +p+  +eeL++ L +  +   +c k+++ 
+  AT2G27090.1 482 KDLHSRIRVAIHRIDSISRRIEELRDNELQPQ--LEELIEGLSRMWEVMLECHKVQFQ 537
+                  33445566678899999999999997765555..9********************964 PP
+
+>> AT5G09690.2  | Symbols: ATMGT7, MGT7, MRS2-7 | magnesium transporter 7 | chr5:3000990-3003415 REVERSE LENGTH=397
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    1.9   0.0       1.6   3.3e+02      34      58 ..     196     221 ..     155     244 .. 0.73
+   2 ?    5.5   0.1      0.12        24      32      85 ..     290     347 ..     279     351 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 1.9 bits;  conditional E-value: 1.6
+         RPW8  34 lkrLestleritPvvkei.eklnkel 58 
+                  +++L+s ++r+t  v+++ ++l++ l
+  AT5G09690.2 196 VRKLKSAMTRLTARVQKVrDELEQLL 221
+                  56777777777777777744555554 PP
+
+  == domain 2  score: 5.5 bits;  conditional E-value: 0.12
+         RPW8  32 silkrLestleritPvvkeiek....lnkeldrpreeieeLkklLekaekLVekcskl 85 
+                    + +++stl+++t +++ i+     +n +ld+ r+++ +L+  L  +   V+ +s +
+  AT5G09690.2 290 AYFMQIDSTLNKLTELREYIDDtedyINIQLDNHRNQLIQLELMLSAGTVCVSVYSMI 347
+                  56778999**9999999999863333677999*****************999999876 PP
+
+>> AT1G26945.1  | Symbols: KDR | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr1:9351571-9352474 FO
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.2   0.1    0.0082       1.7      13      58 ..      26      71 ..      21      81 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 0.0082
+         RPW8 13 lgellkaileakkksldfksilkrLestleritPvvkeieklnkel 58
+                 +++l ++i e +++ +d  s +k L++t + i+ +  e++ l+++l
+  AT1G26945.1 26 VSKLQHLIPELRRRRSDKVSASKVLQETCNYIRNLHREVDDLSDRL 71
+                 678999999**********************************987 PP
+
+>> AT1G67170.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT3G147
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.9   0.9      0.75   1.6e+02      44     128 ..     115     150 ..      68     158 .. 0.53
+   2 ?   10.5   3.3    0.0034      0.72      48     119 ..     157     228 ..     154     242 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 2.9 bits;  conditional E-value: 0.75
+         RPW8  44 itPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkfvqvelqvqqvrdikella 128
+                  +  +                                                 + k++++e +l k  +v+l++qq+r +   l+
+  AT1G67170.1 115 MMGL-------------------------------------------------AEKVAKMETELQKSEAVKLEMQQARAEARSLV 150
+                  3334.................................................44555555555555555555555554443333 PP
+
+  == domain 2  score: 10.5 bits;  conditional E-value: 0.0034
+         RPW8  48 vkeieklnkeldrpreeieeLkklLekaekLVekcsklk.rynvlkkyrYkkklkeLekslrkfvqvelqvqq 119
+                  + ++ +l++el++ r++++++  l+ + e+L +++ + +  y++ kk+ Y+  l++L +  ++++ +  +v++
+  AT1G67170.1 157 MSKVHQLTQELQKSRSDVQQIPALMSELENLRQEYQQCRaTYDYEKKF-YNDHLESLQAMEKNYMTMAREVEK 228
+                  6799***********************************888888876.888888888777777766655554 PP
+
+>> AT1G53350.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:19903899-19907515 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.9   0.1     0.011       2.3       7      81 ..       4      78 ..       1      95 [. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 8.9 bits;  conditional E-value: 0.011
+         RPW8  7 AalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVek 81
+                 A++ + +++l +++ +++ +   ++ +++ L++ l r++ ++k+ +  ++e +r r+ +e+ k+   +a +++e 
+  AT1G53350.1  4 AVVSFGVEKLWELLSRESARLNGIDEQVDGLKRQLGRLQSLLKDADAKKNETERVRNFLEDVKDIVYDADDIIES 78
+                 667777899999999********************************************************9986 PP
+
+>> AT1G35030.1  | Symbols:  | unknown protein; FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.1     0.015       3.1      27      62 ..      24      59 ..      18      68 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.015
+         RPW8 27 sldfksilkrLestleritPvvkeieklnkeldrpr 62
+                  ++f  +l ++e+tl+r++  v++ie+ +   d ++
+  AT1G35030.1 24 EVQFLEMLTSMEKTLKRMVCAVERIESRSISDDGRQ 59
+                 57888999******************9776666665 PP
+
+>> AT2G16790.2  | Symbols:  | P-loop containing nucleoside triphosphate hydrolases superfamily protein | chr2:7284093-72
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.0     0.013       2.7      63      87 ..      67      92 ..      57     100 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.013
+         RPW8 63 eeieeLkklLekaekLVekcsklk.r 87
+                 +  e+L+k+L ++e  V +cs l+ +
+  AT2G16790.2 67 KIQESLRKRLLDGETVVLACSSLRkQ 92
+                 56799******************952 PP
+
+>> AT2G16790.1  | Symbols:  | P-loop containing nucleoside triphosphate hydrolases superfamily protein | chr2:7284093-72
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.0     0.013       2.8      63      87 ..      69      94 ..      59     102 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.013
+         RPW8 63 eeieeLkklLekaekLVekcsklk.r 87
+                 +  e+L+k+L ++e  V +cs l+ +
+  AT2G16790.1 69 KIQESLRKRLLDGETVVLACSSLRkQ 94
+                 56799******************952 PP
+
+>> AT3G10640.1  | Symbols: VPS60.1 | SNF7 family protein | chr3:3323501-3324905 REVERSE LENGTH=235
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.2   0.1       6.9   1.5e+03      55      74 ..      25      44 ..      15      53 .. 0.57
+   2 ?    9.2   0.4    0.0084       1.8      18      72 ..      97     149 ..      88     155 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: -0.2 bits;  conditional E-value: 6.9
+         RPW8 55 nkeldrpreeieeLkklLek 74
+                 nk+ d+ +++i++L  +L k
+  AT3G10640.1 25 NKRGDSVEDKIKKLDVELCK 44
+                 55555555555555544443 PP
+
+  == domain 2  score: 9.2 bits;  conditional E-value: 0.0084
+         RPW8  18 kaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklL 72 
+                  + +++a+++ +  ks  k+L+ ++++++  +++i++l++e+ d ++ +  e+++ L
+  AT3G10640.1  97 EGLKDAQQTMTALKSANKELKGMMKTVK--IQDIDNLQDEMmDLMD-VSSEIQESL 149
+                  5578999******************996..9*********977665.666666655 PP
+
+>> AT5G45150.1  | Symbols: RTL3 | RNAse THREE-like protein 3 | chr5:18260441-18264346 FORWARD LENGTH=957
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.5   0.5     0.029       6.2      99     133 ..     906     940 ..     900     946 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 7.5 bits;  conditional E-value: 0.029
+         RPW8  99 klkeLekslrkfvqvelqvqqvrdikellakmkel 133
+                   + +Le s++  v ++lq+++++d k+   +mke 
+  AT5G45150.1 906 MIRALESSVMSLVITNLQMHENLDGKKKNLQMKES 940
+                  5899*************************999986 PP
+
+>> AT3G17440.2  | Symbols: NPSN13, ATNPSN13 | novel plant snare 13 | chr3:5970153-5972290 REVERSE LENGTH=216
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    9.2   1.8    0.0088       1.9      44      82 ..      25      62 ..       8      99 .. 0.75
+   2 ?    1.0   0.1       2.9   6.1e+02      55      85 ..     138     169 ..     131     177 .. 0.80
+   3 ?   -0.2   0.2       6.8   1.4e+03      56      79 ..     182     205 ..     146     210 .. 0.47
+
+  Alignments for each domain:
+  == domain 1  score: 9.2 bits;  conditional E-value: 0.0088
+         RPW8 44 itPvvkeieklnkeldrpreeieeLkklLekaekLVekc 82
+                 ++  +++++k+++   r+ +++eeL++++++ ++LV++ 
+  AT3G17440.2 25 LANGFQRLDKIKDS-TRQSKQLEELTDKMRECKRLVKEF 62
+                 55668889999855.566669***************987 PP
+
+  == domain 2  score: 1.0 bits;  conditional E-value: 2.9
+         RPW8  55 nkel.drpreeieeLkklLekaekLVekcskl 85 
+                  n+el d   + ++e  + +e+ ++ Ve+  ++
+  AT3G17440.2 138 NQELvDAGMKRMDETDQAIERSKQVVEQTLEV 169
+                  55667888889999999999999999887766 PP
+
+  == domain 3  score: -0.2 bits;  conditional E-value: 6.8
+         RPW8  56 keldrpreeieeLkklLekaekLV 79 
+                  +++ r  + ++ ++  ++ka +LV
+  AT3G17440.2 182 DQMGRVVNHLDTIQFSIKKASQLV 205
+                  222333333444444455555555 PP
+
+>> AT2G17940.1  | Symbols:  | Plant protein of unknown function (DUF827) | chr2:7802878-7803815 FORWARD LENGTH=208
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.2   0.8     0.017       3.6      29      70 ..      68     109 ..      57     113 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 8.2 bits;  conditional E-value: 0.017
+         RPW8  29 dfksilkrLestleritPvvkeieklnkeldrpreeieeLkk 70 
+                  + + + + L +tl+  t + ++i++l++el+  ++ei++L +
+  AT2G17940.1  68 ELEQTKQTLTRTLQLNTSLSNRIKTLTQELELGKKEIQRLSR 109
+                  56677899******************************9987 PP
+
+>> AT5G55300.1  | Symbols: MGO1, TOP1ALPHA, TOP1 | DNA topoisomerase I alpha | chr5:22424837-22429045 REVERSE LENGTH=916
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.3     0.026       5.5      49      77 ..     787     815 ..     756     815 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.026
+         RPW8  49 keieklnkeldrpreeieeLkklLekaek 77 
+                  ++iekl++++++ +e+++eLk  L++a+k
+  AT5G55300.1 787 AQIEKLTARIEELKEVLKELKTNLDRAKK 815
+                  79************************986 PP
+
+>> AT1G18420.1  | Symbols:  | Aluminium activated malate transporter family protein | chr1:6343330-6345689 FORWARD LENGT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0   0.3      0.02       4.3      14     114 ..     362     471 ..     346     478 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.02
+         RPW8  14 gellkaileakkksldfksilkrL....estleritPvvkeieklnkeld...rpreeieeLkklLekaekLV.e.kcsklkrynvlkkyrYkkklke 102
+                  g +l  i  a+++  +f+  l+r     ++ l  i  ++k++ekln   d   + ++  eeL+++++k   L+ + k +++  +  ++    ++k+ +
+  AT1G18420.1 362 GCILSEIQAAEDRRREFRNELQRVgiegAKVLRYIGESLKKMEKLNPIEDilyEIHQAAEELQSKIDKKSYLLvNaKNWEIGNRPRVRDLTDEQKISN 459
+                  4577888999999999999999995544589**************966552225667889******9877654244789******************* PP
+
+         RPW8 103 Lekslrkfvqve 114
+                  L+ +l +  + +
+  AT1G18420.1 460 LDSDLSRILAHK 471
+                  *****9977665 PP
+
+>> AT5G55300.2  | Symbols: TOP1ALPHA | DNA topoisomerase I alpha | chr5:22424701-22429045 REVERSE LENGTH=933
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   0.3     0.027       5.7      49      77 ..     787     815 ..     756     815 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.027
+         RPW8  49 keieklnkeldrpreeieeLkklLekaek 77 
+                  ++iekl++++++ +e+++eLk  L++a+k
+  AT5G55300.2 787 AQIEKLTARIEELKEVLKELKTNLDRAKK 815
+                  79************************986 PP
+
+>> AT2G17200.1  | Symbols: DSK2 | ubiquitin family protein | chr2:7482133-7485090 REVERSE LENGTH=551
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.2       6.3   1.3e+03      36      78 ..     232     274 ..     219     275 .. 0.84
+   2 ?    6.4   0.0     0.062        13      89     132 ..     399     442 ..     391     451 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 6.3
+         RPW8  36 rLestleritPvvkeieklnkeldrpreeieeLkklLekaekL 78 
+                   + +++ +    + +ie++ + ++  r   e+ ++ L++a  +
+  AT2G17200.1 232 LMREMMRNTDRAMSNIESMPEGFNMLRRMYENVQEPLMNATTM 274
+                  577889999999999****999999999999999999998765 PP
+
+  == domain 2  score: 6.4 bits;  conditional E-value: 0.062
+         RPW8  89 nvlkkyrYkkklkeLekslrkfvqvelqvqqvrdikellakmke 132
+                  +v+  + Y ++l +L+ +lr + + + q+ ++  + + l+++++
+  AT2G17200.1 399 SVFSNPQYMNQLMSLNPQLRSMLDSNPQLREMMQNPDFLRQFSS 442
+                  6778899***********************99999888888776 PP
+
+>> AT3G15190.1  | Symbols:  | chloroplast 30S ribosomal protein S20, putative | chr3:5116216-5117412 FORWARD LENGTH=202
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.9     0.015       3.1      42      89 ..     113     160 ..      90     186 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.015
+         RPW8  42 eritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkryn 89 
+                  +r++ v++ +e l+k+ d + +ei   +kl+ +a + + k  k+k  +
+  AT3G15190.1 113 TRMKKVLEALEGLKKKTDAQADEIVTVEKLIGEAYSAIDKAVKVKALH 160
+                  5788999*************************************9655 PP
+
+>> AT1G79070.1  | Symbols:  | SNARE-associated protein-related | chr1:29745018-29745807 REVERSE LENGTH=138
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.0   0.0       1.4     3e+02       6      45 ..      34      74 ..      32      86 .. 0.60
+   2 ?    5.6   0.2      0.11        23      19      58 ..      88     127 ..      77     137 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 2.0 bits;  conditional E-value: 1.4
+         RPW8  6 GAalgaalgellkail.eakkksldfksilkrLestlerit 45
+                 G a++  l+ +l+ ++ +   k+ld+  + ++L   l r++
+  AT1G79070.1 34 GEAMARGLSAMLESVIkDFDSKALDTLNSQDELSGSLDRLV 74
+                 55666666666665541455677777777777776666654 PP
+
+  == domain 2  score: 5.6 bits;  conditional E-value: 0.11
+         RPW8  19 aileakkksldfksilkrLestleritPvvkeieklnkel 58 
+                   i++ + + +++k  + +L+  l++++  +++i+++  + 
+  AT1G79070.1  88 FIVQHASRISSVKQRVSSLNLVLKSVQRRIDNIDHMLSAN 127
+                  5778888888899999999999999999999999876544 PP
+
+>> AT2G17110.1  | Symbols:  | Protein of unknown function (DUF630 and DUF632) | chr2:7443366-7445969 REVERSE LENGTH=733
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.1   0.0     0.075        16      94     134 ..      39      79 ..      26      83 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 6.1 bits;  conditional E-value: 0.075
+         RPW8  94 yrYkkklkeLekslrkfvqvelqvqqvrdikellakmkeln 134
+                   +Y++ lk++ +sl +f++ +   +     k+++ km + +
+  AT2G17110.1  39 VSYTQSLKAISHSLHQFINHHHRYNDSDSPKKAKPKMDSGS 79 
+                  68********************9999999999999998765 PP
+
+>> AT3G27460.2  | Symbols:  | SGF29 tudor-like domain | chr3:10159537-10161994 REVERSE LENGTH=269
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.0   0.8      0.02       4.2      47     103 ..      13      69 ..       6      84 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 8.0 bits;  conditional E-value: 0.02
+         RPW8  47 vvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  + ke+++l+ke ++   ei+++ k+L+   ++Vek   ++  ++   y+ +k+l e 
+  AT3G27460.2  13 NTKELDRLRKEQEEVLVEINKMHKKLQATPEIVEKPGDISLSKLKNLYIQAKELSES 69 
+                  6799********99999******************9999988888888888887765 PP
+
+>> AT5G39950.1  | Symbols: ATTRX2, ATH2, ATTRXH2, TRXH2, TRX2 | thioredoxin 2 | chr5:15990885-15991881 REVERSE LENGTH=13
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   0.0     0.013       2.8      37     103 ..      65     131 ..      43     133 .] 0.92
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.013
+         RPW8  37 LestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  +e  +++++  +++++ ++ ++d+  ++ +e++ + +    LV++  ++ r   +kk   +kk+ +L
+  AT5G39950.1  65 IEPAIHAMADKFNDVDFVKLDVDELPDVAKEFNVTAMPTFVLVKRGKEIERIIGAKKDELEKKVSKL 131
+                  66778999999****************************************************9998 PP
+
+>> AT5G26780.1  | Symbols: SHM2 | serine hydroxymethyltransferase 2 | chr5:9418299-9421725 FORWARD LENGTH=517
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0   0.0      0.17        36      27      57 ..      41      71 ..      28     103 .. 0.84
+   2 ?    1.3   0.1       2.3   4.9e+02      64      84 ..     481     501 ..     458     504 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.17
+         RPW8 27 sldfksilkrLestleritPvvkeieklnke 57
+                  ++ +s +k+L++ l +i P v++i +l+k+
+  AT5G26780.1 41 EKSRSSWIKQLNASLDEIDPEVADIIELEKA 71
+                 44556899*****************999876 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 2.3
+         RPW8  64 eieeLkklLekaekLVekcsk 84 
+                    e+L++++ k  ++Ve+++k
+  AT5G26780.1 481 SNEKLQSEMSKLREMVEEYAK 501
+                  345666666666666666655 PP
+
+>> AT3G27460.1  | Symbols:  | SGF29 tudor-like domain | chr3:10159537-10161994 REVERSE LENGTH=270
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   0.8     0.021       4.5      47     103 ..      13      69 ..       6      82 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.021
+         RPW8  47 vvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  + ke+++l+ke ++   ei+++ k+L+   ++Vek   ++  ++   y+ +k+l e 
+  AT3G27460.1  13 NTKELDRLRKEQEEVLVEINKMHKKLQATPEIVEKPGDISLSKLKNLYIQAKELSES 69 
+                  6799********99999******************9999988888888888887765 PP
+
+>> AT1G18190.1  | Symbols: GC2 | golgin candidate 2 | chr1:6257963-6261325 REVERSE LENGTH=668
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.2       3.2   6.7e+02      35      70 ..     409     444 ..     391     448 .. 0.85
+   2 ?    8.6   1.0     0.013       2.7      49      88 ..     495     535 ..     470     545 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 3.2
+         RPW8  35 krLestleritPvvkeieklnkeldrpreeieeLkk 70 
+                  ++L++  +++++ ++++  l+++++ +++ +eeLk+
+  AT1G18190.1 409 RSLAAGQKKLETQIDQVAVLKQQVELKESTLEELKR 444
+                  56777778999999***********9999***9997 PP
+
+  == domain 2  score: 8.6 bits;  conditional E-value: 0.013
+         RPW8  49 keieklnkeldrpreeieeLkklLek.aekLVekcsklkry 88 
+                  ++ie+++kel++p+e+  eLk++L++   +L++k s++   
+  AT1G18190.1 495 ADIEMMRKELEEPTEVEIELKRRLNQlTDHLIQKQSQVEAL 535
+                  69************999*******885789***99998765 PP
+
+>> AT5G26780.2  | Symbols: SHM2 | serine hydroxymethyltransferase 2 | chr5:9418299-9421725 FORWARD LENGTH=533
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.9   0.0      0.18        38      27      57 ..      41      71 ..      28     103 .. 0.84
+   2 ?    1.3   0.1       2.4   5.1e+02      64      84 ..     497     517 ..     474     520 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 4.9 bits;  conditional E-value: 0.18
+         RPW8 27 sldfksilkrLestleritPvvkeieklnke 57
+                  ++ +s +k+L++ l +i P v++i +l+k+
+  AT5G26780.2 41 EKSRSSWIKQLNASLDEIDPEVADIIELEKA 71
+                 44556899*****************999876 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 2.4
+         RPW8  64 eieeLkklLekaekLVekcsk 84 
+                    e+L++++ k  ++Ve+++k
+  AT5G26780.2 497 SNEKLQSEMSKLREMVEEYAK 517
+                  345666666666666666655 PP
+
+>> AT5G26780.3  | Symbols: SHM2 | serine hydroxymethyltransferase 2 | chr5:9418299-9421725 FORWARD LENGTH=533
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.9   0.0      0.18        38      27      57 ..      41      71 ..      28     103 .. 0.84
+   2 ?    1.3   0.1       2.4   5.1e+02      64      84 ..     497     517 ..     474     520 .. 0.62
+
+  Alignments for each domain:
+  == domain 1  score: 4.9 bits;  conditional E-value: 0.18
+         RPW8 27 sldfksilkrLestleritPvvkeieklnke 57
+                  ++ +s +k+L++ l +i P v++i +l+k+
+  AT5G26780.3 41 EKSRSSWIKQLNASLDEIDPEVADIIELEKA 71
+                 44556899*****************999876 PP
+
+  == domain 2  score: 1.3 bits;  conditional E-value: 2.4
+         RPW8  64 eieeLkklLekaekLVekcsk 84 
+                    e+L++++ k  ++Ve+++k
+  AT5G26780.3 497 SNEKLQSEMSKLREMVEEYAK 517
+                  345666666666666666655 PP
+
+>> AT2G17780.3  | Symbols: MCA2 | PLAC8 family protein | chr2:7725236-7726952 REVERSE LENGTH=410
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   1.1   0.00065      0.14      15     123 ..      24     133 ..      15     150 .. 0.79
+   2 ?   -0.4   0.1       8.1   1.7e+03      31      64 ..     171     204 ..     151     211 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00065
+         RPW8  15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklk.rynvlkkyrYkkklkeLekslrkf 110
+                  +l+ +i++a++++ + k ++++ ++ l+ i+ ++++i++ + +   +  e ++ L + L++   LV+ c + +  y ++  +   ++ ++  +++  f
+  AT2G17780.3  24 KLIGMIVNAANTARMHKKNCRQFAHHLKLIRNLLEQIKNSEMNQrSEILEPLQGLDDALRRSYILVKSCQEKSyLYLLAMGWNIVNQFEKAQNEIDLF 121
+                  67889********************************96554443444458899999************99876777777888888888888888887 PP
+
+         RPW8 111 vqvelqvqqvrdi 123
+                   +++  ++ + d+
+  AT2G17780.3 122 LKIVPLINMA-DN 133
+                  7775544443.44 PP
+
+  == domain 2  score: -0.4 bits;  conditional E-value: 8.1
+         RPW8  31 ksilkrLestleritPvvkeieklnkeldrpree 64 
+                  +     L++tl+r  P++   e l++e ++ + e
+  AT2G17780.3 171 EAATSVLKKTLSRSYPNMGFCEALKTEEEKLQLE 204
+                  4456679999999999999999999888776655 PP
+
+>> AT2G17780.2  | Symbols: MCA2 | PLAC8 family protein | chr2:7725155-7726952 REVERSE LENGTH=414
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   1.1   0.00066      0.14      15     123 ..      24     133 ..      15     150 .. 0.79
+   2 ?   -0.5   0.1       8.2   1.7e+03      31      64 ..     171     204 ..     151     211 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00066
+         RPW8  15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklk.rynvlkkyrYkkklkeLekslrkf 110
+                  +l+ +i++a++++ + k ++++ ++ l+ i+ ++++i++ + +   +  e ++ L + L++   LV+ c + +  y ++  +   ++ ++  +++  f
+  AT2G17780.2  24 KLIGMIVNAANTARMHKKNCRQFAHHLKLIRNLLEQIKNSEMNQrSEILEPLQGLDDALRRSYILVKSCQEKSyLYLLAMGWNIVNQFEKAQNEIDLF 121
+                  67889********************************96554443444458899999************99876777777888888888888888887 PP
+
+         RPW8 111 vqvelqvqqvrdi 123
+                   +++  ++ + d+
+  AT2G17780.2 122 LKIVPLINMA-DN 133
+                  7775544443.44 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 8.2
+         RPW8  31 ksilkrLestleritPvvkeieklnkeldrpree 64 
+                  +     L++tl+r  P++   e l++e ++ + e
+  AT2G17780.2 171 EAATSVLKKTLSRSYPNMGFCEALKTEEEKLQLE 204
+                  4456679999999999999999999888776655 PP
+
+>> AT3G47710.1  | Symbols: BNQ3, BHLH161 | BANQUO 3 | chr3:17590729-17591455 FORWARD LENGTH=92
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.4   0.1     0.016       3.3      24      64 ..      36      77 ..      15      89 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 8.4 bits;  conditional E-value: 0.016
+         RPW8 24 kkksldfk.silkrLestleritPvvkeieklnkeldrpree 64
+                 +++  + k s ++ L++t + i+ + ke++ l+++l +  e 
+  AT3G47710.1 36 ANNRRSGKvSASRVLQETCSYIRNLSKEVDDLSERLSQLLES 77
+                 44433333167788*******************999665554 PP
+
+>> AT1G59620.1  | Symbols: CW9 | Disease resistance protein (CC-NBS-LRR class) family | chr1:21902627-21905527 FORWARD L
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.4   1.2     0.031       6.5       9     102 ..       6      97 ..       1     139 [. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 7.4 bits;  conditional E-value: 0.031
+         RPW8   9 lgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklke 102
+                  l + +++l +++++++++   +k ++++L s l++++ ++++ +  ++++    + ++e k+   + e+++e    l++ ++ ++   kk++ke
+  AT1G59620.1   6 LSFGVEKLWDLLVRESDRFQGVKKQFNELRSDLNKLRCFLEDADAKKHQSAMVSNTVKEVKEIVYDTEDIIETF--LRKKQLGRTRGMKKRIKE 97 
+                  6667889999****************************************99999****************987..566666666666777766 PP
+
+>> AT3G46530.1  | Symbols: RPP13 | NB-ARC domain-containing disease resistance protein | chr3:17130739-17133246 REVERSE 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    3.1   0.0      0.67   1.4e+02       7      66 ..       4      62 ..       1      68 [. 0.84
+   2 ?    2.6   0.0      0.95     2e+02      70      87 ..     349     366 ..     338     376 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 3.1 bits;  conditional E-value: 0.67
+         RPW8  7 AalgaalgellkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeie 66
+                 A+ ++++g++ + ++e++   + +k  l++L+  l+ i   +k++e  + + d+  +e  
+  AT3G46530.1  4 AITEFVVGKIGNYLIEEASMFMAVKEDLEELKTELTCIHGYLKDVEARE-REDEVSKEWS 62
+                 677899999************************************9755.4455555555 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.95
+         RPW8  70 klLekaekLVekcsklkr 87 
+                  +lL+ ++++V+kc  l  
+  AT3G46530.1 349 DLLKTGKEMVQKCRGLPL 366
+                  689**********98865 PP
+
+>> AT2G17780.1  | Symbols: MCA2 | PLAC8 family protein | chr2:7725155-7726952 REVERSE LENGTH=416
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   12.8   1.1   0.00066      0.14      15     123 ..      24     133 ..      15     150 .. 0.79
+   2 ?   -0.5   0.1       8.2   1.7e+03      31      64 ..     171     204 ..     151     211 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 12.8 bits;  conditional E-value: 0.00066
+         RPW8  15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcsklk.rynvlkkyrYkkklkeLekslrkf 110
+                  +l+ +i++a++++ + k ++++ ++ l+ i+ ++++i++ + +   +  e ++ L + L++   LV+ c + +  y ++  +   ++ ++  +++  f
+  AT2G17780.1  24 KLIGMIVNAANTARMHKKNCRQFAHHLKLIRNLLEQIKNSEMNQrSEILEPLQGLDDALRRSYILVKSCQEKSyLYLLAMGWNIVNQFEKAQNEIDLF 121
+                  67889********************************96554443444458899999************99876777777888888888888888887 PP
+
+         RPW8 111 vqvelqvqqvrdi 123
+                   +++  ++ + d+
+  AT2G17780.1 122 LKIVPLINMA-DN 133
+                  7775544443.44 PP
+
+  == domain 2  score: -0.5 bits;  conditional E-value: 8.2
+         RPW8  31 ksilkrLestleritPvvkeieklnkeldrpree 64 
+                  +     L++tl+r  P++   e l++e ++ + e
+  AT2G17780.1 171 EAATSVLKKTLSRSYPNMGFCEALKTEEEKLQLE 204
+                  4456679999999999999999999888776655 PP
+
+>> AT1G48240.1  | Symbols: ATNPSN12, NPSN12 | novel plant snare 12 | chr1:17809223-17811656 REVERSE LENGTH=265
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   1.5     0.019         4      45      82 ..      26      62 ..      10     101 .. 0.75
+   2 ?    0.9   0.1       3.2   6.7e+02      55      85 ..     138     169 ..     129     179 .. 0.79
+   3 ?    0.3   0.2       4.8     1e+03      60      80 ..     186     206 ..     146     219 .. 0.60
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.019
+         RPW8 45 tPvvkeieklnkeldrpreeieeLkklLekaekLVekc 82
+                 +  +++++k+++   r+ +++eeL +++++ ++LV++ 
+  AT1G48240.1 26 ANGFQRLDKIKDS-SRQSKQLEELAEKMRDCKRLVKEF 62
+                 5567888999855.555669***************986 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 3.2
+         RPW8  55 nkel.drpreeieeLkklLekaekLVekcskl 85 
+                  n+el d   + ++e  + +e+ ++ V++  ++
+  AT1G48240.1 138 NQELvDAGMKRMDETDQAIERSKQVVHQTLEV 169
+                  55667888888999999999999999887766 PP
+
+  == domain 3  score: 0.3 bits;  conditional E-value: 4.8
+         RPW8  60 rpreeieeLkklLekaekLVe 80 
+                  r  ++++ ++  L+ka +LV+
+  AT1G48240.1 186 RVVNDLDTIQFSLKKASQLVK 206
+                  333344445555666666665 PP
+
+>> AT5G39860.1  | Symbols: PRE1, BNQ1, BHLH136 | basic helix-loop-helix (bHLH) DNA-binding family protein | chr5:1595768
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   0.1     0.018       3.9      24      61 ..      36      73 ..      19      80 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.018
+         RPW8 24 kkksldfksilkrLestleritPvvkeieklnkeldrp 61
+                 +++ +d +s +k L++t + i+ +  e+++l+++l + 
+  AT5G39860.1 36 QRRRSDKASASKVLQETCNYIRNLNREVDNLSERLSQL 73
+                 56677888999*********************999554 PP
+
+>> AT4G14368.1  | Symbols:  | Regulator of chromosome condensation (RCC1) family protein | chr4:8274279-8278810 REVERSE 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   1.2     0.032       6.8      43      92 ..     815     866 ..     804     898 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.032
+         RPW8  43 ritPvvkeieklnkeldrpreeieeLkklLekaekL.Vekcsklk.rynvlk 92 
+                  ++t +  +i++l+++ d++  ei++Lkk+ ++a +L V+ +sk k   +v+k
+  AT4G14368.1 815 EMTKLQSQIKNLKEKCDNQGTEIQRLKKTAREASDLaVKHSSKHKaATEVMK 866
+                  56677789*********9999**************95555566554444444 PP
+
+>> AT4G32560.1  | Symbols:  | paramyosin-related | chr4:15713866-15716035 FORWARD LENGTH=306
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.1       3.8     8e+02       9      42 ..      30      63 ..      27      70 .. 0.80
+   2 ?    6.9   0.4     0.043       9.1      59     106 ..      65     112 ..      52     126 .. 0.77
+   3 ?    2.4   0.1       1.1   2.3e+02      32      58 ..     139     167 ..     133     198 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 3.8
+         RPW8  9 lgaalgellkaileakkksldfksilkrLestle 42
+                 l a ++el   ++e++++  d k +l++L + ++
+  AT4G32560.1 30 LKASVRELSVKVKEQNQRKCDAKDKLQQLRERIS 63
+                 5667788888888999999999999998887665 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.043
+         RPW8  59 drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLeks 106
+                  +  +  ++eL+ lL++ ++ V++ s+++++  +k+   +  + +Le+ 
+  AT4G32560.1  65 EVVDVSVQELIPLLRSLKEFVKEESEVRSRCNVKRSALEDAVHDLEER 112
+                  334456799*******************88889999999999999886 PP
+
+  == domain 3  score: 2.4 bits;  conditional E-value: 1.1
+         RPW8  32 silkrLestleritPvvkeiekl..nkel 58 
+                  s  k+L +tl +i+ +  +i+ +  + el
+  AT4G32560.1 139 SAKKELGATLREIVSLKRQIDDVpcQSEL 167
+                  66789999999999999999985114444 PP
+
+>> AT4G32560.2  | Symbols:  | paramyosin-related | chr4:15713866-15716035 FORWARD LENGTH=306
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.6   0.1       3.8     8e+02       9      42 ..      30      63 ..      27      70 .. 0.80
+   2 ?    6.9   0.4     0.043       9.1      59     106 ..      65     112 ..      52     126 .. 0.77
+   3 ?    2.4   0.1       1.1   2.3e+02      32      58 ..     139     167 ..     133     198 .. 0.70
+
+  Alignments for each domain:
+  == domain 1  score: 0.6 bits;  conditional E-value: 3.8
+         RPW8  9 lgaalgellkaileakkksldfksilkrLestle 42
+                 l a ++el   ++e++++  d k +l++L + ++
+  AT4G32560.2 30 LKASVRELSVKVKEQNQRKCDAKDKLQQLRERIS 63
+                 5667788888888999999999999998887665 PP
+
+  == domain 2  score: 6.9 bits;  conditional E-value: 0.043
+         RPW8  59 drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLeks 106
+                  +  +  ++eL+ lL++ ++ V++ s+++++  +k+   +  + +Le+ 
+  AT4G32560.2  65 EVVDVSVQELIPLLRSLKEFVKEESEVRSRCNVKRSALEDAVHDLEER 112
+                  334456799*******************88889999999999999886 PP
+
+  == domain 3  score: 2.4 bits;  conditional E-value: 1.1
+         RPW8  32 silkrLestleritPvvkeiekl..nkel 58 
+                  s  k+L +tl +i+ +  +i+ +  + el
+  AT4G32560.2 139 SAKKELGATLREIVSLKRQIDDVpcQSEL 167
+                  66789999999999999999985114444 PP
+
+>> AT5G65640.2  | Symbols: bHLH093 | beta HLH protein 93 | chr5:26237137-26238635 FORWARD LENGTH=290
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.2   0.7      0.15        32      39      75 ..     195     227 ..     175     258 .. 0.53
+   2 ?    2.7   0.2      0.88   1.9e+02      36      68 ..     212     248 ..     197     275 .. 0.57
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.15
+         RPW8  39 stleritPvvkeieklnkeldrpreeieeLkklLeka 75 
+                  s+l +i+P + ++++ +   d     i+ +k+lL+k 
+  AT5G65640.2 195 SMLRSIVPKISKMDRTSILGD----AIDYMKELLDKI 227
+                  344444444444444331112....233333333333 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.88
+         RPW8  36 rLestleritPvvkeieklnkel....drpreeieeL 68 
+                   L + +  ++ ++++i+kl++e     ++ ++ + +L
+  AT5G65640.2 212 ILGDAIDYMKELLDKINKLQDEEqelgNSNNSHHSKL 248
+                  3555556666666666666644310144455555555 PP
+
+>> AT1G29580.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G550
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   0.9     0.022       4.6      23      85 ..      10      73 ..       6      87 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.022
+         RPW8 23 akkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcskl 85
+                 ++++s+++  + + L+s l  ++ ++k++ + +++  ++    ++  k+ Le+ e+L+++ ++l
+  AT1G29580.1 10 QQQQSVQTPLQHQTLASHLYPLVENLKDVTESRARDqNSDALYVDVQKQNLEESEQLLQQRMEL 73
+                 5678888888999999999999999999988777664555556677778888888888877765 PP
+
+>> AT4G27190.1  | Symbols:  | NB-ARC domain-containing disease resistance protein | chr4:13620977-13623934 REVERSE LENGT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   1.4     0.066        14       8     103 ..       7     107 ..       4     119 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 6.3 bits;  conditional E-value: 0.066
+         RPW8   8 algaalgellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekc.sklk...rynvlkkyrYkkkl 100
+                  ++g +l+ + +       ++ +fks++k L++ ler+t +  ++ + ++ l  + +    +L++  ++ae+ ++k   kl    ++ +  ++r ++kl
+  AT4G27190.1   7 VIGEILRLMYESTFSRVANAIKFKSNVKALNESLERLTELKGNMSEDHETLlTKDKPLRLKLMRWQREAEEVISKArLKLEervSCGMSLRPRMSRKL 104
+                  789999999999999999********************999999888888855555556689999999999998863466642334455678888888 PP
+
+         RPW8 101 keL 103
+                   ++
+  AT4G27190.1 105 VKI 107
+                  776 PP
+
+>> AT4G02070.2  | Symbols: MSH6 | MUTS homolog 6 | chr4:906079-912930 FORWARD LENGTH=1321
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   0.0     0.054        11      32      87 ..     777     833 ..     762     846 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.054
+         RPW8  32 silkrL.estleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkr 87 
+                  + ++rL +++ ++i+ +  + +k+    d  +++++e++++L+  e + e+cs l+ 
+  AT4G02070.2 777 PDMERLiARMFSSIEASGRNGDKVVLYEDTAKKQVQEFISTLRGCETMAEACSSLRA 833
+                  4455552345567777777778888888**************************985 PP
+
+>> AT3G19570.2  | Symbols: SCO3, QWRF1 | Family of unknown function (DUF566)  | chr3:6797778-6801344 FORWARD LENGTH=644
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.3   0.2     0.033       7.1      18      93 ..     560     635 ..     552     640 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.3 bits;  conditional E-value: 0.033
+         RPW8  18 kaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkk 93 
+                  ka+++ ++    ++s ++ +++++++i  +  ++e++n ++ ++ + + + + lLe+ +  + + + ++  ++  k
+  AT3G19570.2 560 KAVVDIQDLKHAVSSAVDVMHAMVSSIFSLTSKVEEMNSVMAEMVNITGKEEVLLEQCQGFLTRVAAMQVTDCSMK 635
+                  899999999999999***********************99977776888888888888888888888887777655 PP
+
+>> AT1G07950.1  | Symbols: MED22B | Surfeit locus protein 5 subunit 22 of Mediator complex | chr1:2466061-2466982 REVERS
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.9   0.1      0.09        19      29      83 ..      28      82 ..      19     104 .. 0.79
+   2 ?    2.3   0.1       1.2   2.5e+02      15      67 ..      83     138 ..      74     148 .. 0.54
+
+  Alignments for each domain:
+  == domain 1  score: 5.9 bits;  conditional E-value: 0.09
+         RPW8 29 dfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcs 83
+                 + k  l+r e  +++++ ++++i +++ ++d+p ++ +e     ++a ++V++  
+  AT1G07950.1 28 KQKALLQRVETDITSVVDNFTQIVNVSRVSDPPVKNSQETYMMEMRASRMVQAAD 82
+                 457899***********************99998887776666667778887654 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 1.2
+         RPW8  15 ellkaileakkks..ldfksilkrLestleritPvvkeieklnkel.drpreeiee 67 
+                  +llk++ e k+++  + f+s  ++ e+ +e+     ++ ++l +++ d   ++++e
+  AT1G07950.1  83 SLLKLVSELKQTAifSGFASLNDHVEQRIEEFDQEAEKTNRLLARIaDDASANLKE 138
+                  55555554444331134555555555555555555555555555555555555555 PP
+
+>> AT4G02070.1  | Symbols: MSH6, MSH6-1, ATMSH6 | MUTS homolog 6 | chr4:906079-912930 FORWARD LENGTH=1324
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   0.0     0.054        11      32      87 ..     780     836 ..     765     849 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.054
+         RPW8  32 silkrL.estleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklkr 87 
+                  + ++rL +++ ++i+ +  + +k+    d  +++++e++++L+  e + e+cs l+ 
+  AT4G02070.1 780 PDMERLiARMFSSIEASGRNGDKVVLYEDTAKKQVQEFISTLRGCETMAEACSSLRA 836
+                  4455552345567777777778888888**************************985 PP
+
+>> AT1G46408.1  | Symbols: AGL97 | AGAMOUS-like 97 | chr1:17232135-17232935 REVERSE LENGTH=266
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.4   0.2     0.063        13      32      69 ..      97     131 ..      89     149 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.4 bits;  conditional E-value: 0.063
+         RPW8  32 silkrLestleritPvvkeieklnkeldrpreeieeLk 69 
+                   +l++L + + ++++++ ++++l+k+ d ++   + L+
+  AT1G46408.1  97 ENLEELREAMDSMSTMLRDLKELEKQRDHQT---QTLI 131
+                  57999*******************8877665...4444 PP
+
+>> AT5G24655.1  | Symbols: LSU4 | response to low sulfur 4 | chr5:8440859-8441137 REVERSE LENGTH=92
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.8   0.3     0.024         5      48     110 ..      19      85 ..      11      90 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 7.8 bits;  conditional E-value: 0.024
+         RPW8  48 vkeieklnkeldrpreeieeLkklLeka....ekLVekcsklkrynvlkkyrYkkklkeLekslrkf 110
+                  +++ ++++k+++++r+e+ +L ++ + a    e+L ++ ++l   ++ +   Y+ +++ L ++l +f
+  AT5G24655.1  19 RQKNGEMEKAVEEMRKEMLQLWRRTQVAeeaeEHLCSQLAELEAESLDQARDYHTRIIFLTNQLSRF 85 
+                  5566789999999999999998776555112347999999999999999999******999999997 PP
+
+>> AT4G19350.1  | Symbols: EMB3006 | embryo defective 3006 | chr4:10562214-10563676 REVERSE LENGTH=180
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.2   0.0       5.1   1.1e+03      95      95 ..      46      46 ..       8      97 .. 0.58
+   2 ?    2.6   0.1      0.92   1.9e+02      29      76 ..      80     133 ..      43     135 .. 0.65
+   3 ?    5.8   0.2     0.095        20      14      58 ..     123     167 ..     119     177 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 0.2 bits;  conditional E-value: 5.1
+         RPW8 95 r 95
+                 +
+  AT4G19350.1 46 S 46
+                 2 PP
+
+  == domain 2  score: 2.6 bits;  conditional E-value: 0.92
+         RPW8  29 dfksilkrLestle..ritPvvk...eieklnkel.drpreeieeLkklLekae 76 
+                  ++ +il+  e+ +e  ++ P++    ++  +  +l  ++++ei++L+ lL++ae
+  AT4G19350.1  80 QVGPILDTVEELVEeqSLDPLFSdktDVMAIAYDLtTSKKNEIQKLTVLLQRAE 133
+                  455555555555542245666541113445555666778889999999999887 PP
+
+  == domain 3  score: 5.8 bits;  conditional E-value: 0.095
+         RPW8  14 gellkaileakkksldfksilkrLestleritPvvkeieklnkel 58 
+                  ++l  ++ +a++++ + +  +  L++  ++++   ++iekln+ +
+  AT4G19350.1 123 QKLTVLLQRAEEQNRQKEARISMLKKQTQDLSGTADRIEKLNAGV 167
+                  7788889999999****************************9876 PP
+
+>> AT3G17440.1  | Symbols: NPSN13, ATNPSN13 | novel plant snare 13 | chr3:5969909-5972290 REVERSE LENGTH=269
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.6   1.9     0.013       2.7      44      83 ..      25      63 ..       8     102 .. 0.73
+   2 ?    0.7   0.1       3.7   7.8e+02      55      85 ..     138     169 ..     130     178 .. 0.80
+   3 ?   -0.4   0.1       7.6   1.6e+03      56      79 ..     182     205 ..     144     213 .. 0.49
+
+  Alignments for each domain:
+  == domain 1  score: 8.6 bits;  conditional E-value: 0.013
+         RPW8 44 itPvvkeieklnkeldrpreeieeLkklLekaekLVekcs 83
+                 ++  +++++k+++   r+ +++eeL++++++ ++LV++  
+  AT3G17440.1 25 LANGFQRLDKIKDS-TRQSKQLEELTDKMRECKRLVKEFD 63
+                 55667889999855.566669***************9874 PP
+
+  == domain 2  score: 0.7 bits;  conditional E-value: 3.7
+         RPW8  55 nkel.drpreeieeLkklLekaekLVekcskl 85 
+                  n+el d   + ++e  + +e+ ++ Ve+  ++
+  AT3G17440.1 138 NQELvDAGMKRMDETDQAIERSKQVVEQTLEV 169
+                  55667888889999999999999999887766 PP
+
+  == domain 3  score: -0.4 bits;  conditional E-value: 7.6
+         RPW8  56 keldrpreeieeLkklLekaekLV 79 
+                  +++ r  + ++ ++  ++ka +LV
+  AT3G17440.1 182 DQMGRVVNHLDTIQFSIKKASQLV 205
+                  222222333334444444444444 PP
+
+>> AT3G05390.1  | Symbols:  | FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process unknown; LOCATED
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   1.1     0.043       9.2      20      74 ..      56     111 ..      51     114 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.043
+         RPW8  20 ileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLek 74 
+                  i+e++ + +d k   +r ++ le++  + +++ek  k++ ++++   +e+kk Le+
+  AT3G05390.1  56 IKEVSSEGFDLKALHDRVDEVLEKMDNLYEKLEKTVKDMeKSKDGSKKEMKKFLED 111
+                  788889999999********************999999978888888889988886 PP
+
+>> AT3G51410.1  | Symbols:  | Arabidopsis protein of unknown function (DUF241) | chr3:19081357-19082205 REVERSE LENGTH=2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.5       5.6   1.2e+03      74      74 ..     116     116 ..      60     175 .. 0.50
+   2 ?    8.2   0.2     0.017       3.7      16      67 ..     207     258 ..     201     269 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 5.6
+         RPW8  74 k 74 
+                   
+  AT3G51410.1 116 A 116
+                  1 PP
+
+  == domain 2  score: 8.2 bits;  conditional E-value: 0.017
+         RPW8  16 llkaileakkksldfksilkrLestleritPvvkeieklnkeldrpreeiee 67 
+                  + ++i   ++ s+++ s l++L++ l +   + kei+k+ ++l++++ee+e 
+  AT3G51410.1 207 VSRLISGGHRSSSSIMSELQNLDAVLRSDGDNSKEIKKMLERLEERTEELET 258
+                  6677888888999999**************************9999988886 PP
+
+>> AT1G11070.1  | Symbols:  | BEST Arabidopsis thaliana protein match is: Hydroxyproline-rich glycoprotein family protei
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.1       4.5   9.5e+02      32      75 ..     111     154 ..     100     211 .. 0.86
+   2 ?    6.6   0.5     0.054        11      16     125 ..     502     617 ..     492     631 .. 0.72
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 4.5
+         RPW8  32 silkrLestleritPvvkeieklnkeldrpreeieeLkklLeka 75 
+                  si++   +t++++  +  ei   ++ l+ +ree+++L +   +a
+  AT1G11070.1 111 SISNMVMRTMKDLHKLCPEIIDSSQILEMRREEVDKLLDNFYNA 154
+                  67778889999999999999999999999999999998877666 PP
+
+  == domain 2  score: 6.6 bits;  conditional E-value: 0.054
+         RPW8  16 llkaileakkksldfksilkrLestleritPvvkeieklnk....eldrpreeieeLkklLekaekLVekcsklk..rynvlkky.rYkkklkeLeks 106
+                  +++a+ e +kks  f+ i ++    +++i+ + ++i k+++    el+++++ ie+  ++Le+  + + +c      + + ++ +     kl+ + k+
+  AT1G11070.1 502 MADALAEITKKSPYFQKIEEDVRMYMTSINELKTDITKFKNkditELQKFHHRIESVLEKLEDETQVLARCEGFPhkKLEAIRMAaALYSKLEGMIKE 599
+                  678899999******************************97333246788888888888999988999988876422444455431334567777777 PP
+
+         RPW8 107 lrkfvqvelqvqqvrdike 125
+                  l++  ++e  ++q  d+ e
+  AT1G11070.1 600 LKN-WKIESPANQLYDKTE 617
+                  766.667777777766655 PP
+
+>> AT3G53920.1  | Symbols: SIGC, SIG3 | RNApolymerase sigma-subunit C | chr3:19961041-19963820 REVERSE LENGTH=571
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.6   0.1       8.9   1.9e+03      47     111 ..     287     347 ..     269     352 .. 0.59
+   2 ?    5.7   0.1       0.1        21      25      82 ..     490     548 ..     478     557 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: -0.6 bits;  conditional E-value: 8.9
+         RPW8  47 vvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkfv 111
+                  +v+++e+++++l+++  ++ +L +    a  +     kl ++n++  ++++ +l +   sl+ f 
+  AT3G53920.1 287 IVADMERIRTQLEEESGKVASLSCWAAAAG-M---NEKLLMRNLHYGWYCRDELVKSTRSLVLFL 347
+                  566666666666666666666554433222.2...235556666666677666666666666665 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.1
+         RPW8  25 kksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekc 82 
+                  +++++ +s  +++++ le ++P  k++  l+  l d + + +ee+ klL+  ++ ++k 
+  AT3G53920.1 490 EEAVMRQSARRDIHDLLEGLEPREKQVMVLRYGLqDYRPKSLEEIGKLLKVSKEWIRKI 548
+                  5677788899999****************************************999985 PP
+
+>> AT5G20490.2  | Symbols: XIK, ATXIK, XI-17 | Myosin family protein with Dil domain | chr5:6927064-6936079 REVERSE LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.5   0.0       4.3     9e+02      25      59 ..     538     572 ..     532     591 .. 0.74
+   2 ?    3.2   0.1      0.61   1.3e+02      42      76 ..     907     941 ..     883     949 .. 0.91
+   3 ?    0.3   0.1       4.9     1e+03      14      50 ..     959     995 ..     955    1007 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 0.5 bits;  conditional E-value: 4.3
+         RPW8  25 kksldfksilkrLestleritPvvkeieklnkeld 59 
+                     + fk +l++L +tl++ +P   +  k n++l+
+  AT5G20490.2 538 SIGSRFKLQLQSLMETLSSTEPHYIRCVKPNNVLK 572
+                  566789*************9998777666666665 PP
+
+  == domain 2  score: 3.2 bits;  conditional E-value: 0.61
+         RPW8  42 eritPvvkeieklnkeldrpreeieeLkklLekae 76 
+                  e+i+ +  e+e l++ l+ +r+  e+L+k   +ae
+  AT5G20490.2 907 EKINSLTSEVEALKASLQAERQAAENLRKAFSEAE 941
+                  89999************************999987 PP
+
+  == domain 3  score: 0.3 bits;  conditional E-value: 4.9
+         RPW8  14 gellkaileakkksldfksilkrLestleritPvvke 50 
+                  ++l++ + + ++k ++ +s ++ L +   +i+P    
+  AT5G20490.2 959 DQLHESVQRLEEKLSNSESEIQVLRQQALAISPTSRT 995
+                  6899999999999999999999999999999997665 PP
+
+>> AT4G09060.2  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G146
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    2.2   0.7       1.2   2.6e+02      15      85 ..      43     114 ..      35     122 .. 0.51
+   2 ?    5.7   0.2       0.1        22      50      78 ..     145     173 ..     140     190 .. 0.87
+   3 ?    6.3   0.9     0.068        14      32      86 ..     237     291 ..     225     301 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 2.2 bits;  conditional E-value: 1.2
+         RPW8  15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeieeLkklLekaekLVekcskl 85 
+                  +l k ++ a++ +   + + + L s l++   v++++ +      +  ++ +ee +kl  +  +L+++c kl
+  AT4G09060.2  43 SLQKKLYTAEESQRRLREQYQGLISRLKEKDHVIDRVRSEASMNaQALKKFVEENQKLASECGNLLSQCKKL 114
+                  555555555555555555555555555555555555544333222444444444444444555555555555 PP
+
+  == domain 2  score: 5.7 bits;  conditional E-value: 0.1
+         RPW8  50 eieklnkeldrpreeieeLkklLekaekL 78 
+                  ++ +l++e+ r+ ee++++k+++ ++ekL
+  AT4G09060.2 145 RVRELEDEIGRMSEEMQRFKRQIGDGEKL 173
+                  688999999******************98 PP
+
+  == domain 3  score: 6.3 bits;  conditional E-value: 0.068
+         RPW8  32 silkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklk 86 
+                   +++ L s   +++P+ +++ +l  + +++++e e ++  L kae+ Ve  s l 
+  AT4G09060.2 237 QSCQALLSKWDHLKPSTQKVLSLVSKAKKFEKEKECIIMNLAKAEQEVELVSTLN 291
+                  578889999999*********************************9998877775 PP
+
+>> AT5G40550.2  | Symbols:  | SGF29 tudor-like domain | chr5:16241285-16243100 FORWARD LENGTH=270
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.9     0.046       9.7      47     103 ..      12      68 ..       6      82 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.046
+         RPW8  47 vvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  + ke+++l+k+ ++   ei+++ k+L+   ++Vek   ++  ++   y+ +k+l e 
+  AT5G40550.2  12 NTKELDRLRKDQEEVLVEINKMHKKLQASPEIVEKPGDISLAKLKNLYIQAKELSEN 68 
+                  57899*******99999******************9999998888888888888765 PP
+
+>> AT5G40550.1  | Symbols:  | SGF29 tudor-like domain | chr5:16241285-16243100 FORWARD LENGTH=273
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.9     0.047       9.9      47     103 ..      12      68 ..       6      82 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.047
+         RPW8  47 vvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  + ke+++l+k+ ++   ei+++ k+L+   ++Vek   ++  ++   y+ +k+l e 
+  AT5G40550.1  12 NTKELDRLRKDQEEVLVEINKMHKKLQASPEIVEKPGDISLAKLKNLYIQAKELSEN 68 
+                  57899*******99999******************9999998888888888888765 PP
+
+>> AT4G04745.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT4G219
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.2     0.045       9.5      37      81 ..       9      51 ..       5      71 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.045
+         RPW8 37 LestleritPvvkeieklnkeldrpreeieeLkklLekaekLVek 81
+                 L+ t+ ri++  k+ie++   +++   e  +++k  e+ ++L+++
+  AT4G04745.1  9 LHTTIYRIRTQKKKIESMALMVKNSPYEYTKMEK--EDPQELIHR 51
+                 889****************999665556665555..455555555 PP
+
+>> AT1G16430.1  | Symbols:  | Surfeit locus protein 5 subunit 22 of Mediator complex | chr1:5614632-5615397 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.2     0.073        16      29      84 ..      25      80 ..      16     117 .. 0.77
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.073
+         RPW8 29 dfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsk 84
+                 + k  l+r +  +++++ ++++i ++  ++d+p ++ +e     ++a +LV++   
+  AT1G16430.1 25 KQKALLQRVDTDITSVVDNFNQIVNVARVSDPPMKNSQEAYMMEMRASRLVQAADS 80
+                 457889*********************99999988877766666678888877644 PP
+
+>> AT5G36170.3  | Symbols: HCF109, ATPRFB | high chlorophyll fluorescent 109 | chr5:14236297-14237974 REVERSE LENGTH=391
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   1.3     0.073        15      52     110 ..     135     192 ..      90     199 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.073
+         RPW8  52 eklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkf 110
+                   +ln+  dr+r  + e+k   e+ae +V+   ++ + +v         +keL+ksl kf
+  AT5G36170.3 135 SSLNDLKDRMR-LLSEFKTMVEDAETIVKLTEEMDSTDVSLLEEAMGIIKELNKSLDKF 192
+                  56775558887.99999999********9999999999999999999999999999987 PP
+
+>> AT5G15160.1  | Symbols: BNQ2, BHLH134 | BANQUO 2 | chr5:4921487-4922553 REVERSE LENGTH=94
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.1     0.038         8      24      61 ..      37      74 ..      18      84 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.038
+         RPW8 24 kkksldfksilkrLestleritPvvkeieklnkeldrp 61
+                 +++ +++ s +k L++t + i+ + ke + l+++l + 
+  AT5G15160.1 37 QNRRSNTVSASKVLQETCNYIRNLNKEADDLSDRLTQL 74
+                 45667777999999999999999999999999877554 PP
+
+>> AT1G02340.1  | Symbols: HFR1, RSF1, FBI1, REP1 | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.4     0.046       9.8      57     101 ..     139     184 ..     128     196 .. 0.73
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.046
+         RPW8  57 eldrpreeieeLkklLekaekLVekcsklkrynvlkk.yrYkkklk 101
+                  +  ++r   e++ ++++k ++LV  c k  + +vl k   Y k l+
+  AT1G02340.1 139 KGSKRRRRDEKMSNKMRKLQQLVPNCHKTDKVSVLDKtIEYMKNLQ 184
+                  4444555779999999************999999865156777663 PP
+
+>> AT3G22260.1  | Symbols:  | Cysteine proteinases superfamily protein | chr3:7871489-7873393 FORWARD LENGTH=240
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.7     0.047       9.9      52      95 ..     119     162 ..     114     166 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.047
+         RPW8  52 eklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyr 95 
+                  ++l  + d  +++ ++  k+L++  kL e++  +k++++ +k++
+  AT3G22260.1 119 DQLFRNADYHKHVRKHVVKQLKQQRKLYEEYVPMKYRHYTRKMK 162
+                  667777888999999**************************975 PP
+
+>> AT1G51000.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G510
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   1.8     0.085        18      37      74 ..      17      55 ..       2      68 .. 0.44
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.085
+         RPW8 37 LestleritPvvkeieklnkel.drpreeieeLkklLek 74
+                 L + +++++  +++i+    +   + r++i  ++ +L++
+  AT1G51000.1 17 LIREMTQLNEEIQKIDVNDFRAiREARKKITGMTTKLDE 55
+                 444444444444444433322223333334333333333 PP
+
+>> AT2G27740.1  | Symbols:  | Family of unknown function (DUF662)  | chr2:11822800-11823575 FORWARD LENGTH=174
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   1.6     0.053        11      22      66 ..      75     120 ..      62     163 .. 0.78
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.053
+         RPW8  22 eakkksldfksilkrLestl.eritPvvkeieklnkeldrpreeie 66 
+                  ea+++ ++++  l+ L + + ++i+ ++k+++ +n el++  +  +
+  AT2G27740.1  75 EATRRLAEIREELEALTDPMrKEISAIRKRVDAINRELKPLGQSCQ 120
+                  7788888888888889888745799999999999988876554444 PP
+
+>> AT5G20490.1  | Symbols: XIK, ATXIK, XI-17 | Myosin family protein with Dil domain | chr5:6927064-6936825 REVERSE LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.4   0.0       4.5   9.6e+02      25      59 ..     618     652 ..     612     671 .. 0.74
+   2 ?    2.9   0.1      0.74   1.6e+02      42      76 ..     987    1021 ..     977    1028 .. 0.91
+   3 ?    0.2   0.1       5.2   1.1e+03      14      50 ..    1039    1075 ..    1035    1087 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 0.4 bits;  conditional E-value: 4.5
+         RPW8  25 kksldfksilkrLestleritPvvkeieklnkeld 59 
+                     + fk +l++L +tl++ +P   +  k n++l+
+  AT5G20490.1 618 SIGSRFKLQLQSLMETLSSTEPHYIRCVKPNNVLK 652
+                  566789*************9998777666666665 PP
+
+  == domain 2  score: 2.9 bits;  conditional E-value: 0.74
+         RPW8   42 eritPvvkeieklnkeldrpreeieeLkklLekae 76  
+                   e+i+ +  e+e l++ l+ +r+  e+L+k   +ae
+  AT5G20490.1  987 EKINSLTSEVEALKASLQAERQAAENLRKAFSEAE 1021
+                   89999************************999987 PP
+
+  == domain 3  score: 0.2 bits;  conditional E-value: 5.2
+         RPW8   14 gellkaileakkksldfksilkrLestleritPvvke 50  
+                   ++l++ + + ++k ++ +s ++ L +   +i+P    
+  AT5G20490.1 1039 DQLHESVQRLEEKLSNSESEIQVLRQQALAISPTSRT 1075
+                   6899999999999999999999999999999997665 PP
+
+>> AT3G22260.2  | Symbols:  | Cysteine proteinases superfamily protein | chr3:7871489-7873393 FORWARD LENGTH=245
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.7     0.048        10      52      95 ..     119     162 ..     114     166 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.048
+         RPW8  52 eklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyr 95 
+                  ++l  + d  +++ ++  k+L++  kL e++  +k++++ +k++
+  AT3G22260.2 119 DQLFRNADYHKHVRKHVVKQLKQQRKLYEEYVPMKYRHYTRKMK 162
+                  667777888999999**************************975 PP
+
+>> AT3G22260.3  | Symbols:  | Cysteine proteinases superfamily protein | chr3:7871489-7873393 FORWARD LENGTH=245
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.7     0.048        10      52      95 ..     119     162 ..     114     166 .. 0.89
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.048
+         RPW8  52 eklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyr 95 
+                  ++l  + d  +++ ++  k+L++  kL e++  +k++++ +k++
+  AT3G22260.3 119 DQLFRNADYHKHVRKHVVKQLKQQRKLYEEYVPMKYRHYTRKMK 162
+                  667777888999999**************************975 PP
+
+>> AT1G11905.2  | Symbols:  | B-cell receptor-associated protein 31-like  | chr1:4014958-4016222 FORWARD LENGTH=220
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   0.3     0.056        12      34      66 ..     138     170 ..     111     176 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.056
+         RPW8  34 lkrLestleritPvvkeieklnkeldrpreeie 66 
+                  l++ ++ +e+it ++k+ e+l  el+ + +ei 
+  AT1G11905.2 138 LDEVKNLMEEITSLRKRQEQLDSELEARSKEIR 170
+                  677889999999999999999999999888875 PP
+
+>> AT5G36170.1  | Symbols: HCF109, ATPRFB | high chlorophyll fluorescent 109 | chr5:14236083-14237974 REVERSE LENGTH=456
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   0.6     0.066        14      52     110 ..     135     192 ..     128     200 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 6.3 bits;  conditional E-value: 0.066
+         RPW8  52 eklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkf 110
+                   +ln+  dr+r  + e+k   e+ae +V+   ++ + +v         +keL+ksl kf
+  AT5G36170.1 135 SSLNDLKDRMR-LLSEFKTMVEDAETIVKLTEEMDSTDVSLLEEAMGIIKELNKSLDKF 192
+                  56775558888.999********************999999999999999999999997 PP
+
+>> AT5G36170.2  | Symbols: HCF109, ATPRFB | high chlorophyll fluorescent 109 | chr5:14236083-14237974 REVERSE LENGTH=455
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   0.7     0.069        15      52     110 ..     134     191 ..     126     198 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 6.3 bits;  conditional E-value: 0.069
+         RPW8  52 eklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkf 110
+                   +ln+  dr+r  + e+k   e+ae +V+   ++ + +v         +keL+ksl kf
+  AT5G36170.2 134 SSLNDLKDRMR-LLSEFKTMVEDAETIVKLTEEMDSTDVSLLEEAMGIIKELNKSLDKF 191
+                  56775558888.999********************999999999999999999999987 PP
+
+>> AT5G65640.1  | Symbols: bHLH093 | beta HLH protein 93 | chr5:26237137-26238904 FORWARD LENGTH=351
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.0   0.5      0.17        37      39      75 ..     195     227 ..     175     258 .. 0.53
+
+  Alignments for each domain:
+  == domain 1  score: 5.0 bits;  conditional E-value: 0.17
+         RPW8  39 stleritPvvkeieklnkeldrpreeieeLkklLeka 75 
+                  s+l +i+P + ++++ +   d     i+ +k+lL+k 
+  AT5G65640.1 195 SMLRSIVPKISKMDRTSILGD----AIDYMKELLDKI 227
+                  344444444444444331112....233333333333 PP
+
+>> AT3G58370.1  | Symbols:  | TRAF-like family protein | chr3:21595774-21596538 REVERSE LENGTH=219
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.1     0.074        16      34      71 ..     154     191 ..     143     206 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.074
+         RPW8  34 lkrLestleritPvvkeieklnkeldrpreeieeLkkl 71 
+                  l+ Le+ l +++   k++e+ +++l+r +ee+++L+++
+  AT3G58370.1 154 LDWLEKKLAEVKAKKKKVETGKARLQRAEEELQKLNQK 191
+                  6779999999**********************999986 PP
+
+>> AT2G36410.1  | Symbols:  | Family of unknown function (DUF662)  | chr2:15279041-15280270 FORWARD LENGTH=195
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.6   1.2     0.027       5.8      20      60 ..      93     134 ..      73     149 .. 0.61
+   2 ?    2.7   1.5      0.85   1.8e+02      59      89 ..     154     184 ..     137     192 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 7.6 bits;  conditional E-value: 0.027
+         RPW8  20 ileakkksldfksilkrLestl.eritPvvkeieklnkeldr 60 
+                  + +++k+ ++++  l+++++ + ++++ v+k+i+++nkel++
+  AT2G36410.1  93 VEQETKRLSTIREELESMADPMrKEVSVVRKKIDSVNKELKP 134
+                  444555555555555555555523455555666666666554 PP
+
+  == domain 2  score: 2.7 bits;  conditional E-value: 0.85
+         RPW8  59 drpreeieeLkklLekaekLVekcsklkryn 89 
+                  ++++ e  +L+ +L++ e+LV ++ kl++ +
+  AT2G36410.1 154 NEKNREKVQLITKLMEMEQLVGESEKLRMIK 184
+                  3444455677788888999**9999999765 PP
+
+>> AT4G22950.1  | Symbols: AGL19, GL19 | AGAMOUS-like 19 | chr4:12023946-12027421 REVERSE LENGTH=219
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   0.1      0.16        33      23      74 ..      50     102 ..      38     107 .. 0.72
+   2 ?    2.1   0.7       1.3   2.7e+02      36      70 ..     129     168 ..     119     178 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.16
+         RPW8  23 akkksldfksilkrLestleritPvvkeieklnkel...drpreeieeLkklLek 74 
+                   + k ++f  ++ ++++t+er +  +kei++ +k+    ++ r+e+  L+k++e+
+  AT4G22950.1  50 PRSKLYEF--SSSSIAATIERYQRRIKEIGNNHKRNdnsQQARDETSGLTKKIEQ 102
+                  44444555..778899*************87655442126777888889988875 PP
+
+  == domain 2  score: 2.1 bits;  conditional E-value: 1.3
+         RPW8  36 rLestleritP.....vvkeieklnkeldrpreeieeLkk 70 
+                  +L++ l+ri+      +++eiekl++e  +  +e ++Lk+
+  AT4G22950.1 129 QLDRSLSRIRAkkyqlLREEIEKLKAEERNLVKENKDLKE 168
+                  5666666665422222578999999999888888888886 PP
+
+>> AT2G36355.1  | Symbols:  | Family of unknown function (DUF662)  | chr2:15242449-15243276 FORWARD LENGTH=155
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   0.5     0.021       4.5      23      74 ..      47     103 ..      36     107 .. 0.74
+   2 ?   -0.3   0.2       7.5   1.6e+03      32      35 ..     127     130 ..      99     153 .. 0.45
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.021
+         RPW8  23 akkksldfk.silkrLestlerit....PvvkeieklnkeldrpreeieeLkklLek 74 
+                    ++ l f+    ++L +tle ++    P++ke+++++k+++  + ei++L +  +k
+  AT2G36355.1  47 KIQQRLGFAeEATRSLTQTLEGLEimgdPMRKEVGMVRKKIEMANREIKSLSQSCQK 103
+                  5555555541455679999987744455***********************987665 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 7.5
+         RPW8  32 silk 35 
+                  sil 
+  AT2G36355.1 127 SILM 130
+                  2222 PP
+
+>> AT3G60660.1  | Symbols:  | unknown protein; CONTAINS InterPro DOMAIN/s: Protein of unknown function DUF1395 (InterPro
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.2   0.2      0.07        15      39      85 ..      37      83 ..      10     131 .. 0.75
+
+  Alignments for each domain:
+  == domain 1  score: 6.2 bits;  conditional E-value: 0.07
+         RPW8 39 stleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcskl 85
+                 st+ +++ + + + +++ ++++ ++ + e ++ + ka+kL+e++ k 
+  AT3G60660.1 37 STIPDLSAIDTALSSMELQVQSIKDRLREETEAIPKAKKLIEASLKQ 83
+                 67777777777788888888888888888888999999999887652 PP
+
+>> AT3G52920.1  | Symbols:  | Family of unknown function (DUF662)  | chr3:19624601-19625981 FORWARD LENGTH=180
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.8   0.6     0.046       9.8      23      72 ..      67     110 ..      33     121 .. 0.64
+   2 ?    2.3   0.4       1.2   2.5e+02      59      87 ..     126     153 ..     116     163 .. 0.69
+
+  Alignments for each domain:
+  == domain 1  score: 6.8 bits;  conditional E-value: 0.046
+         RPW8  23 akkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklL 72 
+                  ++++ ++++  l+ +++      P++ke++ ++k++d+ ++e++ L ++ 
+  AT3G52920.1  67 ETRRLASIREELETMAD------PMRKEVNWVRKKIDSVNKELKPLGSTV 110
+                  44444444444444444......555555555555555555555554444 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 1.2
+         RPW8  59 drpreeieeLkklLekaekLVekcsklkr 87 
+                  ++ re+++ ++kl+e + +LV ++ kl+ 
+  AT3G52920.1 126 EKNREKVQLITKLMEMG-QLVGESEKLRL 153
+                  55666666666666665.79999999985 PP
+
+>> AT5G07770.2  | Symbols:  | Actin-binding FH2 protein | chr5:2474816-2479022 FORWARD LENGTH=695
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.2     0.051        11      16      65 ..     396     446 ..     391     451 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.051
+         RPW8  16 llkaileakkksldfksilkrLestle.ritPvvkeieklnkeldrpreei 65 
+                  l k++   +   ldf+  l++Lestle +++ + +ei  ++k l++ ++e+
+  AT5G07770.2 396 LCKVLASKAADLLDFHKDLQSLESTLEiNLKSLAEEIHAITKGLEKLKQEL 446
+                  6778888888999*************9679999999999999998888776 PP
+
+>> AT1G13890.1  | Symbols: SNAP30, ATSNAP30 | soluble N-ethylmaleimide-sensitive factor adaptor protein 30 | chr1:475158
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.9   0.0       3.1   6.7e+02      51      81 ..     102     132 ..      62     143 .. 0.72
+   2 ?    4.2   0.0       0.3        65      18      76 ..     192     254 ..     184     261 .. 0.68
+
+  Alignments for each domain:
+  == domain 1  score: 0.9 bits;  conditional E-value: 3.1
+         RPW8  51 ieklnkeldrpreeieeLkklLekaekLVek 81 
+                  + +  ++++r +e   ++ k L ++ekL++ 
+  AT1G13890.1 102 LHQQGEQINRTHEMAVDMDKDLSRGEKLLNN 132
+                  4444455677777777899999999999875 PP
+
+  == domain 2  score: 4.2 bits;  conditional E-value: 0.3
+         RPW8  18 kaileakkksldfksilkrLestleritPvv....keieklnkeldrpreeieeLkklLekae 76 
+                  +a+ +++++ ++ +  l +L + l +++ +      ei+k nk+ld   ++++eL+++ + a+
+  AT1G13890.1 192 NALQKVEQEKAKQDDGLSDLSDILGDLKSMAvdmgSEIDKQNKALDHLGDDVDELNSRVQGAN 254
+                  55555555555555566666666666655442222689**********99*****99988776 PP
+
+>> AT1G11905.1  | Symbols:  | B-cell receptor-associated protein 31-like  | chr1:4014958-4016222 FORWARD LENGTH=221
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.1   1.0     0.076        16      34      66 ..     139     171 ..      93     177 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 6.1 bits;  conditional E-value: 0.076
+         RPW8  34 lkrLestleritPvvkeieklnkeldrpreeie 66 
+                  l++ ++ +e+it ++k+ e+l  el+ + +ei 
+  AT1G11905.1 139 LDEVKNLMEEITSLRKRQEQLDSELEARSKEIR 171
+                  667788899999999999999999988888875 PP
+
+>> AT1G35410.1  | Symbols:  | Protein of unknown function (DUF1184) | chr1:13024161-13024941 FORWARD LENGTH=149
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.7   0.1     0.051        11      86     109 ..      62      88 ..      57     119 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 6.7 bits;  conditional E-value: 0.051
+         RPW8  86 krynvlkky...rYkkklkeLekslrk 109
+                  k  nv+k y   +Y+++lk+Le++lr 
+  AT1G35410.1  62 KNNNVVKSYsfeYYNQELKKLEEKLRS 88 
+                  6667777774446999******99986 PP
+
+>> AT4G17010.1  | Symbols:  | unknown protein; Has 30201 Blast hits to 17322 proteins in 780 species: Archae - 12; Bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   2.4     0.068        14      31      74 ..      44      89 ..      31     123 .. 0.76
+
+  Alignments for each domain:
+  == domain 1  score: 6.3 bits;  conditional E-value: 0.068
+         RPW8 31 ksilkrLes..tleritPvvkeieklnkeldrpreeieeLkklLek 74
+                 k  ++rL +   l++++ +v+e+++lnk++++ +++ie+  k ++k
+  AT4G17010.1 44 KVEINRLPEqiVLSEVRRMVEEMQNLNKQIENTEAQIEDYFKPIDK 89
+                 4445666442257899999999999999999999999987776665 PP
+
+>> AT1G51010.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G510
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    4.8   1.3      0.19        41      45      69 ..      43      67 ..      13      79 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 4.8 bits;  conditional E-value: 0.19
+         RPW8 45 tPvvkeieklnkeldrpreeieeLk 69
+                 +P ++ ie+++k+l+ +r +++eL 
+  AT1G51010.1 43 RPYFDAIEEVRKKLNDKRMKLQELY 67
+                 4888888888888866666666664 PP
+
+>> AT3G12550.1  | Symbols:  | XH/XS domain-containing protein | chr3:3978669-3981372 FORWARD LENGTH=638
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.5   0.7      0.11        24      81     128 ..     387     434 ..     374     467 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 5.5 bits;  conditional E-value: 0.11
+         RPW8  81 kcsklkrynvlkkyrYkkklkeLekslrkfvqvelqvqqvrdikella 128
+                  k  +l   + ++k + +k++++Le +l +  ++el+vqq + +  +++
+  AT3G12550.1 387 KAQRLAVDHKMQKEKLHKRIAALERQLDQKQELELEVQQLKSQLSVMR 434
+                  555666667788888899999999999999999999999888877765 PP
+
+>> AT3G12550.2  | Symbols:  | XH/XS domain-containing protein | chr3:3978669-3981372 FORWARD LENGTH=638
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.5   0.7      0.11        24      81     128 ..     387     434 ..     374     467 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 5.5 bits;  conditional E-value: 0.11
+         RPW8  81 kcsklkrynvlkkyrYkkklkeLekslrkfvqvelqvqqvrdikella 128
+                  k  +l   + ++k + +k++++Le +l +  ++el+vqq + +  +++
+  AT3G12550.2 387 KAQRLAVDHKMQKEKLHKRIAALERQLDQKQELELEVQQLKSQLSVMR 434
+                  555666667788888899999999999999999999999888877765 PP
+
+>> AT5G28642.1  | Symbols:  | unknown protein; Has 30201 Blast hits to 17322 proteins in 780 species: Archae - 12; Bacte
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.1   0.0     0.039       8.2      35      64 ..       8      38 ..       2      44 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 7.1 bits;  conditional E-value: 0.039
+         RPW8 35 krLestleritPvv.keieklnkeldrpree 64
+                  r+++tl r +P v ++ ++++k++d ++++
+  AT5G28642.1  8 SRMDQTLDRSRPTVaDKTDRCRKQVDLRQSK 38
+                 69**********873579*******877754 PP
+
+>> AT4G36060.2  | Symbols: bHLH11 | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr4:17055521-170565
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.1   1.0     0.019       4.1      36      70 ..      65      99 ..      57     129 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 8.1 bits;  conditional E-value: 0.019
+         RPW8 36 rLestleritPvvkeieklnkeldrpreeieeLkk 70
+                  L +t++ ++ v++++++l++e +   +e  eL++
+  AT4G36060.2 65 VLTDTIQMLKDVMNQVDRLKAEYETLSQESRELIQ 99
+                 6999******************9999988888765 PP
+
+>> AT2G32760.1  | Symbols:  | unknown protein; Has 229 Blast hits to 229 proteins in 104 species: Archae - 0; Bacteria -
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   1.5     0.084        18      44      83 ..      53      92 ..      38     108 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.084
+         RPW8 44 itPvvkeieklnkeldrpreeieeLkklLekaekLVekcs 83
+                 ++P ++ + ++++e+ r+++e+ee++++Le  + LV k s
+  AT2G32760.1 53 LQPKLESLIQVSTESLRRTNELEEMRQRLEARKLLVDKTS 92
+                 68999999999999999999****************9986 PP
+
+>> AT5G41315.1  | Symbols: GL3, MYC6.2 | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr5:16529457-1
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.4     0.083        18      39      74 ..     458     492 ..     441     498 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.083
+         RPW8  39 stleritPvvkeieklnkeldrpreeieeLkklLek 74 
+                   tl +i P++++i+k++  ld   e ++eL+++ ++
+  AT5G41315.1 458 MTLRKIIPSINKIDKVS-ILDDTIEYLQELERRVQE 492
+                  69**************9.567777788888887665 PP
+
+>> AT4G32560.3  | Symbols:  | paramyosin-related | chr4:15713866-15716035 FORWARD LENGTH=304
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.9   0.5     0.044       9.2      56     106 ..      58     110 ..      49     124 .. 0.77
+   2 ?    2.3   0.1       1.1   2.4e+02      32      58 ..     137     165 ..     131     195 .. 0.71
+   3 ?   -0.7   0.0       9.9   2.1e+03      48      74 ..     228     254 ..     189     289 .. 0.66
+
+  Alignments for each domain:
+  == domain 1  score: 6.9 bits;  conditional E-value: 0.044
+         RPW8  56 kel..drpreeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeLeks 106
+                  +++  +  +  ++eL+ lL++ ++ V++ s+++++  +k+   +  + +Le+ 
+  AT4G32560.3  58 ERIskEVVDVSVQELIPLLRSLKEFVKEESEVRSRCNVKRSALEDAVHDLEER 110
+                  44432334556799*******************88889999999999999886 PP
+
+  == domain 2  score: 2.3 bits;  conditional E-value: 1.1
+         RPW8  32 silkrLestleritPvvkeiekl..nkel 58 
+                  s  k+L +tl +i+ +  +i+ +  + el
+  AT4G32560.3 137 SAKKELGATLREIVSLKRQIDDVpcQSEL 165
+                  66789999999999999999985114444 PP
+
+  == domain 3  score: -0.7 bits;  conditional E-value: 9.9
+         RPW8  48 vkeieklnkeldrpreeieeLkklLek 74 
+                  vk i++++ +++  +++i +++  L++
+  AT4G32560.3 228 VKLIDSMEGVMKGIQQKIGKIQLGLQE 254
+                  555555555555555555555444444 PP
+
+>> AT5G33898.1  | Symbols:  | Protein of unknown function (DUF3287) | chr5:12787599-12788778 FORWARD LENGTH=248
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.3   0.4     0.067        14      15      59 ..     198     242 ..     193     247 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 6.3 bits;  conditional E-value: 0.067
+         RPW8  15 ellkaileakkksldfksilkrLestleritPvvkeieklnkeld 59 
+                   + ++ ++ +k+sl+ k   k+++++l r+t +  e+ +ln+ ld
+  AT5G33898.1 198 FIKDLAVQHQKRSLEKKKLQKKINQMLRRVTAISRELHTLNTILD 242
+                  5666778899******************************98776 PP
+
+>> AT5G15690.1  | Symbols:  | zinc ion binding | chr5:5113823-5114402 REVERSE LENGTH=169
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.5   1.8     0.058        12      47      94 ..      70     117 ..      61     134 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.058
+         RPW8  47 vvkeieklnkeldrpreeieeLkklLekaekLVekcsklkrynvlkky 94 
+                  +++ei+++n++ +r  e+i +L+   +   +L++k +k    +++kk+
+  AT5G15690.1  70 LLDEIKMVNEKCKRVAENISDLRMNVMVNMELLNKNAKQMEEELIKKM 117
+                  578999999999999999999999999999999999998888888886 PP
+
+>> AT3G14750.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G671
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    0.1   0.2       5.5   1.2e+03      32      65 ..      97     130 ..      73     144 .. 0.61
+   2 ?    0.9   1.1       3.2   6.8e+02      29      56 ..     136     163 ..      97     179 .. 0.58
+   3 ?    6.5   0.5     0.057        12      30      65 ..     175     210 ..     146     216 .. 0.71
+
+  Alignments for each domain:
+  == domain 1  score: 0.1 bits;  conditional E-value: 5.5
+         RPW8  32 silkrLestleritPvvkeieklnkeldrpreei 65 
+                     ++Le   ++++ +++ i++l++e + +  e+
+  AT3G14750.1  97 ALKQELEVAQHELQRIMHYIDSLRAEEEIMMREM 130
+                  4445566666667777777777777765544444 PP
+
+  == domain 2  score: 0.9 bits;  conditional E-value: 3.2
+         RPW8  29 dfksilkrLestleritPvvkeieklnk 56 
+                    +  l++ +++  +i+ ++++i++++ 
+  AT3G14750.1 136 RSEMELREVDAMRAEIQKIRADIKEFTS 163
+                  3334444444444444444444444443 PP
+
+  == domain 3  score: 6.5 bits;  conditional E-value: 0.057
+         RPW8  30 fksilkrLestleritPvvkeieklnkeldrpreei 65 
+                  +   l rL + l++i ++ +eie+ ++el+r r+ i
+  AT3G14750.1 175 MTQDLARLTADLQQIPTLTAEIENTKQELQRARAAI 210
+                  335677788888888888888888888887777655 PP
+
+>> AT5G07770.1  | Symbols:  | Actin-binding FH2 protein | chr5:2474816-2479022 FORWARD LENGTH=722
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.6   0.2     0.054        11      16      65 ..     423     473 ..     418     478 .. 0.85
+
+  Alignments for each domain:
+  == domain 1  score: 6.6 bits;  conditional E-value: 0.054
+         RPW8  16 llkaileakkksldfksilkrLestle.ritPvvkeieklnkeldrpreei 65 
+                  l k++   +   ldf+  l++Lestle +++ + +ei  ++k l++ ++e+
+  AT5G07770.1 423 LCKVLASKAADLLDFHKDLQSLESTLEiNLKSLAEEIHAITKGLEKLKQEL 473
+                  6778888888999*************9679999999999999998888776 PP
+
+>> AT1G19010.2  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G748
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.8   0.4     0.093        20      49      84 ..      48      83 ..      28     104 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 5.8 bits;  conditional E-value: 0.093
+         RPW8 49 keieklnkeldrpreeieeLkklLekaekLVekcsk 84
+                 ++ie+l+++l + ++ + eL+ +L++   L+ek ++
+  AT1G19010.2 48 QKIEELEAQLGEAEDIVGELRTELRESRYLLEKLAN 83
+                 678888888866666888888888888888888775 PP
+
+>> AT4G06490.1  | Symbols:  | Protein of unknown function (DUF3287) | chr4:3116894-3117334 FORWARD LENGTH=146
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.5   0.1     0.058        12      16      57 ..      65     106 ..      59     120 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 6.5 bits;  conditional E-value: 0.058
+         RPW8  16 llkaileakkksldfksilkrLestleritPvvkeieklnke 57 
+                  +  + ++ +k++++ + i k+++++l r+t +  e+ +ln +
+  AT4G06490.1  65 IKALAVQHQKRTMERRNIRKKINRMLLRVTAITRELHNLNSH 106
+                  5556678899999***********************999975 PP
+
+>> AT1G19980.1  | Symbols:  | cytomatrix protein-related | chr1:6933162-6934643 FORWARD LENGTH=342
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    8.8   0.9     0.011       2.3      29      77 ..     213     258 ..     194     278 .. 0.79
+
+  Alignments for each domain:
+  == domain 1  score: 8.8 bits;  conditional E-value: 0.011
+         RPW8  29 dfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaek 77 
+                  + +s+ ++ ++t++r++  ++e+e+ +    +++eei +L++ Le+a+k
+  AT1G19980.1 213 QLQSSNQEKDETISRLKAKMAEMETNS---TKKDEEISKLTRDLESAKK 258
+                  556777777899999998888877665...677889***********97 PP
+
+>> AT1G45110.1  | Symbols:  | Tetrapyrrole (Corrin/Porphyrin) Methylases | chr1:17052572-17054546 FORWARD LENGTH=343
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.2     0.085        18      60     108 ..     284     334 ..     268     336 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.085
+         RPW8  60 rpreei.eeLkklLekaekLVekcsklk.rynvlkkyrYkkklkeLekslr 108
+                  + ++++ eeL+ l+ ++++L  +   +  r ++ kk  Y+  lk+  k++r
+  AT1G45110.1 284 PTESQLeEELRGLISDGHSLSTAVKTVAeRTSMRKKEVYSLALKKFGKQIR 334
+                  444444268******************988999999********9988876 PP
+
+>> AT4G36060.1  | Symbols: bHLH11 | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr4:17055397-170565
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.9   1.0     0.021       4.5      36      70 ..      83     117 ..      75     147 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 7.9 bits;  conditional E-value: 0.021
+         RPW8  36 rLestleritPvvkeieklnkeldrpreeieeLkk 70 
+                   L +t++ ++ v++++++l++e +   +e  eL++
+  AT4G36060.1  83 VLTDTIQMLKDVMNQVDRLKAEYETLSQESRELIQ 117
+                  5999******************9999988888765 PP
+
+>> AT2G40480.1  | Symbols:  | Plant protein of unknown function (DUF827) | chr2:16910425-16912444 FORWARD LENGTH=518
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    7.0   0.2     0.042       8.9      35      75 ..     181     221 ..     173     242 .. 0.83
+
+  Alignments for each domain:
+  == domain 1  score: 7.0 bits;  conditional E-value: 0.042
+         RPW8  35 krLestleritPvvkeieklnkeldrpreeieeLkklLeka 75 
+                   +L +t+ +++ +   +e+lnk+++++++ +e+ + +L+ +
+  AT2G40480.1 181 MNLGKTMDNLVVIQSSVESLNKKMKEEKDFLEKTRAKLTYG 221
+                  5799********************99999999888888765 PP
+
+>> AT1G63650.1  | Symbols: EGL3, EGL1, ATMYC-2 | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr1:23
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.4     0.085        18      39      74 ..     422     456 ..     404     474 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.085
+         RPW8  39 stleritPvvkeieklnkeldrpreeieeLkklLek 74 
+                   tl +i P++ +i+k++  ld   e +++L+k+ ++
+  AT1G63650.1 422 MTLRSIIPSISKIDKVS-ILDDTIEYLQDLQKRVQE 456
+                  59*************99.667777799999988765 PP
+
+>> AT1G63650.2  | Symbols: EGL3, EGL1, ATMYC-2 | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr1:23
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.4     0.085        18      39      74 ..     422     456 ..     404     474 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.085
+         RPW8  39 stleritPvvkeieklnkeldrpreeieeLkklLek 74 
+                   tl +i P++ +i+k++  ld   e +++L+k+ ++
+  AT1G63650.2 422 MTLRSIIPSISKIDKVS-ILDDTIEYLQDLQKRVQE 456
+                  59*************99.667777799999988765 PP
+
+>> AT1G63650.3  | Symbols: EGL3 | basic helix-loop-helix (bHLH) DNA-binding superfamily protein | chr1:23599809-23602734
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0   0.4     0.085        18      39      74 ..     422     456 ..     404     474 .. 0.82
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.085
+         RPW8  39 stleritPvvkeieklnkeldrpreeieeLkklLek 74 
+                   tl +i P++ +i+k++  ld   e +++L+k+ ++
+  AT1G63650.3 422 MTLRSIIPSISKIDKVS-ILDDTIEYLQDLQKRVQE 456
+                  59*************99.667777799999988765 PP
+
+>> AT5G62600.1  | Symbols:  | ARM repeat superfamily protein | chr5:25123337-25132473 REVERSE LENGTH=958
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.2   0.1      0.14        30      57      86 ..     163     192 ..     158     198 .. 0.86
+
+  Alignments for each domain:
+  == domain 1  score: 5.2 bits;  conditional E-value: 0.14
+         RPW8  57 eldrpreeieeLkklLekaekLVekcsklk 86 
+                  + dr+r+  +eL++++e a +++++c k++
+  AT5G62600.1 163 RPDRRRQFEKELTSQMEAALSILSACLKIS 192
+                  4589999999******************97 PP
+
+>> AT2G28830.1  | Symbols: PUB12, AtPUB12 | PLANT U-BOX 12 | chr2:12367001-12370608 REVERSE LENGTH=962
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.1   1.1      0.16        33      19      90 ..      19      91 ..       8     115 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 5.1 bits;  conditional E-value: 0.16
+         RPW8 19 aileakkksldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklLekaekLVekcsklk.rynv 90
+                  i   ++ ++ +k  + +L + l+ + P+++ei   ++ + +  + + + k+ L +a++L++  s ++  y v
+  AT2G28830.1 19 EIASISDSVTPMKKHCANLSRRLSLLLPMLEEIRDNQESSSEVVNALLSVKQSLLHAKDLLSFVSHVSkIYLV 91
+                 56666777888899999*****************999999777779999***********9999988745555 PP
+
+>> AT1G33960.1  | Symbols: AIG1 | P-loop containing nucleoside triphosphate hydrolases superfamily protein | chr1:123465
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    6.0  10.9     0.086        18      15     115 ..     242     344 ..     238     352 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 6.0 bits;  conditional E-value: 0.086
+         RPW8  15 ellkaileakkksldfksilkrLestleritPvvkeieklnkel.drpreeiee.LkklLekaekLVekcsklkrynvlkkyrYkkklkeLekslrkf 110
+                  e+ ++i+e++++ ++ +  l++  +  e+++ ++ke++ +n++  + + e +e+ +k  +e  ekL e+  k + +++ +k+  + klk++e  +r  
+  AT1G33960.1 242 EMYHMIKEENERHKKEQEELESKGHSEEQLAALMKELQIMNERNlKAMAEMMEKnMKIAMEAQEKLFEQREKAQEMSYQQKMEMQEKLKQMEGRMRAE 339
+                  778899999999999999999999999***************998999999975377889999******************************99985 PP
+
+         RPW8 111 vqvel 115
+                  ++ ++
+  AT1G33960.1 340 MEAQM 344
+                  55554 PP
+
+>> AT1G51030.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G510
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.5   2.2      0.12        26      46      74 ..      41      69 ..       3      79 .. 0.74
+
+  Alignments for each domain:
+  == domain 1  score: 5.5 bits;  conditional E-value: 0.12
+         RPW8 46 PvvkeieklnkeldrpreeieeLkklLek 74
+                 P +  ie+ +k+l  +r ++eeL k++++
+  AT1G51030.1 41 PDFGAIEEARKKLTDKRMKLEELSKRMKE 69
+                 66667777777775555577777777765 PP
+
+>> AT1G70540.1  | Symbols: EDA24 | Plant invertase/pectin methylesterase inhibitor superfamily protein | chr1:26593973-2
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.5   0.1      0.12        26      63     103 ..      40      80 ..      34      84 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 5.5 bits;  conditional E-value: 0.12
+         RPW8  63 eeieeLkklLekaekLVekcsklkrynvlkkyrYkkklkeL 103
+                  ++++ L +   k++k V++  +++ ++++k+ + +k+ +++
+  AT1G70540.1  40 SDFKVLCRSVVKGQKNVNAATEVSIRELMKRTIKAKEAAKI 80 
+                  5789999999*********************9988887766 PP
+
+>> AT3G20320.1  | Symbols: TGD2 | trigalactosyldiacylglycerol2 | chr3:7087657-7089640 REVERSE LENGTH=381
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.3   0.1       7.5   1.6e+03      40      58 ..     156     174 ..     154     180 .. 0.83
+   2 ?    4.3   0.1      0.28        60      28      65 ..     260     297 ..     246     338 .. 0.83
+   3 ?   -0.5   0.1       8.2   1.7e+03      27      72 ..     334     377 ..     317     379 .. 0.63
+
+  Alignments for each domain:
+  == domain 1  score: -0.3 bits;  conditional E-value: 7.5
+         RPW8  40 tleritPvvkeieklnkel 58 
+                  t+ r++P++k+ie + +  
+  AT3G20320.1 156 TIIRVNPSLKNIEAVAEIE 174
+                  8999*********988655 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.28
+         RPW8  28 ldfksilkrLestleritPvvkeieklnkeldrpreei 65 
+                  +++ s  +r +s +e+ +P++k+i+ + ++ ++  +e+
+  AT3G20320.1 260 ANTYSLAERAASVIEEARPLLKKIQAMAEDAQPLLSEF 297
+                  567788999999*************9999877665554 PP
+
+  == domain 3  score: -0.5 bits;  conditional E-value: 8.2
+         RPW8  27 sldfksilkrLestleritPvvkeieklnkeldrpreeieeLkklL 72 
+                   l  + ++  L  tl++++ +  +i  ++ +    r++++ L+k L
+  AT3G20320.1 334 ELI-QKSIYTLVYTLKNVESISSDILGFTGDE-ATRKNLKLLIKSL 377
+                  333.3456678888888888888887777444.4444777777766 PP
+
+>> AT1G19010.1  | Symbols:  | unknown protein; BEST Arabidopsis thaliana protein match is: unknown protein (TAIR:AT1G748
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?    5.6   0.3      0.11        24      49      84 ..      77     112 ..      67     133 .. 0.80
+
+  Alignments for each domain:
+  == domain 1  score: 5.6 bits;  conditional E-value: 0.11
+         RPW8  49 keieklnkeldrpreeieeLkklLekaekLVekcsk 84 
+                  ++ie+l+++l + ++ + eL+ +L++   L+ek ++
+  AT1G19010.1  77 QKIEELEAQLGEAEDIVGELRTELRESRYLLEKLAN 112
+                  689999999977777999999999999999999876 PP
+
+>> AT5G12900.1  | Symbols:  | unknown protein; FUNCTIONS IN: molecular_function unknown; INVOLVED IN: biological_process
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 ?   -0.1   0.1       6.1   1.3e+03      49      76 ..     232     259 ..     227     261 .. 0.81
+   2 ?    4.3   0.1      0.28        59      41      80 ..     266     305 ..     260     309 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: -0.1 bits;  conditional E-value: 6.1
+         RPW8  49 keieklnkeldrpreeieeLkklLekae 76 
+                  ++ e+++++l+   + +e+Lk++L++a+
+  AT5G12900.1 232 EKSEEVSEVLKDSGSGVEKLKRELMEAN 259
+                  56688999997777799*******9997 PP
+
+  == domain 2  score: 4.3 bits;  conditional E-value: 0.28
+         RPW8  41 leritPvvkeieklnkeldrpreeieeLkklLekaekLVe 80 
+                  l++++ +   +++l+++l+  ++  ++Lkk L++a + V+
+  AT5G12900.1 266 LTQVSEMKSSLGELSEKLQYLESYCDNLKKALREATEVVS 305
+                  6677777788999***********************9997 PP
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (139 nodes)
+Target sequences:                      35386  (14482855 residues searched)
+Passed MSV filter:                     35386  (1); expected 35386.0 (1)
+Passed bias filter:                    35386  (1); expected 35386.0 (1)
+Passed Vit filter:                     35386  (1); expected 35386.0 (1)
+Passed Fwd filter:                     35386  (1); expected 35386.0 (1)
+Initial search space (Z):              35386  [actual number of targets]
+Domain search space  (domZ):             167  [number of targets reported over threshold]
+# CPU time: 17.53u 0.17s 00:00:17.70 Elapsed: 00:00:02.49
+# Mc/sec: 807.40
+//
+[ok]

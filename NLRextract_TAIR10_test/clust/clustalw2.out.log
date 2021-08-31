@@ -1,0 +1,531 @@
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence type explicitly set to Protein
+Sequence format is Pearson
+Sequence 1: AT1G50180.1_4-90     103 aa
+Sequence 2: AT1G58602.1_4-82     103 aa
+Sequence 3: AT1G58602.2_4-82     103 aa
+Sequence 4: AT1G53350.1_4-92     103 aa
+Sequence 5: AT5G48620.1_4-90     103 aa
+Sequence 6: AT1G58410.1_3-82     103 aa
+Sequence 7: AT3G14470.1_7-100    103 aa
+Sequence 8: AT5G43470.1_4-90     103 aa
+Sequence 9: AT5G43470.2_4-90     103 aa
+Sequence 10: AT3G46530.1_6-88     103 aa
+Sequence 11: AT1G58400.1_4-88     103 aa
+Sequence 12: AT3G46730.1_6-87     103 aa
+Sequence 13: AT1G59780.1_9-87     103 aa
+Sequence 14: AT1G58390.1_5-88     103 aa
+Sequence 15: AT1G58807.2_5-89     103 aa
+Sequence 16: AT1G59124.1_5-89     103 aa
+Sequence 17: AT1G58807.1_5-89     103 aa
+Sequence 18: AT5G35450.1_4-88     103 aa
+Sequence 19: AT1G58848.1_5-89     103 aa
+Sequence 20: AT1G58848.2_5-89     103 aa
+Sequence 21: AT1G59218.1_5-89     103 aa
+Sequence 22: AT1G59218.2_5-89     103 aa
+Sequence 23: AT1G59620.1_5-87     103 aa
+Sequence 24: AT3G50950.1_4-93     103 aa
+Sequence 25: AT3G50950.2_4-93     103 aa
+Sequence 26: AT3G46710.1_6-86     103 aa
+Sequence 27: AT3G07040.1_7-94     103 aa
+Sequence 28: AT3G14460.1_26-92    103 aa
+Sequence 29: AT1G29990.1_68-110   103 aa
+
+temp = 33; seed = 33;
+
+Nexus tree file created:   [./NLRextract_TAIR10_test1/clust/cc.out.dom.fa.tre]
+
+Phylogenetic tree file created:   [./NLRextract_TAIR10_test1/clust/cc.out.dom.fa.ph]
+
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence type explicitly set to Protein
+Sequence format is Pearson
+Sequence 1: AT1G53350.1_0-20    21 aa
+Sequence 2: AT1G59780.1_5-26    21 aa
+Sequence 3: AT1G58807.2_0-21    21 aa
+Sequence 4: AT1G59124.1_0-21    21 aa
+Sequence 5: AT5G43470.1_0-20    21 aa
+Sequence 6: AT5G43470.2_0-20    21 aa
+Sequence 7: AT1G58807.1_0-21    21 aa
+Sequence 8: AT1G58848.1_0-21    21 aa
+Sequence 9: AT1G58848.2_0-21    21 aa
+Sequence 10: AT1G59218.1_0-21    21 aa
+Sequence 11: AT1G59218.2_0-21    21 aa
+Sequence 12: AT1G58390.1_0-21    21 aa
+Sequence 13: AT1G58400.1_0-21    21 aa
+Sequence 14: AT5G48620.1_0-20    21 aa
+Sequence 15: AT1G59620.1_0-20    21 aa
+Sequence 16: AT1G50180.1_0-20    21 aa
+Sequence 17: AT1G58602.1_0-21    21 aa
+Sequence 18: AT1G58602.2_0-21    21 aa
+Sequence 19: AT5G35450.1_0-20    21 aa
+Sequence 20: AT3G46530.1_0-21    21 aa
+Sequence 21: AT3G46710.1_0-21    21 aa
+Sequence 22: AT3G46730.1_0-21    21 aa
+Sequence 23: AT1G58410.1_2-19    21 aa
+Sequence 24: AT3G50950.1_0-20    21 aa
+Sequence 25: AT3G50950.2_0-20    21 aa
+
+temp = 33; seed = 33;
+
+Nexus tree file created:   [./NLRextract_TAIR10_test1/clust/mada.dom.fa.tre]
+
+Phylogenetic tree file created:   [./NLRextract_TAIR10_test1/clust/mada.dom.fa.ph]
+
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence type explicitly set to Protein
+Sequence format is Pearson
+Sequence 1: AT1G61180.1_155-397     369 aa
+Sequence 2: AT1G61180.2_155-397     369 aa
+Sequence 3: AT1G10920.1_43-296      369 aa
+Sequence 4: AT1G10920.2_43-296      369 aa
+Sequence 5: AT1G61310.1_157-399     369 aa
+Sequence 6: AT1G61300.1_44-286      369 aa
+Sequence 7: AT1G61190.1_156-398     369 aa
+Sequence 8: AT3G50950.1_163-410     369 aa
+Sequence 9: AT3G50950.2_163-410     369 aa
+Sequence 10: AT1G12220.1_160-402     369 aa
+Sequence 11: AT1G12220.2_160-402     369 aa
+Sequence 12: AT3G07040.1_176-425     369 aa
+Sequence 13: AT5G43470.1_168-418     369 aa
+Sequence 14: AT5G43470.2_168-418     369 aa
+Sequence 15: AT4G26090.1_158-398     369 aa
+Sequence 16: AT5G48620.1_168-418     369 aa
+Sequence 17: AT5G63020.1_160-400     369 aa
+Sequence 18: AT5G35450.1_166-412     369 aa
+Sequence 19: AT1G12210.1_160-400     369 aa
+Sequence 20: AT1G12280.1_159-401     369 aa
+Sequence 21: AT1G53350.1_166-413     369 aa
+Sequence 22: AT1G63350.1_155-397     369 aa
+Sequence 23: AT5G43740.1_156-395     369 aa
+Sequence 24: AT5G43740.2_156-395     369 aa
+Sequence 25: AT4G10780.1_157-399     369 aa
+Sequence 26: AT1G15890.1_158-399     369 aa
+Sequence 27: AT5G43730.1_156-396     369 aa
+Sequence 28: AT1G12290.2_116-359     369 aa
+Sequence 29: AT1G12290.1_158-401     369 aa
+Sequence 30: AT1G63360.1_156-398     369 aa
+Sequence 31: AT1G51480.1_246-485     369 aa
+Sequence 32: AT1G62630.1_155-398     369 aa
+Sequence 33: AT1G58410.1_165-413     369 aa
+Sequence 34: AT1G58807.2_166-419     369 aa
+Sequence 35: AT1G59124.1_166-419     369 aa
+Sequence 36: AT1G59620.1_132-382     369 aa
+Sequence 37: AT1G58390.1_167-414     369 aa
+Sequence 38: AT1G58807.1_166-419     369 aa
+Sequence 39: AT1G58602.1_165-422     369 aa
+Sequence 40: AT1G58602.2_165-422     369 aa
+Sequence 41: AT1G58848.1_166-418     369 aa
+Sequence 42: AT1G58848.2_166-418     369 aa
+Sequence 43: AT1G59218.1_166-418     369 aa
+Sequence 44: AT1G59218.2_166-418     369 aa
+Sequence 45: AT5G05400.1_159-381     369 aa
+Sequence 46: AT1G50180.1_167-419     369 aa
+Sequence 47: AT1G59780.1_163-410     369 aa
+Sequence 48: AT1G58400.1_168-409     369 aa
+Sequence 49: AT1G52660.1_150-365     369 aa
+Sequence 50: AT5G47250.1_160-398     369 aa
+Sequence 51: AT3G46530.1_169-394     369 aa
+Sequence 52: AT3G46730.1_169-397     369 aa
+Sequence 53: AT5G47260.1_154-390     369 aa
+Sequence 54: AT3G15700.1_156-364     369 aa
+Sequence 55: AT4G27220.1_119-357     369 aa
+Sequence 56: AT4G27190.1_149-388     369 aa
+Sequence 57: AT3G46710.1_172-392     369 aa
+Sequence 58: AT3G14460.1_193-421     369 aa
+Sequence 59: AT3G14470.1_175-398     369 aa
+Sequence 60: AT5G48780.1_204-404     369 aa
+Sequence 61: AT5G48780.1_453-665     369 aa
+Sequence 62: AT3G25510.1_217-444     369 aa
+Sequence 63: AT3G25510.1_1439-1668   369 aa
+Sequence 64: AT4G19500.1_186-412     369 aa
+Sequence 65: AT4G19500.1_751-958     369 aa
+Sequence 66: AT4G36140.1_271-416     369 aa
+Sequence 67: AT4G36140.1_593-804     369 aa
+Sequence 68: AT5G48780.2_204-404     369 aa
+Sequence 69: AT5G48780.2_453-618     369 aa
+Sequence 70: AT5G48770.1_189-427     369 aa
+Sequence 71: AT5G41750.1_189-418     369 aa
+Sequence 72: AT5G41750.2_189-418     369 aa
+Sequence 73: AT1G27170.2_203-420     369 aa
+Sequence 74: AT1G27170.1_203-420     369 aa
+Sequence 75: AT5G17680.1_202-412     369 aa
+Sequence 76: AT5G36930.1_204-413     369 aa
+Sequence 77: AT5G36930.2_207-416     369 aa
+Sequence 78: AT5G04720.1_185-384     369 aa
+Sequence 79: AT4G33300.1_190-390     369 aa
+Sequence 80: AT4G33300.2_190-390     369 aa
+Sequence 81: AT1G63740.1_147-371     369 aa
+Sequence 82: AT1G27180.1_377-592     369 aa
+Sequence 83: AT5G41740.1_179-404     369 aa
+Sequence 84: AT5G41740.2_179-404     369 aa
+Sequence 85: AT2G17060.1_224-440     369 aa
+Sequence 86: AT5G45210.1_179-391     369 aa
+Sequence 87: AT4G09430.1_189-426     369 aa
+Sequence 88: AT5G45250.1_210-449     369 aa
+Sequence 89: AT4G12010.1_196-427     369 aa
+Sequence 90: AT1G33560.1_172-240     369 aa
+Sequence 91: AT1G33560.1_231-365     369 aa
+Sequence 92: AT3G51560.1_170-367     369 aa
+Sequence 93: AT5G41550.1_190-428     369 aa
+Sequence 94: AT1G72840.1_199-429     369 aa
+Sequence 95: AT1G72840.2_199-429     369 aa
+Sequence 96: AT1G63880.1_190-430     369 aa
+Sequence 97: AT1G63870.1_207-410     369 aa
+Sequence 98: AT5G45440.1_59-310      369 aa
+Sequence 99: AT5G45490.1_70-320      369 aa
+Sequence 100: AT5G45490.2_70-320      369 aa
+Sequence 101: AT5G41540.1_190-429     369 aa
+Sequence 102: AT5G45050.2_152-362     369 aa
+Sequence 103: AT5G45050.1_152-362     369 aa
+Sequence 104: AT4G36150.1_218-451     369 aa
+Sequence 105: AT5G58120.1_191-415     369 aa
+Sequence 106: AT4G11170.1_189-423     369 aa
+Sequence 107: AT5G40910.1_188-404     369 aa
+Sequence 108: AT3G04220.1_241-481     369 aa
+Sequence 109: AT1G17600.1_189-426     369 aa
+Sequence 110: AT5G66910.1_181-403     369 aa
+Sequence 111: AT5G40100.1_194-427     369 aa
+Sequence 112: AT5G38850.1_193-403     369 aa
+Sequence 113: AT1G72850.1_176-400     369 aa
+Sequence 114: AT4G19510.2_200-428     369 aa
+Sequence 115: AT5G45230.1_219-453     369 aa
+Sequence 116: AT4G19510.1_240-468     369 aa
+Sequence 117: AT5G17970.1_193-427     369 aa
+Sequence 118: AT1G63750.1_27-252      369 aa
+Sequence 119: AT1G63750.2_27-252      369 aa
+Sequence 120: AT1G63750.3_194-419     369 aa
+Sequence 121: AT5G45260.2_162-371     369 aa
+Sequence 122: AT5G66900.1_175-405     369 aa
+Sequence 123: AT5G45260.1_162-371     369 aa
+Sequence 124: AT1G72860.1_188-427     369 aa
+Sequence 125: AT5G18350.1_198-448     369 aa
+Sequence 126: AT5G49140.1_189-429     369 aa
+Sequence 127: AT1G64070.1_190-426     369 aa
+Sequence 128: AT5G47280.1_5-196       369 aa
+Sequence 129: AT1G56510.1_192-411     369 aa
+Sequence 130: AT3G04210.1_243-475     369 aa
+Sequence 131: AT3G51570.1_212-453     369 aa
+Sequence 132: AT4G19060.1_101-291     369 aa
+Sequence 133: AT5G17890.1_177-379     369 aa
+Sequence 134: AT4G19520.1_181-400     369 aa
+Sequence 135: AT2G14080.1_237-472     369 aa
+Sequence 136: AT5G44870.1_261-491     369 aa
+Sequence 137: AT4G19500.2_228-435     369 aa
+Sequence 138: AT1G56540.1_191-428     369 aa
+Sequence 139: AT1G63730.1_189-415     369 aa
+Sequence 140: AT4G14370.1_147-385     369 aa
+Sequence 141: AT5G45200.1_218-448     369 aa
+Sequence 142: AT3G44670.1_279-497     369 aa
+Sequence 143: AT3G44670.2_279-497     369 aa
+Sequence 144: AT2G16870.1_203-411     369 aa
+Sequence 145: AT5G18360.1_191-403     369 aa
+Sequence 146: AT1G72870.1_257-471     369 aa
+Sequence 147: AT3G44480.1_283-510     369 aa
+Sequence 148: AT4G09420.1_212-434     369 aa
+Sequence 149: AT4G08450.1_186-428     369 aa
+Sequence 150: AT5G46260.1_194-427     369 aa
+Sequence 151: AT3G44630.1_279-497     369 aa
+Sequence 152: AT3G44630.2_279-497     369 aa
+Sequence 153: AT5G11250.1_241-479     369 aa
+Sequence 154: AT3G44630.3_279-497     369 aa
+Sequence 155: AT5G51630.2_124-345     369 aa
+Sequence 156: AT5G51630.1_188-409     369 aa
+Sequence 157: AT1G65850.1_224-452     369 aa
+Sequence 158: AT1G65850.2_239-467     369 aa
+Sequence 159: AT5G44510.1_230-457     369 aa
+Sequence 160: AT5G18370.1_242-488     369 aa
+Sequence 161: AT4G16960.1_190-413     369 aa
+Sequence 162: AT4G16940.1_146-369     369 aa
+Sequence 163: AT1G66090.1_204-411     369 aa
+Sequence 164: AT5G45060.1_211-435     369 aa
+Sequence 165: AT5G38350.1_40-268      369 aa
+Sequence 166: AT4G12020.1_821-1031    369 aa
+Sequence 167: AT4G12020.3_821-1031    369 aa
+Sequence 168: AT4G12020.2_821-1031    369 aa
+Sequence 169: AT5G17880.1_210-432     369 aa
+Sequence 170: AT5G46450.1_190-428     369 aa
+Sequence 171: AT4G09360.1_3-211       369 aa
+Sequence 172: AT4G16920.1_184-410     369 aa
+Sequence 173: AT4G16900.1_187-414     369 aa
+Sequence 174: AT4G16860.1_188-418     369 aa
+Sequence 175: AT5G38340.1_234-474     369 aa
+Sequence 176: AT5G40090.1_187-401     369 aa
+Sequence 177: AT4G16890.1_186-421     369 aa
+Sequence 178: AT5G45240.1_165-366     369 aa
+Sequence 179: AT4G16950.2_191-425     369 aa
+Sequence 180: AT4G16950.1_191-425     369 aa
+Sequence 181: AT1G17610.1_182-400     369 aa
+Sequence 182: AT5G22690.1_189-430     369 aa
+Sequence 183: AT3G44400.1_230-445     369 aa
+Sequence 184: AT3G44400.2_230-445     369 aa
+Sequence 185: AT5G46520.1_197-430     369 aa
+Sequence 186: AT1G56520.1_195-426     369 aa
+Sequence 187: AT5G40060.1_8-207       369 aa
+Sequence 188: AT5G46510.1_198-429     369 aa
+Sequence 189: AT5G46270.1_207-438     369 aa
+Sequence 190: AT1G56520.2_195-426     369 aa
+Sequence 191: AT1G31540.1_199-416     369 aa
+Sequence 192: AT2G17050.1_47-253      369 aa
+Sequence 193: AT1G31540.2_199-416     369 aa
+Sequence 194: AT5G46470.1_191-400     369 aa
+Sequence 195: AT1G72890.1_228-391     369 aa
+Sequence 196: AT1G72890.2_254-417     369 aa
+Sequence 197: AT5G46490.2_194-413     369 aa
+Sequence 198: AT1G69550.1_257-463     369 aa
+Sequence 199: AT4G19050.1_9-284       369 aa
+Sequence 200: AT4G16990.5_26-249      369 aa
+Sequence 201: AT4G16990.3_26-249      369 aa
+Sequence 202: AT4G16990.4_26-249      369 aa
+Sequence 203: AT4G16990.1_184-407     369 aa
+Sequence 204: AT4G16990.2_184-407     369 aa
+Sequence 205: AT5G66630.1_177-305     369 aa
+Sequence 206: AT1G63860.2_204-328     369 aa
+Sequence 207: AT4G19530.1_221-441     369 aa
+Sequence 208: AT1G63860.1_204-328     369 aa
+Sequence 209: AT1G72940.1_188-348     369 aa
+Sequence 210: AT5G51630.3_225-361     369 aa
+Sequence 211: AT1G72950.1_193-353     369 aa
+Sequence 212: AT5G46490.1_194-332     369 aa
+Sequence 213: AT4G23440.1_428-616     369 aa
+Sequence 214: AT1G72910.1_192-330     369 aa
+Sequence 215: AT1G72900.1_189-350     369 aa
+Sequence 216: AT1G17615.1_206-363     369 aa
+Sequence 217: AT5G56220.1_433-592     369 aa
+
+temp = 33; seed = 33;
+
+Nexus tree file created:   [./NLRextract_TAIR10_test1/clust/nb.out.dom.fa.tre]
+
+Phylogenetic tree file created:   [./NLRextract_TAIR10_test1/clust/nb.out.dom.fa.ph]
+
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence type explicitly set to Protein
+Sequence format is Pearson
+Sequence 1: AT3G50470.1_4-143    145 aa
+Sequence 2: AT3G50460.1_4-142    145 aa
+Sequence 3: AT3G50450.1_4-142    145 aa
+Sequence 4: AT3G50480.1_10-147   145 aa
+Sequence 5: AT5G66630.1_6-145    145 aa
+Sequence 6: AT5G66910.1_11-133   145 aa
+Sequence 7: AT5G66900.1_9-128    145 aa
+Sequence 8: AT3G26470.1_9-126    145 aa
+Sequence 9: AT1G33560.1_11-119   145 aa
+Sequence 10: AT4G33300.1_8-130    145 aa
+Sequence 11: AT4G33300.2_8-130    145 aa
+Sequence 12: AT5G04720.1_7-125    145 aa
+
+temp = 33; seed = 33;
+
+Nexus tree file created:   [./NLRextract_TAIR10_test1/clust/rpw8.out.dom.fa.tre]
+
+Phylogenetic tree file created:   [./NLRextract_TAIR10_test1/clust/rpw8.out.dom.fa.ph]
+
+
+
+
+ CLUSTAL 2.1 Multiple Sequence Alignments
+
+
+Sequence type explicitly set to Protein
+Sequence format is Pearson
+Sequence 1: AT3G25510.1_51-185      259 aa
+Sequence 2: AT3G25510.1_1261-1426   259 aa
+Sequence 3: AT4G19500.1_10-182      259 aa
+Sequence 4: AT4G19500.1_623-724     259 aa
+Sequence 5: AT4G19520.1_6-163       259 aa
+Sequence 6: AT4G19520.1_1401-1564   259 aa
+Sequence 7: AT5G45000.1_14-183      259 aa
+Sequence 8: AT5G45000.1_216-389     259 aa
+Sequence 9: AT1G72910.1_7-185       259 aa
+Sequence 10: AT1G72930.1_7-171       259 aa
+Sequence 11: AT3G44480.1_96-274      259 aa
+Sequence 12: AT3G44670.1_92-270      259 aa
+Sequence 13: AT3G44670.2_92-270      259 aa
+Sequence 14: AT2G14080.1_54-232      259 aa
+Sequence 15: AT3G44630.1_92-270      259 aa
+Sequence 16: AT3G44630.2_92-270      259 aa
+Sequence 17: AT3G44630.3_92-270      259 aa
+Sequence 18: AT3G04220.1_61-239      259 aa
+Sequence 19: AT1G72940.1_7-188       259 aa
+Sequence 20: AT1G72950.1_9-188       259 aa
+Sequence 21: AT1G72920.1_7-188       259 aa
+Sequence 22: AT1G27180.1_16-148      259 aa
+Sequence 23: AT1G27180.1_174-331     259 aa
+Sequence 24: AT5G46450.1_12-188      259 aa
+Sequence 25: AT5G45220.1_17-176      259 aa
+Sequence 26: AT5G45220.1_329-476     259 aa
+Sequence 27: AT5G38340.1_55-233      259 aa
+Sequence 28: AT1G56540.1_14-188      259 aa
+Sequence 29: AT4G36140.1_49-179      259 aa
+Sequence 30: AT4G36140.1_447-579     259 aa
+Sequence 31: AT1G64070.1_13-189      259 aa
+Sequence 32: AT2G16870.1_10-188      259 aa
+Sequence 33: AT1G65850.1_32-209      259 aa
+Sequence 34: AT1G65850.2_47-224      259 aa
+Sequence 35: AT3G44400.1_46-208      259 aa
+Sequence 36: AT3G44400.2_46-208      259 aa
+Sequence 37: AT5G51630.1_10-188      259 aa
+Sequence 38: AT5G51630.3_10-188      259 aa
+Sequence 39: AT5G41540.1_9-185       259 aa
+Sequence 40: AT5G58120.1_14-189      259 aa
+Sequence 41: AT1G63730.1_12-189      259 aa
+Sequence 42: AT4G16990.1_8-183       259 aa
+Sequence 43: AT5G22690.1_9-187       259 aa
+Sequence 44: AT4G16990.2_8-183       259 aa
+Sequence 45: AT1G72930.2_7-142       259 aa
+Sequence 46: AT1G72890.1_37-208      259 aa
+Sequence 47: AT4G11170.1_10-186      259 aa
+Sequence 48: AT1G69550.1_79-246      259 aa
+Sequence 49: AT5G41550.1_12-187      259 aa
+Sequence 50: AT3G04210.1_64-242      259 aa
+Sequence 51: AT5G18370.1_60-236      259 aa
+Sequence 52: AT1G63880.1_12-190      259 aa
+Sequence 53: AT1G72900.1_8-188       259 aa
+Sequence 54: AT5G41750.1_12-188      259 aa
+Sequence 55: AT5G41750.2_12-188      259 aa
+Sequence 56: AT5G46470.1_13-190      259 aa
+Sequence 57: AT5G49140.1_13-186      259 aa
+Sequence 58: AT5G44510.1_40-216      259 aa
+Sequence 59: AT4G16890.1_11-185      259 aa
+Sequence 60: AT1G66090.1_25-202      259 aa
+Sequence 61: AT5G38850.1_8-179       259 aa
+Sequence 62: AT5G46510.1_8-179       259 aa
+Sequence 63: AT5G17970.1_15-190      259 aa
+Sequence 64: AT5G40910.1_11-186      259 aa
+Sequence 65: AT5G11250.1_61-238      259 aa
+Sequence 66: AT1G63750.3_16-190      259 aa
+Sequence 67: AT5G38344.1_58-199      259 aa
+Sequence 68: AT1G63860.2_12-187      259 aa
+Sequence 69: AT1G63860.1_12-187      259 aa
+Sequence 70: AT1G72890.2_37-228      259 aa
+Sequence 71: AT1G56510.1_12-186      259 aa
+Sequence 72: AT1G31540.1_11-185      259 aa
+Sequence 73: AT5G46270.1_22-195      259 aa
+Sequence 74: AT1G17615.1_13-182      259 aa
+Sequence 75: AT1G63870.1_16-191      259 aa
+Sequence 76: AT1G31540.2_11-185      259 aa
+Sequence 77: AT5G18350.1_19-195      259 aa
+Sequence 78: AT5G18360.1_15-187      259 aa
+Sequence 79: AT4G16950.2_11-190      259 aa
+Sequence 80: AT4G16950.1_11-190      259 aa
+Sequence 81: AT4G08450.1_10-183      259 aa
+Sequence 82: AT5G17680.1_18-178      259 aa
+Sequence 83: AT5G46490.1_11-183      259 aa
+Sequence 84: AT5G46260.1_11-183      259 aa
+Sequence 85: AT5G46520.1_11-179      259 aa
+Sequence 86: AT5G46490.2_11-183      259 aa
+Sequence 87: AT1G72860.1_10-178      259 aa
+Sequence 88: AT1G56520.1_12-178      259 aa
+Sequence 89: AT1G56520.2_12-178      259 aa
+Sequence 90: AT4G16920.1_9-171       259 aa
+Sequence 91: AT4G16860.1_12-175      259 aa
+Sequence 92: AT4G16900.1_11-177      259 aa
+Sequence 93: AT4G16960.1_12-178      259 aa
+Sequence 94: AT5G36930.1_13-175      259 aa
+Sequence 95: AT5G36930.2_16-178      259 aa
+Sequence 96: AT4G14370.1_1-145       259 aa
+Sequence 97: AT1G72840.1_14-182      259 aa
+Sequence 98: AT1G72840.2_14-182      259 aa
+Sequence 99: AT1G57630.1_21-153      259 aa
+Sequence 100: AT1G63740.1_1-146       259 aa
+Sequence 101: AT1G17600.1_10-178      259 aa
+Sequence 102: AT4G04110.1_44-210      259 aa
+Sequence 103: AT4G09430.1_14-181      259 aa
+Sequence 104: AT5G45250.1_15-184      259 aa
+Sequence 105: AT4G23510.1_10-192      259 aa
+Sequence 106: AT4G23510.1_375-458     259 aa
+Sequence 107: AT5G40100.1_11-177      259 aa
+Sequence 108: AT5G48780.2_10-183      259 aa
+Sequence 109: AT5G48780.1_10-183      259 aa
+Sequence 110: AT5G48770.1_12-188      259 aa
+Sequence 111: AT2G20142.1_7-170       259 aa
+Sequence 112: AT5G41740.1_15-178      259 aa
+Sequence 113: AT5G41740.2_15-178      259 aa
+Sequence 114: AT5G17880.1_17-185      259 aa
+Sequence 115: AT2G32140.1_21-193      259 aa
+Sequence 116: AT2G03030.1_7-180       259 aa
+Sequence 117: AT4G36150.1_18-177      259 aa
+Sequence 118: AT2G03300.1_7-179       259 aa
+Sequence 119: AT4G12010.1_10-185      259 aa
+Sequence 120: AT4G19530.1_14-184      259 aa
+Sequence 121: AT1G57670.1_9-174       259 aa
+Sequence 122: AT5G45070.1_14-179      259 aa
+Sequence 123: AT5G44900.1_16-186      259 aa
+Sequence 124: AT5G45060.1_13-180      259 aa
+Sequence 125: AT1G27170.1_12-183      259 aa
+Sequence 126: AT5G45080.1_15-184      259 aa
+Sequence 127: AT1G57850.1_11-143      259 aa
+Sequence 128: AT5G45200.1_18-179      259 aa
+Sequence 129: AT3G51570.1_18-185      259 aa
+Sequence 130: AT4G16940.1_3-134       259 aa
+Sequence 131: AT4G19510.2_16-182      259 aa
+Sequence 132: AT4G19510.1_56-222      259 aa
+Sequence 133: AT1G60320.1_24-154      259 aa
+Sequence 134: AT1G72870.1_9-167       259 aa
+Sequence 135: AT1G57830.1_18-148      259 aa
+Sequence 136: AT1G09665.1_10-144      259 aa
+Sequence 137: AT5G44870.1_11-180      259 aa
+Sequence 138: AT1G65390.2_22-192      259 aa
+Sequence 139: AT4G11340.1_223-406     259 aa
+Sequence 140: AT1G65390.1_22-192      259 aa
+Sequence 141: AT1G47370.1_15-184      259 aa
+Sequence 142: AT4G19920.1_50-214      259 aa
+Sequence 143: AT5G51630.2_0-124       259 aa
+Sequence 144: AT4G23515.1_9-189       259 aa
+Sequence 145: AT5G45230.1_11-190      259 aa
+Sequence 146: AT2G17060.1_18-182      259 aa
+Sequence 147: AT1G51270.4_186-349     259 aa
+Sequence 148: AT1G51270.2_356-519     259 aa
+Sequence 149: AT1G51270.3_356-519     259 aa
+Sequence 150: AT1G27170.2_15-183      259 aa
+Sequence 151: AT5G44920.1_11-186      259 aa
+Sequence 152: AT1G51270.1_356-518     259 aa
+Sequence 153: AT5G44910.1_11-179      259 aa
+Sequence 154: AT5G44920.2_11-173      259 aa
+Sequence 155: AT4G19925.1_13-139      259 aa
+Sequence 156: AT1G57850.2_31-130      259 aa
+Sequence 157: AT4G19910.1_8-176       259 aa
+Sequence 158: AT2G17050.1_1124-1290   259 aa
+Sequence 159: AT4G09420.1_10-160      259 aa
+Sequence 160: AT1G72850.1_5-166       259 aa
+Sequence 161: AT1G52900.1_37-134      259 aa
+Sequence 162: AT5G45210.1_8-161       259 aa
+Sequence 163: AT5G45240.1_44-156      259 aa
+Sequence 164: AT3G51560.1_5-159       259 aa
+Sequence 165: AT4G19500.2_70-201      259 aa
+Sequence 166: AT4G16930.1_1-77        259 aa
+Sequence 167: AT1G61105.1_29-125      259 aa
+Sequence 168: AT5G40090.1_37-174      259 aa
+Sequence 169: AT1G17610.1_32-122      259 aa
+Sequence 170: AT2G17055.1_2-128       259 aa
+Sequence 171: AT5G45090.1_47-142      259 aa
+Sequence 172: AT5G45050.2_13-102      259 aa
+Sequence 173: AT5G45050.1_13-102      259 aa
+
+temp = 33; seed = 33;
+
+Nexus tree file created:   [./NLRextract_TAIR10_test1/clust/tir.out.dom.fa.tre]
+
+Phylogenetic tree file created:   [./NLRextract_TAIR10_test1/clust/tir.out.dom.fa.ph]
+

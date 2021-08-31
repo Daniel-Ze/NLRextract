@@ -1,0 +1,504 @@
+# hmmsearch :: search profile(s) against a sequence database
+# HMMER 3.3.2 (Nov 2020); http://hmmer.org/
+# Copyright (C) 2020 Howard Hughes Medical Institute.
+# Freely distributed under the BSD open source license.
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# query HMM file:                  /Users/daniel/test/hmm/mada.hmm
+# target sequence database:        ./NLRextract_TAIR10_test1/fasta/NBARC_CC_LRR.protein.fa
+# output directed to file:         ./NLRextract_TAIR10_test1/hmmer/NBARC_CC_LRR.protein.famada.out
+# per-seq hits tabular output:     ./NLRextract_TAIR10_test1/hmmer/NBARC_CC_LRR.protein.famada.out.tbl
+# per-dom hits tabular output:     ./NLRextract_TAIR10_test1/hmmer/NBARC_CC_LRR.protein.famada.out.dom.tbl
+# Max sensitivity mode:            on [all heuristic filters off]
+# number of worker threads:        8
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Query:       CC_motif_1  [M=21]
+Scores for complete sequences (score includes all domains):
+   --- full sequence ---   --- best 1 domain ---    -#dom-
+    E-value  score  bias    E-value  score  bias    exp  N  Sequence    Description
+    ------- ------ -----    ------- ------ -----   ---- --  --------    -----------
+    1.1e-10   32.1   0.1    3.5e-10   30.6   0.1    1.9  1  AT1G53350.1  | Symbols:  | Disease resistance protein (CC-NBS
+      2e-10   31.3   1.7    5.6e-10   29.9   0.0    2.9  1  AT1G59780.1  | Symbols:  | NB-ARC domain-containing disease r
+    2.5e-10   31.0   0.0    5.1e-09   26.9   0.0    3.1  2  AT1G58807.2  | Symbols:  | Disease resistance protein (CC-NBS
+    2.5e-10   31.0   0.0    5.1e-09   26.9   0.0    3.1  2  AT1G59124.1  | Symbols:  | Disease resistance protein (CC-NBS
+    2.9e-10   30.8   0.7    1.2e-09   28.8   0.0    2.6  2  AT5G43470.1  | Symbols: RPP8, HRT, RCY1 | Disease resistance 
+    2.9e-10   30.8   0.7    1.2e-09   28.8   0.0    2.6  2  AT5G43470.2  | Symbols: RPP8, HRT, RCY1 | Disease resistance 
+      4e-10   30.4   0.0    6.2e-09   26.7   0.0    2.9  2  AT1G58807.1  | Symbols:  | Disease resistance protein (CC-NBS
+    5.1e-10   30.0   0.0    6.4e-09   26.6   0.0    2.8  2  AT1G58848.1  | Symbols:  | Disease resistance protein (CC-NBS
+    5.1e-10   30.0   0.0    6.4e-09   26.6   0.0    2.8  2  AT1G58848.2  | Symbols:  | Disease resistance protein (CC-NBS
+    5.1e-10   30.0   0.0    6.4e-09   26.6   0.0    2.8  2  AT1G59218.1  | Symbols:  | Disease resistance protein (CC-NBS
+    5.1e-10   30.0   0.0    6.4e-09   26.6   0.0    2.8  2  AT1G59218.2  | Symbols:  | Disease resistance protein (CC-NBS
+    1.1e-09   29.0   0.3    3.2e-08   24.5   0.0    3.6  3  AT1G58390.1  | Symbols:  | Disease resistance protein (CC-NBS
+    1.1e-09   29.0   0.2    1.1e-08   25.9   0.0    2.9  2  AT1G58400.1  | Symbols:  | Disease resistance protein (CC-NBS
+    2.6e-09   27.9   0.3    1.6e-08   25.4   0.0    2.6  2  AT5G48620.1  | Symbols:  | Disease resistance protein (CC-NBS
+    2.6e-09   27.8   0.1    8.8e-09   26.2   0.1    2.0  1  AT1G59620.1  | Symbols: CW9 | Disease resistance protein (CC-
+    3.1e-09   27.6   0.1    1.4e-08   25.5   0.1    2.3  1  AT1G50180.1  | Symbols:  | NB-ARC domain-containing disease r
+    6.4e-09   26.6   0.0    3.2e-08   24.4   0.0    2.4  1  AT1G58602.1  | Symbols:  | LRR and NB-ARC domains-containing 
+    6.4e-09   26.6   0.0    3.2e-08   24.4   0.0    2.4  1  AT1G58602.2  | Symbols:  | LRR and NB-ARC domains-containing 
+    3.6e-08   24.3   0.1    1.3e-07   22.5   0.1    2.1  1  AT5G35450.1  | Symbols:  | Disease resistance protein (CC-NBS
+    2.5e-07   21.7   3.9    3.7e-07   21.1   0.0    3.0  2  AT3G46530.1  | Symbols: RPP13 | NB-ARC domain-containing dise
+    3.9e-07   21.0   3.9    6.4e-06   17.3   0.0    3.4  2  AT3G46710.1  | Symbols:  | NB-ARC domain-containing disease r
+    7.5e-07   20.2   0.2    2.4e-05   15.5   0.0    2.9  2  AT3G46730.1  | Symbols:  | NB-ARC domain-containing disease r
+    1.1e-06   19.7   0.2    7.2e-06   17.1   0.0    2.6  1  AT1G58410.1  | Symbols:  | Disease resistance protein (CC-NBS
+    4.7e-06   17.7   0.2    1.4e-05   16.2   0.2    1.9  1  AT3G50950.1  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | 
+    4.7e-06   17.7   0.2    1.4e-05   16.2   0.2    1.9  1  AT3G50950.2  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | 
+     0.0023    9.3   1.4      0.009    7.4   0.0    2.8  2  AT3G07040.1  | Symbols: RPM1, RPS3 | NB-ARC domain-containing
+  ------ inclusion threshold ------
+        1.6    0.4   0.0         15   -2.6   0.0    1.8  0  AT3G14460.1  | Symbols:  | LRR and NB-ARC domains-containing 
+        1.7    0.3   0.0         25   -3.3   0.0    1.8  0  AT3G14470.1  | Symbols:  | NB-ARC domain-containing disease r
+
+
+Domain annotation for each sequence (and alignments):
+>> AT1G53350.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:19903899-19907515 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   30.6   0.1   3.5e-10   3.5e-10       1      20 [.       1      20 [.       1      21 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 30.6 bits;  conditional E-value: 3.5e-10
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA+AvVsf+vekL++lL+ E
+  AT1G53350.1  1 MAEAVVSFGVEKLWELLSRE 20
+                 ******************99 PP
+
+>> AT1G59780.1  | Symbols:  | NB-ARC domain-containing disease resistance protein | chr1:21993581-21997691 REVERSE LENGT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   29.9   0.0   5.6e-10   5.6e-10       1      21 []       6      26 ..       6      26 .. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 29.9 bits;  conditional E-value: 5.6e-10
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 M+d++Vsf+vekL++lL++E+
+  AT1G59780.1  6 MVDSIVSFGVEKLWKLLSQEY 26
+                 ********************7 PP
+
+>> AT1G58807.2  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21780574-21783395 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.9   0.0   5.1e-09   5.1e-09       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -0.0   0.0       2.2       2.2      10      21 .]     170     181 ..     170     181 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.9 bits;  conditional E-value: 5.1e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  ++sf++++L++lL++E+
+  AT1G58807.2  1 MAGELISFGIQNLWNLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -0.0 bits;  conditional E-value: 2.2
+   CC_motif_1  10 vekLgqlLieEa 21 
+                  v kL  +L++Ea
+  AT1G58807.2 170 VKKLVGYLVDEA 181
+                  789*******97 PP
+
+>> AT1G59124.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21816832-21819653 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.9   0.0   5.1e-09   5.1e-09       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -0.0   0.0       2.2       2.2      10      21 .]     170     181 ..     170     181 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.9 bits;  conditional E-value: 5.1e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  ++sf++++L++lL++E+
+  AT1G59124.1  1 MAGELISFGIQNLWNLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -0.0 bits;  conditional E-value: 2.2
+   CC_motif_1  10 vekLgqlLieEa 21 
+                  v kL  +L++Ea
+  AT1G59124.1 170 VKKLVGYLVDEA 181
+                  789*******97 PP
+
+>> AT5G43470.1  | Symbols: RPP8, HRT, RCY1 | Disease resistance protein (CC-NBS-LRR class) family | chr5:17463130-174666
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.8   0.0   1.2e-09   1.2e-09       1      20 [.       1      20 [.       1      21 [. 0.96
+   2 ?   -2.0   0.1       9.7       9.7       9      18 ..     366     375 ..     365     377 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 28.8 bits;  conditional E-value: 1.2e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA+A+Vsf++ekL++lL+ E
+  AT5G43470.1  1 MAEAFVSFGLEKLWDLLSRE 20
+                 ******************99 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 9.7
+   CC_motif_1   9 avekLgqlLi 18 
+                  av  Lg lL 
+  AT5G43470.1 366 AVKALGGLLA 375
+                  899*****97 PP
+
+>> AT5G43470.2  | Symbols: RPP8, HRT, RCY1 | Disease resistance protein (CC-NBS-LRR class) family | chr5:17463130-174666
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   28.8   0.0   1.2e-09   1.2e-09       1      20 [.       1      20 [.       1      21 [. 0.96
+   2 ?   -2.0   0.1       9.7       9.7       9      18 ..     366     375 ..     365     377 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 28.8 bits;  conditional E-value: 1.2e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA+A+Vsf++ekL++lL+ E
+  AT5G43470.2  1 MAEAFVSFGLEKLWDLLSRE 20
+                 ******************99 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 9.7
+   CC_motif_1   9 avekLgqlLi 18 
+                  av  Lg lL 
+  AT5G43470.2 366 AVKALGGLLA 375
+                  899*****97 PP
+
+>> AT1G58807.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21780574-21783793 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.7   0.0   6.2e-09   6.2e-09       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -0.3   0.0       2.7       2.7      10      21 .]     170     181 ..     170     181 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.7 bits;  conditional E-value: 6.2e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  ++sf++++L++lL++E+
+  AT1G58807.1  1 MAGELISFGIQNLWNLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 2.7
+   CC_motif_1  10 vekLgqlLieEa 21 
+                  v kL  +L++Ea
+  AT1G58807.1 170 VKKLVGYLVDEA 181
+                  789*******97 PP
+
+>> AT1G58848.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21792140-21795455 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.6   0.0   6.4e-09   6.4e-09       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -0.3   0.0       2.8       2.8      10      21 .]     170     181 ..     170     181 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.6 bits;  conditional E-value: 6.4e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  ++sf++++L++lL++E+
+  AT1G58848.1  1 MAGELISFGIQNLWNLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 2.8
+   CC_motif_1  10 vekLgqlLieEa 21 
+                  v kL  +L++Ea
+  AT1G58848.1 170 VKKLVGYLVDEA 181
+                  789*******97 PP
+
+>> AT1G58848.2  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21792140-21795455 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.6   0.0   6.4e-09   6.4e-09       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -0.3   0.0       2.8       2.8      10      21 .]     170     181 ..     170     181 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.6 bits;  conditional E-value: 6.4e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  ++sf++++L++lL++E+
+  AT1G58848.2  1 MAGELISFGIQNLWNLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 2.8
+   CC_motif_1  10 vekLgqlLieEa 21 
+                  v kL  +L++Ea
+  AT1G58848.2 170 VKKLVGYLVDEA 181
+                  789*******97 PP
+
+>> AT1G59218.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21828398-21831713 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.6   0.0   6.4e-09   6.4e-09       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -0.3   0.0       2.8       2.8      10      21 .]     170     181 ..     170     181 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.6 bits;  conditional E-value: 6.4e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  ++sf++++L++lL++E+
+  AT1G59218.1  1 MAGELISFGIQNLWNLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 2.8
+   CC_motif_1  10 vekLgqlLieEa 21 
+                  v kL  +L++Ea
+  AT1G59218.1 170 VKKLVGYLVDEA 181
+                  789*******97 PP
+
+>> AT1G59218.2  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21828398-21831713 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.6   0.0   6.4e-09   6.4e-09       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -0.3   0.0       2.8       2.8      10      21 .]     170     181 ..     170     181 .. 0.91
+
+  Alignments for each domain:
+  == domain 1  score: 26.6 bits;  conditional E-value: 6.4e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  ++sf++++L++lL++E+
+  AT1G59218.2  1 MAGELISFGIQNLWNLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -0.3 bits;  conditional E-value: 2.8
+   CC_motif_1  10 vekLgqlLieEa 21 
+                  v kL  +L++Ea
+  AT1G59218.2 170 VKKLVGYLVDEA 181
+                  789*******97 PP
+
+>> AT1G58390.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21690962-21693891 REVERSE LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.5   0.0   3.2e-08   3.2e-08       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -1.4   0.0       6.1       6.1       3      11 ..      55      63 ..      54      68 .. 0.83
+   3 ?   -2.0   0.0       9.3       9.3      10      20 ..     170     180 ..     169     180 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 24.5 bits;  conditional E-value: 3.2e-08
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  +Vsf++ kL++lL++E+
+  AT1G58390.1  1 MAGELVSFGIKKLWDLLSQEC 21
+                 ********************7 PP
+
+  == domain 2  score: -1.4 bits;  conditional E-value: 6.1
+   CC_motif_1  3 dAvVsfave 11
+                 +AvV  +ve
+  AT1G58390.1 55 TAVVRNVVE 63
+                 8*******9 PP
+
+  == domain 3  score: -2.0 bits;  conditional E-value: 9.3
+   CC_motif_1  10 vekLgqlLieE 20 
+                  v kL  +L++E
+  AT1G58390.1 170 VKKLVGYLVDE 180
+                  789999**998 PP
+
+>> AT1G58400.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21696165-21699118 REVERSE LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.9   0.0   1.1e-08   1.1e-08       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?   -1.6   0.1       6.9       6.9      10      20 ..     171     181 ..     170     181 .. 0.87
+
+  Alignments for each domain:
+  == domain 1  score: 25.9 bits;  conditional E-value: 1.1e-08
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 M++A+Vsf+vekL++ L++E+
+  AT1G58400.1  1 MVEAIVSFGVEKLWDRLTQEY 21
+                 *******************97 PP
+
+  == domain 2  score: -1.6 bits;  conditional E-value: 6.9
+   CC_motif_1  10 vekLgqlLieE 20 
+                  v kL  +L+eE
+  AT1G58400.1 171 VKKLVGYLVEE 181
+                  78999999998 PP
+
+>> AT5G48620.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr5:19717406-19720932 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.4   0.0   1.6e-08   1.6e-08       1      20 [.       1      20 [.       1      21 [. 0.96
+   2 ?   -2.0   0.1       9.7       9.7       9      18 ..     366     375 ..     365     377 .. 0.84
+
+  Alignments for each domain:
+  == domain 1  score: 25.4 bits;  conditional E-value: 1.6e-08
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA+ +Vsf++ekL++lL+ E
+  AT5G48620.1  1 MAEGFVSFGLEKLWDLLSRE 20
+                 ******************99 PP
+
+  == domain 2  score: -2.0 bits;  conditional E-value: 9.7
+   CC_motif_1   9 avekLgqlLi 18 
+                  av  Lg lL 
+  AT5G48620.1 366 AVKALGGLLA 375
+                  899*****97 PP
+
+>> AT1G59620.1  | Symbols: CW9 | Disease resistance protein (CC-NBS-LRR class) family | chr1:21902627-21905527 FORWARD L
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   26.2   0.1   8.8e-09   8.8e-09       1      20 [.       1      20 [.       1      21 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 26.2 bits;  conditional E-value: 8.8e-09
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA++++sf+vekL++lL+ E
+  AT1G59620.1  1 MAETLLSFGVEKLWDLLVRE 20
+                 ******************99 PP
+
+>> AT1G50180.1  | Symbols:  | NB-ARC domain-containing disease resistance protein | chr1:18584235-18587136 FORWARD LENGT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   25.5   0.1   1.4e-08   1.4e-08       1      20 [.       1      20 [.       1      21 [. 0.98
+
+  Alignments for each domain:
+  == domain 1  score: 25.5 bits;  conditional E-value: 1.4e-08
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA+A+Vs+ v+kLgqlL+eE
+  AT1G50180.1  1 MAEAIVSVTVQKLGQLLLEE 20
+                 *******************9 PP
+
+>> AT1G58602.1  | Symbols:  | LRR and NB-ARC domains-containing disease resistance protein | chr1:21760167-21763765 FORW
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.4   0.0   3.2e-08   3.2e-08       1      21 []       1      21 [.       1      21 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 24.4 bits;  conditional E-value: 3.2e-08
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  +Vsfav kL++lL++E+
+  AT1G58602.1  1 MAGELVSFAVNKLWDLLSHEY 21
+                 *******************97 PP
+
+>> AT1G58602.2  | Symbols:  | LRR and NB-ARC domains-containing disease resistance protein | chr1:21760167-21763765 FORW
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   24.4   0.0   3.2e-08   3.2e-08       1      21 []       1      21 [.       1      21 [. 0.97
+
+  Alignments for each domain:
+  == domain 1  score: 24.4 bits;  conditional E-value: 3.2e-08
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 MA  +Vsfav kL++lL++E+
+  AT1G58602.2  1 MAGELVSFAVNKLWDLLSHEY 21
+                 *******************97 PP
+
+>> AT5G35450.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr5:13667809-13670685 FORWARD LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   22.5   0.1   1.3e-07   1.3e-07       1      20 [.       1      20 [.       1      21 [. 0.95
+
+  Alignments for each domain:
+  == domain 1  score: 22.5 bits;  conditional E-value: 1.3e-07
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA+ vVsf+v+kL+ lL  E
+  AT5G35450.1  1 MAEGVVSFGVQKLWALLNRE 20
+                 *****************888 PP
+
+>> AT3G46530.1  | Symbols: RPP13 | NB-ARC domain-containing disease resistance protein | chr3:17130739-17133246 REVERSE 
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   21.1   0.0   3.7e-07   3.7e-07       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?    0.4   0.1       1.6       1.6      10      20 ..     435     445 ..     435     446 .. 0.88
+
+  Alignments for each domain:
+  == domain 1  score: 21.1 bits;  conditional E-value: 3.7e-07
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 M+dA+ +f+v k+g++LieEa
+  AT3G46530.1  1 MVDAITEFVVGKIGNYLIEEA 21
+                 ********************7 PP
+
+  == domain 2  score: 0.4 bits;  conditional E-value: 1.6
+   CC_motif_1  10 vekLgqlLieE 20 
+                  +ekL +lL+ E
+  AT3G46530.1 435 LEKLIHLLVAE 445
+                  79******987 PP
+
+>> AT3G46710.1  | Symbols:  | NB-ARC domain-containing disease resistance protein | chr3:17206489-17209032 REVERSE LENGT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.3   0.0   6.4e-06   6.4e-06       1      21 []       1      21 [.       1      21 [. 0.98
+   2 ?    3.5   0.3      0.16      0.16      10      20 ..     428     438 ..     428     439 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 17.3 bits;  conditional E-value: 6.4e-06
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 M+dA+ +f+v k+ ++LieEa
+  AT3G46710.1  1 MVDAITEFVVGKIDNYLIEEA 21
+                 ********************7 PP
+
+  == domain 2  score: 3.5 bits;  conditional E-value: 0.16
+   CC_motif_1  10 vekLgqlLieE 20 
+                  vekL qlL+ E
+  AT3G46710.1 428 VEKLIQLLVAE 438
+                  8*******987 PP
+
+>> AT3G46730.1  | Symbols:  | NB-ARC domain-containing disease resistance protein | chr3:17213069-17215612 REVERSE LENGT
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   15.5   0.0   2.4e-05   2.4e-05       1      21 []       1      21 [.       1      21 [. 0.97
+   2 ?    1.5   0.1       0.7       0.7      10      20 ..     435     445 ..     435     446 .. 0.90
+
+  Alignments for each domain:
+  == domain 1  score: 15.5 bits;  conditional E-value: 2.4e-05
+   CC_motif_1  1 MAdAvVsfavekLgqlLieEa 21
+                 M+dAv  f++ k+g +Li E+
+  AT3G46730.1  1 MVDAVTGFVLNKIGGYLINEV 21
+                 ******************997 PP
+
+  == domain 2  score: 1.5 bits;  conditional E-value: 0.7
+   CC_motif_1  10 vekLgqlLieE 20 
+                  vekL +lL+ E
+  AT3G46730.1 435 VEKLIHLLVAE 445
+                  8*******987 PP
+
+>> AT1G58410.1  | Symbols:  | Disease resistance protein (CC-NBS-LRR class) family | chr1:21701286-21704255 REVERSE LENG
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   17.1   0.0   7.2e-06   7.2e-06       5      21 .]       3      19 ..       2      19 .. 0.94
+
+  Alignments for each domain:
+  == domain 1  score: 17.1 bits;  conditional E-value: 7.2e-06
+   CC_motif_1  5 vVsfavekLgqlLieEa 21
+                 +Vsf+vekL++ L++E+
+  AT1G58410.1  3 LVSFGVEKLWDRLSQEY 19
+                 7***************7 PP
+
+>> AT3G50950.1  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | chr3:18936127-18938685 FORWARD LENGTH=852
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   0.2   1.4e-05   1.4e-05       1      20 [.       1      20 [.       1      21 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 1.4e-05
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 M+dAvV++++ek ++ L+e+
+  AT3G50950.1  1 MVDAVVTVFLEKTLNILEEK 20
+                 *****************997 PP
+
+>> AT3G50950.2  | Symbols: ZAR1 | HOPZ-ACTIVATED RESISTANCE 1 | chr3:18936127-18938685 FORWARD LENGTH=852
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !   16.2   0.2   1.4e-05   1.4e-05       1      20 [.       1      20 [.       1      21 [. 0.96
+
+  Alignments for each domain:
+  == domain 1  score: 16.2 bits;  conditional E-value: 1.4e-05
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 M+dAvV++++ek ++ L+e+
+  AT3G50950.2  1 MVDAVVTVFLEKTLNILEEK 20
+                 *****************997 PP
+
+>> AT3G07040.1  | Symbols: RPM1, RPS3 | NB-ARC domain-containing disease resistance protein | chr3:2226244-2229024 REVER
+   #    score  bias  c-Evalue  i-Evalue hmmfrom  hmm to    alifrom  ali to    envfrom  env to     acc
+ ---   ------ ----- --------- --------- ------- -------    ------- -------    ------- -------    ----
+   1 !    7.4   0.0     0.009     0.009       1      20 [.       1      20 [.       1      21 [. 0.96
+   2 ?   -1.0   0.1       4.7       4.7       9      18 ..     268     277 ..     268     279 .. 0.81
+
+  Alignments for each domain:
+  == domain 1  score: 7.4 bits;  conditional E-value: 0.009
+   CC_motif_1  1 MAdAvVsfavekLgqlLieE 20
+                 MA A V f++ +++++L+ E
+  AT3G07040.1  1 MASATVDFGIGRILSVLENE 20
+                 *****************988 PP
+
+  == domain 2  score: -1.0 bits;  conditional E-value: 4.7
+   CC_motif_1   9 avekLgqlLi 18 
+                  +vekL ++L 
+  AT3G07040.1 268 LVEKLVEYLQ 277
+                  7999999885 PP
+
+>> AT3G14460.1  | Symbols:  | LRR and NB-ARC domains-containing disease resistance protein | chr3:4851990-4856264 REVERS
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+>> AT3G14470.1  | Symbols:  | NB-ARC domain-containing disease resistance protein | chr3:4857940-4861104 FORWARD LENGTH=
+   [No individual domains that satisfy reporting thresholds (although complete target did)]
+
+
+
+Internal pipeline statistics summary:
+-------------------------------------
+Query model(s):                            1  (21 nodes)
+Target sequences:                         28  (26699 residues searched)
+Passed MSV filter:                        28  (1); expected 28.0 (1)
+Passed bias filter:                       28  (1); expected 28.0 (1)
+Passed Vit filter:                        28  (1); expected 28.0 (1)
+Passed Fwd filter:                        28  (1); expected 28.0 (1)
+Initial search space (Z):                 28  [actual number of targets]
+Domain search space  (domZ):              28  [number of targets reported over threshold]
+# CPU time: 0.01u 0.00s 00:00:00.01 Elapsed: 00:00:00.00
+# Mc/sec: 95.51
+//
+[ok]

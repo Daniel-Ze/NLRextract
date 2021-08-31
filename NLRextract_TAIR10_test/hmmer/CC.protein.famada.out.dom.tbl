@@ -1,0 +1,13 @@
+#                                                                            --- full sequence --- -------------- this domain -------------   hmm coord   ali coord   env coord
+# target name        accession   tlen query name           accession   qlen   E-value  score  bias   #  of  c-Evalue  i-Evalue  score  bias  from    to  from    to  from    to  acc description of target
+#------------------- ---------- ----- -------------------- ---------- ----- --------- ------ ----- --- --- --------- --------- ------ ----- ----- ----- ----- ----- ----- ----- ---- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.3.2 (Nov 2020)
+# Pipeline mode:   SEARCH
+# Query file:      /Users/daniel/test/hmm/mada.hmm
+# Target file:     ./NLRextract_TAIR10_test1/fasta/CC.protein.fa
+# Option settings: hmmsearch -o ./NLRextract_TAIR10_test1/hmmer/CC.protein.famada.out --tblout ./NLRextract_TAIR10_test1/hmmer/CC.protein.famada.out.tbl --domtblout ./NLRextract_TAIR10_test1/hmmer/CC.protein.famada.out.dom.tbl --max --cpu 8 /Users/daniel/test/hmm/mada.hmm ./NLRextract_TAIR10_test1/fasta/CC.protein.fa 
+# Current dir:     /Users/daniel/test
+# Date:            Mon Aug 30 14:46:36 2021
+# [ok]
