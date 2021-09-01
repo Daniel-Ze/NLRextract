@@ -1,6 +1,6 @@
 #!/bin/bash
 ########################################################### To get the script running
-NLRextracthome=~/test           # edit this line
+NLRextracthome=~/NLRextract           # edit this line
 ########################################################### and put the folder in PATH
 
 miniconda=~/miniconda3/etc/profile.d/conda.sh
