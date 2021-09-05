@@ -37,9 +37,12 @@ sequences. It uses hmms from pfam v32. It includes the search for the CC domain 
 ## How to install it:
 
 1. Clone it
-2. put the condaining folder in your $PATH
-3. chmod a+x NLRextract
-4. Edit line 3 in NLRextract if you chose to install it anywhere else than your home folder:
+```shell
+(base) 💻 daniel ~ $ git clone https://github.com/Daniel-Ze/NLRextract.git
+```
+3. put the containing folder in your $PATH
+4. chmod a+x NLRextract
+5. Edit line 3 in NLRextract if you chose to install it anywhere else than your home folder:
 ```shell
 1 #!/bin/bash
 2 ########################################################### To get the script running
