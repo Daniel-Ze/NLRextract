@@ -31,7 +31,7 @@ helpFunction()
    echo ""
    echo -e "\tNLRextract will run hmmersearch and search for the"
    echo -e "\tHMMs located in $NLRextracthome/hmm/."
-   echo -e "\tMake sure that supply a protein multifasta file."
+   echo -e "\tMake sure that you supply a protein multifasta file."
    echo ""
    echo "Usage: $(basename -- "$0") -p protein.fa"
    echo -e "\t-c number of CPUs to use (default: 1) "
