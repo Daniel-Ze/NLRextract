@@ -52,7 +52,7 @@ sequences. It uses hmms from pfam v32. It includes the search for the CC domain 
 5. Install the environment:
 ```shell
 (base) 💻 daniel ~ $ cd NLRextract
-(base) 💻 daniel:NLRextract $ mamba env install -f environment.yml
+(base) 💻 daniel:NLRextract $ mamba env create -f environment.yml
 ```
 
 ## How to run it:
