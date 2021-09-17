@@ -78,6 +78,22 @@ Usage: NLRextract -p protein.fa
 	-e conda environment (default: NLRextract)
 ```
 
+## Output:
+The script will generated several folder with the output of the different tools used:
+
+```shell
+NLRextract_TAIR10_test/
+├── [3.1K]  nlr.stderr          # Error reports of all steps
+├── [204K]  clust/              # Alignment and phylogenetic tree data
+├── [ 92K]  domain/             # Fasta sequences of the extracted domains
+├── [1.1M]  fasta/              # Fasta sequences of the extracted NLR proteins
+├── [1.2M]  gff/                # GFF files of domains and NLR proteins
+├── [233M]  hmmer/              # HMMER results for the NLR HMM motifs
+├── [ 59K]  name/               # Sequence names of NLR proteins and domains
+├── [ 26K]  seqname/            # Sequence names of proteins with a NLR domain
+└── [ 34K]  stats/              # Summary of findings plus plots
+```
+
 ## Changes:
 
 - Added usage info
