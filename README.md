@@ -68,7 +68,7 @@ sequences. It uses hmms from pfam v32. It includes the search for the CC domain 
 [error]	No protein file supplied.
 
 	NLRextract will run hmmersearch and search for the
-	HMMs located in /Users/daniel/test/hmm/.
+	HMMs located in /Users/daniel/NLRextract/hmm/.
 	Make sure that you supply a protein multifasta file.
 
 Usage: NLRextract -p protein.fa
