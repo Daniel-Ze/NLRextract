@@ -1,4 +1,5 @@
 ![title](https://github.com/Daniel-Ze/NLRextract/blob/master/preview_nlrextract.png?raw=true)
+<a href="https://kiwiirc.com/client/biotinkertech.servehttp.com/?&amp;theme=cli#welcome"><img src="https://kiwiirc.com/buttons/biotinkertech.servehttp.com/welcome.png" alt="Visit my IRC channel"></a>
 # NLRextract: search for NLR related hmms
 
 NLRextract was written to search for NLR related hmms in multi-fasta protein
