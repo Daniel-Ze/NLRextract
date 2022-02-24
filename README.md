@@ -5,13 +5,13 @@ NLRextract was written to search for NLR related hmms in multi-fasta protein
 sequences. It uses hmms from pfam v32. It includes the search for the CC domain related MADA motif [1]. This tool is under development so let me know if something's odd or can be improved. I tested the performance of NLRextract against [NLRparser](https://github.com/steuernb/NLR-Parser)[2] and [NLRtracker](https://github.com/slt666666/NLRtracker)[3] in a small article on my website: https://www.biotinkertech.eu/project_NLRextract.html
 
 
-**IMPORTANT!! \
-
-Potentially wrong output of NLRextract using system supplied awk: \
+**IMPORTANT!!**
+\
+**Potentially wrong output of NLRextract using system supplied awk:** \
 \
 Filtering of hmmrsearch / hmmrscan output was so far done with the system supplied awk version. Standard Installation of Ubuntu 20.04 comes with mawk as awk version. This version of awk has problems with scientific notation of numbers. Therefore, gawk=5.1.0 was included in environment.yml and the bash script was 'NLRextract' was adjusted to use gawk for filtering of results. If you have run NLRextract on standard Ubuntu 20.04 please make sure to rerun your analysis with the updated version!!! \
 \
-IMPORTANT!!**
+**IMPORTANT!!**
 
 ## What it does:
 
