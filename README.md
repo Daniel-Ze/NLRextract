@@ -6,27 +6,21 @@ sequences. It uses hmms from pfam v32. It includes the search for the CC domain 
 
 ## What it does:
 
+**IMPORTANT: Filtering of hmmrsearch / hmmrscan output was so far done with the system supplied awk version. Standard Installation of Ubuntu 20.04 comes with mawk as awk version. This version of awk has problems with scientific notation of numbers. Therefore, gawk=5.1.0 was included in environment.yml and the bash script was 'NLRextract' was adjusted to use gawk for filtering of results. If you have run NLRextract on standard Ubuntu 20.04 please make sure to rerun your analysis with the updated version!!!**
+
 - Searching for: NB-ARC, CC, TIR, RPW8 and LRR domains in the proteins
 - Create a venn diagram from the domain infromation
 - Extract the overlaps of the different domain combinations
 - Extract sequences of proteins with the different domain combinations
 - Plot number of different domains, and number of different NLRs
 
+
 ## What it needs:
 
-- conda with mamba
-- bedtools
-- clustalo
-- clustalw2
-- HMMER 3.2.1
-  - hmmsearch
-  - hmmscan
-- Rscript
-  - ggplot2
-  - gplots
-  - plyr
-  - egg
-  - cowplot
+Please have a look at the environment.yml file for more information
+```
+(base) 💻 daniel:NLRextract $ cat environment.yml
+```
 
 ## What it includes:
 
@@ -96,10 +90,14 @@ NLRextract_TAIR10_test/
 
 ## Changes:
 
-- Added usage info
-- Added suffix and number of CPU options
-- Adjusted plotNLR.r output
-- Added phylogenetic trees
+**UPDATE 24.02.21**
+  - switched from awk to gawk=5.1.0
+ 
+**PREVIOUS UPDATES**
+  - Added usage info
+  - Added suffix and number of CPU options
+  - Adjusted plotNLR.r output
+  - Added phylogenetic trees
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 
