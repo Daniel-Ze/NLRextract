@@ -179,8 +179,8 @@ hmmsearch --cpu $parameterC \
 
 #   - Format the hmmsearch ouput to gff3 format
 grep -v '^#' $HMMER'nb.out.dom.tbl' | \
-    awk '{if($7 < 0.01 && $14 > 20) {print $0}}' | \
-    awk '{print $1"\tNLRextract\tNB-ARC\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
+    gawk '{if($7 < 0.01 && $14 > 20) {print $0}}' | \
+    gawk '{print $1"\tNLRextract\tNB-ARC\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
     > $HMMER'nb.out.dom.gff'
 
 #   - Extract sequence of identfied domains
@@ -189,7 +189,7 @@ bedtools getfasta -fi $parameterP \
                   -bed $HMMER'nb.out.dom.gff'
 
 grep -v "^#" $HMMER'nb.out.tbl' | \
-    awk '{if($5 + 0.0 < 0.01 && $9 > 20) { print $1 }}' > $SEQNA'nb.out.seqname' 2>> $NLREX'nlr.stderr'
+    gawk '{if($5 + 0.0 < 0.01 && $9 > 20) { print $1 }}' > $SEQNA'nb.out.seqname' 2>> $NLREX'nlr.stderr'
 echo -e "[info]\t$(wc -l < $SEQNA'nb.out.seqname') sequences with NB-ARC domain"
 echo -e "NB-ARC\n$(cat $SEQNA'nb.out.seqname')" > $NAME'nb.out.name'
 echo -e "$(wc -l < $SEQNA'nb.out.seqname')\tNB-ARC" >> $STATS'nlr.stats'
@@ -204,8 +204,8 @@ hmmsearch --cpu $parameterC \
 
 #   - Format the hmmsearch output to gff3 format
 grep -v '^#' $HMMER'cc.out.dom.tbl' | \
-    awk '{if($7 < 0.01 && $14 > 10) {print $0}}' | \
-    awk '{print $1"\tNLRextract\tCC\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
+    gawk '{if($7 < 0.01 && $14 > 10) {print $0}}' | \
+    gawk '{print $1"\tNLRextract\tCC\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
     > $HMMER'cc.out.dom.gff'
 
 
@@ -214,7 +214,7 @@ bedtools getfasta -fi $parameterP \
                   -bed $HMMER'cc.out.dom.gff'
 
 grep -v "^#" $HMMER'cc.out.tbl' | \
-    awk '($5 + 0.0 < 0.01) { print $1 }' > $SEQNA'cc.out.seqname' 2>> $NLREX'nlr.stderr'
+    gawk '($5 + 0.0 < 0.01) { print $1 }' > $SEQNA'cc.out.seqname' 2>> $NLREX'nlr.stderr'
 echo -e "[info]\t$(wc -l < $SEQNA'cc.out.seqname') sequences with CC domain"
 echo -e "CC\n$(cat $SEQNA'cc.out.seqname')" > $NAME'cc.out.name'
 echo -e "$(wc -l < $SEQNA'cc.out.seqname')\tCC" >> $STATS'nlr.stats'
@@ -229,8 +229,8 @@ hmmsearch --cpu $parameterC \
 
 #   - Format the hmmsearch output to gff3 format
 grep -v '^#' $HMMER'tir.out.dom.tbl' | \
-    awk '{if($7 < 0.01 && $14 > 20) {print $0}}' | \
-    awk '{print $1"\tNLRextract\tTIR\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
+    gawk '{if($7 < 0.01 && $14 > 20) {print $0}}' | \
+    gawk '{print $1"\tNLRextract\tTIR\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
     > $HMMER'tir.out.dom.gff'
 
 bedtools getfasta -fi $parameterP \
@@ -238,7 +238,7 @@ bedtools getfasta -fi $parameterP \
                   -bed $HMMER'tir.out.dom.gff'
 
 grep -v "^#" $HMMER'tir.out.tbl' | \
-    awk '($5 + 0.0 < 0.01) { print $1 }' > $SEQNA'tir.out.seqname' 2>> $NLREX'nlr.stderr'
+    gawk '($5 + 0.0 < 0.01) { print $1 }' > $SEQNA'tir.out.seqname' 2>> $NLREX'nlr.stderr'
 echo -e "[info]\t$(wc -l < $SEQNA'tir.out.seqname') sequences with TIR domain"
 echo -e "TIR\n$(cat $SEQNA'tir.out.seqname')" > $NAME'tir.out.name'
 echo -e "$(wc -l < $SEQNA'tir.out.seqname')\tTIR" >> $STATS'nlr.stats'
@@ -253,8 +253,8 @@ hmmsearch --cpu $parameterC \
 
 #   - Format the hmmsearch output to gff3 format
 grep -v '^#' $HMMER'rpw8.out.dom.tbl' | \
-    awk '{if($7 + 0.0 < 0.01 && $14 > 40) {print $0}}' | \
-    awk '{print $1"\tNLRextract\tRPW8\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
+    gawk '{if($7 + 0.0 < 0.01 && $14 > 40) {print $0}}' | \
+    gawk '{print $1"\tNLRextract\tRPW8\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$5"_"$4}' \
     > $HMMER'rpw8.out.dom.gff'
 
 bedtools getfasta -fi $parameterP \
@@ -262,7 +262,7 @@ bedtools getfasta -fi $parameterP \
                   -bed $HMMER'rpw8.out.dom.gff'
 
 grep -v "^#" $HMMER'rpw8.out.tbl' | \
-    awk '($5 + 0.0 < 0.01) { print $1 }' > $SEQNA'rpw8.out.seqname' 2>> $NLREX'nlr.stderr'
+    gawk '($5 + 0.0 < 0.01) { print $1 }' > $SEQNA'rpw8.out.seqname' 2>> $NLREX'nlr.stderr'
 echo -e "[info]\t$(wc -l < $SEQNA'rpw8.out.seqname') sequences with RPW8 domain"
 echo -e "RPW8\n$(cat $SEQNA'rpw8.out.seqname')" > $NAME'rpw8.out.name'
 echo -e "$(wc -l < $SEQNA'rpw8.out.seqname')\tRPW8" >> $STATS'nlr.stats'
@@ -277,13 +277,13 @@ hmmscan --cpu $parameterC \
 
 #   - Format the hmmscan output to gff3 format
 grep -v '^#' $HMMER'lrr.out.dom.tbl' | \
-    awk '{if($7 + 0.0 < 0.01) {print $0}}' | \
+    gawk '{if($7 + 0.0 < 0.01) {print $0}}' | \
     sort -k4 | \
-    awk '{print $4"\tNLRextract\tLRR\t"$18"\t"$19"\t"$7"\t+\t.\tName="$1";ID="$4"_"$2"_"$1}' \
+    gawk '{print $4"\tNLRextract\tLRR\t"$18"\t"$19"\t"$7"\t+\t.\tName="$1";ID="$4"_"$2"_"$1}' \
     > $HMMER'lrr.out.dom.gff'
 
 grep -v "^#" $HMMER'lrr.out.tbl' | \
-    awk '($5 + 0.0 < 0.01) { print $3 }' | \
+    gawk '($5 + 0.0 < 0.01) { print $3 }' | \
     uniq  > $SEQNA'lrr.out.seqname' 2>> $NLREX'nlr.stderr'
 
 echo -e "[info]\t$(wc -l < $SEQNA'lrr.out.seqname') sequences with LRR domain"
@@ -323,10 +323,10 @@ do
   echo $(basename -- "$f")
   file=$(basename -- "$f")
   echo -e "$(wc -l < $f)\t$(basename -- "$f")" >> $STATS'nlr.stats'
-  awk '{print $2}' $f | \
+  gawk '{print $2}' $f | \
       xargs -I % grep -E % $parameterP | \
       cut -d '>' -f2 | \
-      awk -F '^>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' - $parameterP > $FASTA$file.fa
+      gawk -F '^>' 'NR==FNR{ids[$0]; next} NF>1{f=($2 in ids)} f' - $parameterP > $FASTA$file.fa
 done
 
 #Rscript $plotNLR $STATS'nlr.stats' --save 2>> $NLREX'nlr.stderr'
@@ -351,13 +351,13 @@ do
               --domtblout $HMMER$file"mada.out.dom.tbl" -o $HMMER$file"mada.out" $MADA $f
 
     grep -v '^#' $HMMER$file'mada.out.dom.tbl' | \
-    awk '{if($7 + 0.0 < 0.01 && $14 > 9) {print $0}}' | \
-    awk '{print $1"\tNLRextract\tMADA\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$4"_"$8}' \
+    gawk '{if($7 + 0.0 < 0.01 && $14 > 9) {print $0}}' | \
+    gawk '{print $1"\tNLRextract\tMADA\t"$18"\t"$19"\t"$7"\t+\t.\tName="$4";ID="$1"_"$4"_"$8}' \
     > $HMMER$file'mada.out.dom.gff'
 
     bedtools getfasta -fi $parameterP -bed $HMMER$file'mada.out.dom.gff' >> $DOMAIN"mada.dom.fa"
     
-    domain=$(echo $file | awk '{split($0,a,"."); split(a[1],b,"_"); for(x in b){print b[x]}}' ORS="_")"MADA.protein"
+    domain=$(echo $file | gawk '{split($0,a,"."); split(a[1],b,"_"); for(x in b){print b[x]}}' ORS="_")"MADA.protein"
 
     echo -e "$(wc -l < $HMMER$file'mada.out.dom.gff')\t$domain" >> $STATS'nlr.stats'
 done
