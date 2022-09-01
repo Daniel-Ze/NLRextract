@@ -1,7 +1,6 @@
 #!/bin/bash
-########################################################### To get the script running
-NLRextracthome=~/NLRextract           # edit this line
-########################################################### and put the folder in PATH
+
+NLRextracthome="$(cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"/
 
 miniconda=~/miniconda3/etc/profile.d/conda.sh
 
